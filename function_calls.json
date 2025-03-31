@@ -1,0 +1,32 @@
+{
+    "nodes": [
+        {
+            "function": "add",
+            "language": "C++",
+            "file": "./math_ops.cpp",
+            "start": 1,
+            "end": 7
+        },
+        {
+            "function": "format_text",
+            "language": "C++",
+            "file": "./string_utils.cpp",
+            "start": 8,
+            "end": 8
+        },
+        {
+            "function": "createMaze",
+            "language": "JavaScript",
+            "file": "./data_processor.js",
+            "start": 47,
+            "end": 51
+        },
+        {
+            "function": "send_request",
+            "language": "JavaScript",
+            "file": "./api_handler.js",
+            "start": 10,
+            "end": 10
+        }
+    ]
+}
