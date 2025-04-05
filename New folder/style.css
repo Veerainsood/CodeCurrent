@@ -1,0 +1,17 @@
+/* svg {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+}
+/* 
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    marker-end: url(#arrow);
+} */
+
+.node text {
+    font-size: 12px;
+    text-anchor: middle;
+    fill: #333;
+} 
