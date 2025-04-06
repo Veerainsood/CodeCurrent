@@ -10,10 +10,10 @@ using namespace boost::python;
 void test_python_c_api() {
     Py_Initialize();
     PyObject *mod = PyImport_ImportModule("mymodule");
-    PyObject *func = PyObject_GetAttrString(mod, "myfunc");
-    PyObject *args = PyTuple_New(2);
     PyTuple_SetItem(args, 0, PyLong_FromLong(10));
+    PyObject *func = PyObject_GetAttrString(mod, "myfunc");
     PyTuple_SetItem(args, 1, PyUnicode_FromString("hello"));
+    PyObject *args = PyTuple_New(2);
     PyObject *res = PyObject_CallObject(func, args);
     Py_Finalize();
 }

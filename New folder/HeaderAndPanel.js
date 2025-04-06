@@ -2,21 +2,23 @@ const sidePanel = document.getElementById("sidePanel");
     const overlay = document.getElementById("overlay");
     const toggleBtn = document.getElementById("togglePanel");
     const closeBtn = document.getElementById("closePanel");
+   
     
     toggleBtn.onclick = () => {
-      sidePanel.classList.setActive(true);
-      overlay.classList.setActive(true);
+      // overlay.style.display = "block";
+      sidePanel.style.display = "block";
     };
     
     closeBtn.onclick = () => {
-      sidePanel.classList.setActive(false);
-      overlay.classList.setActive(false);
+      // overlay.style.display = "none";
+      sidePanel.style.display = "none";
     };
     
     overlay.onclick = () => {
-      sidePanel.classList.remove("active");
-      overlay.classList.remove("active");
+      // overlay.style.display = "block";
+      sidePanel.style.display = "block";
     };
+    
     
     // --- Resizing logic ---
     const handles = document.querySelectorAll(".resize-handle");

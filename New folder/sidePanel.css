@@ -11,16 +11,6 @@ body, html {
 }
 
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, #2c3e50, #3498db);
-  color: white;
-  position: relative;
-  z-index: 1;
-}
 
 .logo {
   font-size: 1.6rem;
@@ -61,16 +51,13 @@ body, html {
   z-index: 999;
 }
 
-.overlay.active {
-  display: block;
-}
 
 /* Floating Side Panel */
 .side-panel {
   position: fixed;
-  top: 0;
-  /* right: -100%; */
-  height: 100vh;
+  top: 7%;
+  right: 0%;
+  height: 90%;
   width: 35vh;
   min-width: 280px;
   max-width: 600px;
@@ -83,9 +70,6 @@ body, html {
   box-shadow: -5px 0 20px rgba(0,0,0,0.5);
 }
 
-.side-panel.active {
-  right: 0;
-}
 
 .panel-header {
   display: flex;
