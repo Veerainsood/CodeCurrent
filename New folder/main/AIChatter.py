@@ -1,11 +1,12 @@
 import json
+import time
 import requests
 import subprocess
 import sys
 import os
 import concurrent.futures
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "deepseek-coder"
+MODEL_NAME = "tinyllama"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_JSON = os.path.join(BASE_DIR, "public", "file.json")
@@ -25,10 +26,12 @@ def is_model_available():
         return False
 
 def start_ollama():
-    # print("🟡 Starting ollama serve...")  
+    # print("🟡 Starting ollama serve...")      
     subprocess.Popen(["ollama", "serve"])
-    import time
-    time.sleep(3)  # give some time to start
+    for _ in range(10):
+        if is_ollama_running():
+            return
+        time.sleep(0.5) # give some time to start
 
 def pull_model():
     # print(f"📦 Pulling model {MODEL_NAME}...")
@@ -44,29 +47,32 @@ def find_function_by_id(file_path, target_id):
                 return func
     return None
 
-def extract_code_from_file(path, start, end):
-    # BASE_DIR is .../New folder/main
-    real_base = os.path.abspath(os.path.join(BASE_DIR, ".."))  # Points to "New folder"
+def extract_code_from_file(path, start, end, max_lines=40):
+    real_base = os.path.abspath(os.path.join(BASE_DIR, ".."))
     normalized_path = os.path.join(real_base, path.removeprefix("/src").lstrip("/"))
-    # print(normalized_path)
 
     try:
         with open(normalized_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
-            return "".join(lines[start - 1:end])
-    except Exception as e:
-        # print(f"❌ Error reading file {normalized_path}: {e}")
+            lines = lines[start - 1:end]
+            return "".join(lines[:max_lines])  # Limit lines
+    except Exception:
         return None
 
 def format_prompt_for_structure(code, task):
-    if task == 1:
-        return f"Explain what the following code does:\n\n{code} give very short ans"
-    elif task == 2:
-        return f"Suggest improvements for the following code:\n\n{code} give very short an"
-    elif task == 3:
-        return f"Identify potential code smells in the following code:\n\n{code} give very short an"
-    return code
+    code = code.strip()[:1000]  # limit input chars
+    prefix = {
+        1: "Briefly explain:",
+        2: "One improvement:",
+        3: "One code smell:"
+    }.get(task, "")
+    return f"{prefix}\n{code}"
 
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+def extract_code_from_file_cached(path, start, end):
+    return extract_code_from_file(path, start, end)
 
 
 def analyze_with_deepseek(code, task, timeout=10):
@@ -74,14 +80,18 @@ def analyze_with_deepseek(code, task, timeout=10):
     payload = {
         "model": MODEL_NAME,
         "prompt": prompt,
-        "stream": False
-    }
-
+        "stream": False,
+        "options": {
+            "num_predict": 64,
+            "temperature": 0.2,
+            "top_k": 40,
+            "top_p": 0.95
+        }
+    }   
     def make_request():
         response = requests.post(OLLAMA_URL, json=payload)
         response.raise_for_status()
         return json.loads(response.text)["response"]
-
     try:
         with concurrent.futures.ThreadPoolExecutor() as executor:
             future = executor.submit(make_request)
@@ -118,6 +128,6 @@ if not func:
     print(f"❌ Function ID {id} not found.")
     sys.exit(1)
 
-code = extract_code_from_file(func["path"], func["startLine"], func["endLine"])
+code = extract_code_from_file_cached(func["path"], func["startLine"], func["endLine"])
 result = analyze_with_deepseek(code, task)
 print(result)  # send result back to Node.js
