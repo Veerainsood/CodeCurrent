@@ -6,10 +6,7 @@ import time
 from pathlib import Path
 
 # Configuration
-container_name = "cpp_parser_container"
-image_name = "veerain/cplusplusparser:latest"
 base_dir = Path(os.getcwd())
-final_json = base_dir / "file.json"
 
 def is_container_running(name):
     try:
@@ -39,7 +36,7 @@ def remove_existing_container(name):
         print("Error removing existing container:", e)
         sys.exit(1)
 
-def start_container():
+def start_container(container_name,image_name):
     if container_exists(container_name):
         remove_existing_container(container_name)
 
@@ -57,8 +54,11 @@ def start_container():
         print("Error starting container:", e)
         sys.exit(1)
 
-def run_generator_in_container():
-    docker_cmd = ["docker", "exec", container_name, "bash", "-c", "./tester.sh"]
+def run_generator_in_container(container_name,javPy):
+    if(javPy == 0):
+        docker_cmd = ["docker", "exec", container_name, "bash", "-c", "./tester.sh"]
+    else:
+        docker_cmd = ["docker", "exec", container_name, "bash", "-c", "./tester_java.sh"]
     try:
         subprocess.check_call(docker_cmd)
         print("Generator command executed successfully in container.")
@@ -66,14 +66,7 @@ def run_generator_in_container():
         print("Error executing generator command:", e)
         sys.exit(1)
 
-def copy_json_to_current():
-    src = base_dir / "file.json"
-    if src.exists():
-        print(f"Output file generated at: {src}")
-    else:
-        print("file.json not found. Make sure tester.sh writes to /src/file.json")
-
-def stop_and_remove_container():
+def stop_and_remove_container(container_name):
     try:
         subprocess.check_call(["docker", "stop", container_name])
         subprocess.check_call(["docker", "rm", container_name])
@@ -81,17 +74,27 @@ def stop_and_remove_container():
     except subprocess.CalledProcessError as e:
         print("Error stopping/removing container:", e)
 
-def main():
+def main(container_name,image_name):
     if not is_container_running(container_name):
         print("Container not running. Starting container...")
-        start_container()
+        start_container(container_name,image_name)
     else:
         print("Container is already running.")
 
     print("Running generator on all C++ files...")
-    run_generator_in_container()
-    copy_json_to_current()
-    stop_and_remove_container()
+    if(container_name == "cpp_parser_container"):
+        run_generator_in_container(container_name=container_name,javPy=0)
+    else:
+        run_generator_in_container(container_name=container_name,javPy=1)
+    stop_and_remove_container(container_name=container_name)
 
-if __name__ == "__main__":
-    main()
+
+container_name = "cpp_parser_container"
+image_name = "veerain/cplusplusparser:latest"
+main(container_name,image_name)
+container_name = "java_parser_container"
+image_name = "veerain/cplusplusparser:javaInterlang"
+main(container_name,image_name)
+os.system("python3 pythonMaker.py")
+os.system("python3 combineJsons.py")
+

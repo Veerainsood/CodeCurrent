@@ -1,0 +1,5 @@
+[
+{"caller_id":190,"callee_id":189,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true}
+,
+{"caller_id":191,"callee_id":195,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":191,"callee_id":198,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":191,"callee_id":199,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":198,"callee_id":193,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true}
+]

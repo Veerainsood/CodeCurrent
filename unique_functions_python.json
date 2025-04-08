@@ -1,0 +1,743 @@
+[
+    {
+        "id": 201,
+        "name": "is_ollama_running",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 11,
+        "endLine": 16
+    },
+    {
+        "id": 202,
+        "name": "is_model_available",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 18,
+        "endLine": 23
+    },
+    {
+        "id": 203,
+        "name": "start_ollama",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 25,
+        "endLine": 29
+    },
+    {
+        "id": 204,
+        "name": "pull_model",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 31,
+        "endLine": 33
+    },
+    {
+        "id": 205,
+        "name": "find_function_by_id",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 35,
+        "endLine": 42
+    },
+    {
+        "id": 206,
+        "name": "extract_code_from_file",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 44,
+        "endLine": 52
+    },
+    {
+        "id": 207,
+        "name": "format_prompt_for_structure",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 54,
+        "endLine": 61
+    },
+    {
+        "id": 208,
+        "name": "analyze_with_deepseek",
+        "file": "AIChatter.py",
+        "path": "./AIChatter.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 63,
+        "endLine": 81
+    },
+    {
+        "id": 209,
+        "name": "is_container_running",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 11,
+        "endLine": 19
+    },
+    {
+        "id": 210,
+        "name": "container_exists",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 21,
+        "endLine": 29
+    },
+    {
+        "id": 211,
+        "name": "remove_existing_container",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 31,
+        "endLine": 37
+    },
+    {
+        "id": 212,
+        "name": "start_container",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 39,
+        "endLine": 55
+    },
+    {
+        "id": 213,
+        "name": "run_generator_in_container",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 57,
+        "endLine": 67
+    },
+    {
+        "id": 214,
+        "name": "stop_and_remove_container",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 69,
+        "endLine": 75
+    },
+    {
+        "id": 215,
+        "name": "main",
+        "file": "runner.py",
+        "path": "./runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 77,
+        "endLine": 89
+    },
+    {
+        "id": 216,
+        "name": "extract_code_from_file",
+        "file": "deepseekExternalCPP.py",
+        "path": "./deepseekExternalCPP.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 8,
+        "endLine": 15
+    },
+    {
+        "id": 217,
+        "name": "format_prompt_for_structure",
+        "file": "deepseekExternalCPP.py",
+        "path": "./deepseekExternalCPP.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 18,
+        "endLine": 41
+    },
+    {
+        "id": 218,
+        "name": "analyze_with_deepseek",
+        "file": "deepseekExternalCPP.py",
+        "path": "./deepseekExternalCPP.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 44,
+        "endLine": 64
+    },
+    {
+        "id": 219,
+        "name": "load_external_call_files",
+        "file": "deepseekExternalCPP.py",
+        "path": "./deepseekExternalCPP.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 67,
+        "endLine": 74
+    },
+    {
+        "id": 220,
+        "name": "load_id_counter",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 8,
+        "endLine": 12
+    },
+    {
+        "id": 221,
+        "name": "save_id_counter",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 14,
+        "endLine": 16
+    },
+    {
+        "id": 222,
+        "name": "__init__",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 19,
+        "endLine": 25
+    },
+    {
+        "id": 223,
+        "name": "visit_FunctionDef",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 27,
+        "endLine": 51
+    },
+    {
+        "id": 224,
+        "name": "visit_Call",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 53,
+        "endLine": 83
+    },
+    {
+        "id": 225,
+        "name": "_get_called_class_name",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 85,
+        "endLine": 91
+    },
+    {
+        "id": 226,
+        "name": "visit_ClassDef",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 93,
+        "endLine": 97
+    },
+    {
+        "id": 227,
+        "name": "_get_function_id",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 99,
+        "endLine": 112
+    },
+    {
+        "id": 228,
+        "name": "_is_inside",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 114,
+        "endLine": 119
+    },
+    {
+        "id": 229,
+        "name": "analyze_python_files",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 121,
+        "endLine": 206
+    },
+    {
+        "id": 230,
+        "name": "analyze_metrics",
+        "file": "pythonMaker.py",
+        "path": "./pythonMaker.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 208,
+        "endLine": 223
+    },
+    {
+        "id": 231,
+        "name": "extract_relevant_functions",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 14,
+        "endLine": 44
+    },
+    {
+        "id": 232,
+        "name": "format_prompt",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 46,
+        "endLine": 65
+    },
+    {
+        "id": 233,
+        "name": "analyze_code",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 67,
+        "endLine": 79
+    },
+    {
+        "id": 234,
+        "name": "dump_result",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 81,
+        "endLine": 86
+    },
+    {
+        "id": 235,
+        "name": "process_file",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 88,
+        "endLine": 95
+    },
+    {
+        "id": 236,
+        "name": "load_files",
+        "file": "deepseekExternFast.py",
+        "path": "./deepseekExternFast.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 97,
+        "endLine": 103
+    },
+    {
+        "id": 237,
+        "name": "extract_relevant_functions",
+        "file": "externalAnalyser.py",
+        "path": "./externalAnalyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 14,
+        "endLine": 44
+    },
+    {
+        "id": 238,
+        "name": "format_prompt",
+        "file": "externalAnalyser.py",
+        "path": "./externalAnalyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 46,
+        "endLine": 65
+    },
+    {
+        "id": 239,
+        "name": "analyze_code",
+        "file": "externalAnalyser.py",
+        "path": "./externalAnalyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 67,
+        "endLine": 79
+    },
+    {
+        "id": 240,
+        "name": "process_file",
+        "file": "externalAnalyser.py",
+        "path": "./externalAnalyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 81,
+        "endLine": 88
+    },
+    {
+        "id": 241,
+        "name": "load_files",
+        "file": "externalAnalyser.py",
+        "path": "./externalAnalyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 90,
+        "endLine": 96
+    },
+    {
+        "id": 242,
+        "name": "extract_code_from_file",
+        "file": "analyser.py",
+        "path": "./analyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 6,
+        "endLine": 13
+    },
+    {
+        "id": 243,
+        "name": "analyze_with_ollama",
+        "file": "analyser.py",
+        "path": "./analyser.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 15,
+        "endLine": 30
+    }
+]
