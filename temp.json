@@ -1,10 +1,10 @@
 {
     "functions": [
         {
-            "id": 618,
+            "id": 1236,
             "name": "Print",
             "file": "stats.cc",
-            "path": "/src/nachos/Nachos 3/code/machine/stats.cc",
+            "path": "/src/New folder/nachos/Nachos 3/code/machine/stats.cc",
             "language": "C++",
             "parameters": {
                 "count": 0,

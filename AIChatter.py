@@ -5,7 +5,7 @@ import sys
 import os
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "deepseek-coder"
+MODEL_NAME = "tinyllama"
 FILE_JSON = "file.json"
 
 def is_ollama_running():
