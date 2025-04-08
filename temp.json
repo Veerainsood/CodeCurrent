@@ -1,7 +1,7 @@
 {
     "functions": [
         {
-            "id": 3094,
+            "id": 618,
             "name": "Print",
             "file": "stats.cc",
             "path": "/src/nachos/Nachos 3/code/machine/stats.cc",

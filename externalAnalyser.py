@@ -1,68 +1,113 @@
+import json
 import os
 import re
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Define patterns that indicate C++ calling Python or Java
-PATTERNS = {
-    'python': [
-        r'#include\s*<Python\.h>',
-        r'Py_Initialize\s*\(',
-        r'PyRun_SimpleString\s*\(',
-        r'PyObject_',
-        r'Py_Finalize\s*\('
-    ],
-    'java': [
-        r'#include\s*<jni\.h>',
-        r'JNI_CreateJavaVM',
-        r'JNIEnv\s*\*',
-        r'jclass',
-        r'Call\w+Method',
-        r'FindClass\s*\(',
-        r'GetMethodID\s*\('
-    ]
-}
+OLLAMA_URL = "http://localhost:11434/api/generate"
+EXTERNAL_CALLS_FILE = "external_calls.txt"
+NUM_THREADS = 4
 
-CPP_EXTENSIONS = ('.cpp', '.cc', '.cxx', '.C')
+CALL_PATTERNS = re.compile(r'(Py\w+|JNI\w+|Call\w+Method|GetMethodID|FindClass)')
+FUNC_DEF_PATTERN = re.compile(r'(?:[\w:<>\*&\s]+)?\s+(\w+)\s*\(([^)]*)\)\s*{', re.MULTILINE)
 
-def check_file_for_patterns(filepath):
+def extract_relevant_functions(file_path):
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read()
-            results = {
-                'python': any(re.search(p, content) for p in PATTERNS['python']),
-                'java': any(re.search(p, content) for p in PATTERNS['java']),
-            }
-            return results
-    except Exception as e:
-        print(f"Error reading {filepath}: {e}")
-        return {'python': False, 'java': False}
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            code = f.read()
 
-def scan_cpp_files():
-    matches = []
-    for dirpath, _, filenames in os.walk('.'):
-        for filename in filenames:
-            if filename.endswith(CPP_EXTENSIONS):
-                full_path = os.path.join(dirpath, filename)
-                result = check_file_for_patterns(full_path)
-                if result['python'] or result['java']:
-                    matches.append((full_path, result))
-    return matches
+        blocks = []
+        lines = code.splitlines()
+        total_lines = len(lines)
+
+        for match in FUNC_DEF_PATTERN.finditer(code):
+            start_pos = match.start()
+            start_line = code.count('\n', 0, start_pos)
+            brace_count = 0
+            found_start = False
+
+            for i in range(start_line, total_lines):
+                brace_count += lines[i].count('{')
+                brace_count -= lines[i].count('}')
+                if not found_start and '{' in lines[i]:
+                    found_start = True
+                    start = i
+                if found_start and brace_count == 0:
+                    end = i
+                    block = "\n".join(lines[start:end+1])
+                    if CALL_PATTERNS.search(block):
+                        blocks.append(block)
+                    break
+        return blocks
+    except Exception as e:
+        print(f"❌ Error in {file_path}: {e}")
+        return []
+
+def format_prompt(code_blocks):
+    joined_code = '\n\n'.join(code_blocks)
+    return (
+        "Analyze the following C++ functions and extract function call relationships in this JSON format:\n\n"
+        "{\n"
+        '  "functionCalls": [\n'
+        "    {\n"
+        '      "callerId": 1,\n'
+        '      "calleeId": 2,\n'
+        '      "isInsideIfElseOrSwitch": true,\n'
+        '      "isInsideLoopOrEnvironment": false,\n'
+        '      "isDifferentLanguage": true,\n'
+        '      "isDifferentModule": false,\n'
+        '      "isInsideClass": true,\n'
+        '      "isInsideFunction": false\n'
+        "    }\n"
+        "  ]\n"
+        "}\n\n"
+        f"Code:\n```cpp\n{joined_code}\n```"
+    )
+
+def analyze_code(code_blocks):
+    prompt = format_prompt(code_blocks)
+    payload = {
+        "model": "deepseek-coder",
+        "prompt": prompt,
+        "stream": False
+    }
+    try:
+        response = requests.post(OLLAMA_URL, json=payload)
+        response.raise_for_status()
+        return response.text
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+def process_file(file_path):
+    print(f"🔍 {file_path}")
+    code_blocks = extract_relevant_functions(file_path)
+    if not code_blocks:
+        return (file_path, "No relevant functions found.")
+    
+    result = analyze_code(code_blocks)
+    return (file_path, result)
+
+def load_files(path):
+    try:
+        with open(path, "r") as f:
+            return [line.strip().split(",")[0] for line in f if line.strip()]
+    except FileNotFoundError:
+        print("❌ Missing external_calls.txt")
+        return []
 
 if __name__ == "__main__":
-    results = scan_cpp_files()
-    output_path = "external_calls.txt"
+    files = load_files(EXTERNAL_CALLS_FILE)
+    results_dir = "results_light"
+    os.makedirs(results_dir, exist_ok=True)
 
-    if not results:
-        print("✅ No external calls to Python or Java found.")
-    else:
-        print("⚠️ External calls detected:")
-        with open(output_path, 'w') as f:
-            for file, types in results:
-                langs = []
-                if types['python']:
-                    langs.append('Python')
-                if types['java']:
-                    langs.append('Java')
-                line = f"{file},{','.join(langs)}"
-                print(f"- {line}")
-                f.write(line + "\n")
-        print(f"\n📁 File paths saved to: {output_path}")
+    with ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
+        futures = [executor.submit(process_file, f) for f in files]
+        for future in as_completed(futures):
+            file_path, result = future.result()
+            file_name = os.path.basename(file_path).replace("/", "_")
+            result_path = os.path.join(results_dir, f"{file_name}.out")
+
+            with open(result_path, "w") as f:
+                f.write(result)
+            
+            print(f"✅ Result saved for {file_path} → {result_path}")
