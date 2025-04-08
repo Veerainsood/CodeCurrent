@@ -1,0 +1,7 @@
+{
+  "1-1": "The \"Consumer::consume()\" function in the provided code snippet is responsible for consuming items from a table and printing them to the console. The function first checks if there are any items left on the table, and if not, it will wait for an item to be consumed by another consumer before proceeding",
+  "50-1": "The \"ConsoleTest\" function takes two arguments: the input string and the output string. It creates a new instance of the Console class with the specified input and output strings, respectively. It also creates two semaphores (one for read availability and one for write completion) and initializes them to 0",
+  "12-1": "The Scheduler::Run() function is responsible for running a specific thread (currentThread) while ignoring any user programs. The function checks if the old thread (oldThread) had an undetected stack overflow, and switches to the next thread (nextThread). The currentThread->space->SaveState()",
+  "29-1": "The `Condition::Signal` method of the `Lock` class is used to notify other threads that a condition has been signaled. The `condition` pointer in the Lock structure is used as the lock object, and the `signal` function is called on it.\n\nThe `Signal` method sets",
+  "34-1": "PerformanceTest is a function that performs various tests on the performance of your program, such as time-consuming operations or complex calculations. It takes no arguments and does not return any value. The function is designed to run multiple times with different inputs and measure the execution time for each test. Here's how it"
+}

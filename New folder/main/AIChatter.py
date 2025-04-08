@@ -7,9 +7,20 @@ import os
 import concurrent.futures
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "tinyllama"
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_FILE = os.path.join(BASE_DIR, "cache.json")
 FILE_JSON = os.path.join(BASE_DIR, "public", "file.json")
+
+def load_cache():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r") as f:
+            return json.load(f)
+    return {}
+
+def save_cache(cache):
+    with open(CACHE_FILE, "w") as f:
+        json.dump(cache, f, indent=2)
+
 
 def is_ollama_running():
     try:
@@ -129,5 +140,14 @@ if not func:
     sys.exit(1)
 
 code = extract_code_from_file_cached(func["path"], func["startLine"], func["endLine"])
-result = analyze_with_deepseek(code, task)
-print(result)  # send result back to Node.js
+cache = load_cache()
+key = f"{func['id']}-{task}"
+
+if key in cache:
+    result = cache[key]
+else:
+    result = analyze_with_deepseek(code, task)
+    cache[key] = result
+    save_cache(cache)
+
+print(result)
