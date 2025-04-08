@@ -25,17 +25,17 @@ def is_model_available():
         return False
 
 def start_ollama():
-    print("🟡 Starting ollama serve...")
+    # print("🟡 Starting ollama serve...")  
     subprocess.Popen(["ollama", "serve"])
     import time
     time.sleep(3)  # give some time to start
 
 def pull_model():
-    print(f"📦 Pulling model {MODEL_NAME}...")
+    # print(f"📦 Pulling model {MODEL_NAME}...")
     subprocess.call(["ollama", "pull", MODEL_NAME])
 
 def find_function_by_id(file_path, target_id):
-    print(f"🔍 Searching for function ID {target_id} in {file_path}...")
+    # print(f"🔍 Searching for function ID {target_id} in {file_path}...")
     with open(file_path, "r") as f:
         data = json.load(f)
     for group in data:
@@ -45,22 +45,26 @@ def find_function_by_id(file_path, target_id):
     return None
 
 def extract_code_from_file(path, start, end):
-    path = "." + path.removeprefix("/src")  # remove leading /src
+    # BASE_DIR is .../New folder/main
+    real_base = os.path.abspath(os.path.join(BASE_DIR, ".."))  # Points to "New folder"
+    normalized_path = os.path.join(real_base, path.removeprefix("/src").lstrip("/"))
+    # print(normalized_path)
+
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(normalized_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
             return "".join(lines[start - 1:end])
     except Exception as e:
-        print(f"❌ Error reading file {path}: {e}")
+        # print(f"❌ Error reading file {normalized_path}: {e}")
         return None
 
 def format_prompt_for_structure(code, task):
     if task == 1:
-        return f"Explain what the following code does:\n\n{code}"
+        return f"Explain what the following code does:\n\n{code} give very short ans"
     elif task == 2:
-        return f"Suggest improvements for the following code:\n\n{code}"
+        return f"Suggest improvements for the following code:\n\n{code} give very short an"
     elif task == 3:
-        return f"Identify potential code smells in the following code:\n\n{code}"
+        return f"Identify potential code smells in the following code:\n\n{code} give very short an"
     return code
 
 
@@ -92,28 +96,28 @@ def analyze_with_deepseek(code, task, timeout=10):
         print("❌ Invalid response format")
         return None
 
-if __name__ == "__main__":
-    if not is_ollama_running():
-        start_ollama()
 
-    if not is_model_available():
-        pull_model()
+if not is_ollama_running():
+    start_ollama()
 
-    try:
-        id = int(input("Enter function ID: "))
-        task = int(input("Enter task (1=Description, 2=Improvements, 3=Code smells): "))
-    except ValueError:
-        print("❌ Invalid input.")
-        sys.exit(1)
+if not is_model_available():
+    pull_model()
 
-    id = int(sys.argv[1])
-    task = int(sys.argv[2])
+# try:
+#     id = int(input("Enter function ID: "))
+#     task = int(input("Enter task (1=Description, 2=Improvements, 3=Code smells): "))
+# except ValueError:
+#     print("❌ Invalid input.")
+#     sys.exit(1)
 
-    func = find_function_by_id(FILE_JSON, id)
-    if not func:
-        print(f"❌ Function ID {id} not found.")
-        sys.exit(1)
+id = int(sys.argv[1])
+task = int(sys.argv[2])
 
-    code = extract_code_from_file(func["path"], func["startLine"], func["endLine"])
-    result = analyze_with_deepseek(code, task)
-    print(result)  # send result back to Node.js
+func = find_function_by_id(FILE_JSON, id)
+if not func:
+    print(f"❌ Function ID {id} not found.")
+    sys.exit(1)
+
+code = extract_code_from_file(func["path"], func["startLine"], func["endLine"])
+result = analyze_with_deepseek(code, task)
+print(result)  # send result back to Node.js
