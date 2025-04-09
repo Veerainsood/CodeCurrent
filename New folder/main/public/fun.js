@@ -181,7 +181,7 @@ function createLanguageLegend(svg, nodes, styling) {
         row.append("text")
             .attr("x", 20)
             .attr("y", 12)
-            .attr("fill", "#333")
+            .attr("fill", "#ffffff")
             .text(lang)
             .style("font-size", graphConfig.fontSize);
     });
@@ -211,11 +211,18 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
     const link = linksLayer.selectAll(".link")
         .data(links)
         .enter().append("line")
-        .attr("class", "link")
+        .attr("class", "link animated") // <- add 'animated' class
         .attr("stroke", d => (d.style?.stroke) || styling.linkColor)
         .attr("stroke-width", d => (d.style?.strokeWidth) || styling.linkStrokeWidth)
         .attr("marker-end", "url(#arrow)")
-        .attr("stroke-dasharray", d => (d.style?.strokeDasharray) || null);
+        .attr("stroke-dasharray", d => (d.style?.strokeDasharray) || null); // Ensure dash pattern
+
+    // link.attr("stroke-dasharray", "5,5")
+    //     .attr("stroke-dashoffset", 1000)
+    //     .transition()
+    //     .duration(2000)
+    //     .ease(d3.easeLinear)
+    //     .attr("stroke-dashoffset", 0);
 
     // Group nodes by file.
     const fileGroups = d3.group(nodes, d => d.file || "unknown");
@@ -294,21 +301,15 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
                     .attr("fill", hoveredNode.style?.hoverFill || styling.nodeHoverColor)
                     .transition().duration(300)
                     .attr("filter", "url(#glow)");
-
-                // Highlight connected links.
+            
+                // Highlight only directly connected links.
                 link
+                    .style("opacity", 0) // Hide all links first
+                    .filter(l => l.source.id === hoveredNode.id || l.target.id === hoveredNode.id) // Keep only connected ones
                     .transition().duration(200)
-                    .attr("stroke", l =>
-                        (l.source.id === hoveredNode.id || l.target.id === hoveredNode.id)
-                            ? styling.highlightLinkColor
-                            : l.style?.stroke || styling.linkColor
-                    )
-                    .style("opacity", l =>
-                        (l.source.id === hoveredNode.id || l.target.id === hoveredNode.id)
-                            ? 1
-                            : 0
-                    );
-
+                    .attr("stroke", l => l.style?.stroke || styling.highlightLinkColor)
+                    .style("opacity", 1); // Show only connected links
+            
                 showTooltip(event, hoveredNode);
             })
             .on("mouseout", function(event, hoveredNode) {
@@ -347,7 +348,7 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
             .attr("text-anchor", "middle")
             .attr("dy", -(d.style?.radius || styling.nodeRadius) - 4)
             .text(d.name)
-            .attr("fill", d.style?.textColor || styling.textColor)
+            .attr("fill", "#ffffff")
             .style("font-size", `${graphConfig.fontSize}px`);
 
         // Creative: Optionally add an icon (if provided) to represent node type.
@@ -371,11 +372,19 @@ function drawGraphElements2({ svg, zoomGroup, links, nodes, styling, linksLayer,
     const link = linksLayer.selectAll(".link")
         .data(links)
         .enter().append("line")
-        .attr("class", "link")
-        .attr("stroke", d => d.style?.stroke || styling.linkColor)
-        .attr("stroke-width", d => d.style?.strokeWidth || styling.linkStrokeWidth)
+        .attr("class", "link animated") // <- add 'animated' class
+        .attr("stroke", d => (d.style?.stroke) || styling.linkColor)
+        .attr("stroke-width", d => (d.style?.strokeWidth) || styling.linkStrokeWidth)
         .attr("marker-end", "url(#arrow)")
-        .attr("stroke-dasharray", d => d.style?.strokeDasharray || null);
+        .attr("stroke-dasharray", d => (d.style?.strokeDasharray) || "5,5"); // Ensure dash pattern
+
+    link.attr("stroke-dasharray", "5,5")
+        .attr("stroke-dashoffset", 1000)
+        .transition()
+        .duration(20)
+        .ease(d3.easeLinear)
+        .attr("stroke-dashoffset", 0);
+      
 
     // Group nodes by file.
     const fileGroups = d3.group(nodes, d => d.file || "unknown");
@@ -820,7 +829,7 @@ function defineArrowMarkers(zoomGroup, options) {
     .attr("stop-color", d => d.color);
 
     const markerData = options.markers || [
-        { id: "arrow", refX: 10, color: "#000", pathD: "M0,-5L10,0L0,5", width: 6, height: 6 }
+        { id: "arrow", refX: 10, color: "#000", pathD: "M0,-5L10,0L0,5", width: 12, height: 12 }
     ];
 
     markerData.forEach(marker => {
@@ -873,8 +882,8 @@ function defineDropShadow(svg, options = {}) {
         blur = 3,
         dx = 2,
         dy = 2,
-        shadowColor = "black",
-        glow = false
+        shadowColor = "#000d33",
+        glow = true
     } = options;
 
     const defs = svg.append("defs");
@@ -1044,18 +1053,20 @@ function setupSearch(styling, svg, simulations, nodes, link) {
     const height = window.innerHeight;
     
     // Create a styled, animated search bar
-    const searchInput = d3.select("body").append("input")
+    const searchInput = d3.select(".search-box").append("input")
         .attr("id", "search-input")
+        
         .attr("placeholder", "🔍 Search nodes...")
-        .style("position", "absolute")
-        .style("top", "20px")
+        .style("background", "white")
+        // .style("position", "absolute")
+        // .style("top", "20px")
         .style("right", "20px")
         .style("padding", "8px 12px")
         .style("font-size", "14px")
         .style("border", "2px solid #ccc")
         .style("border-radius", "8px")
         .style("box-shadow", "0px 2px 10px rgba(0,0,0,0.1)")
-        .style("transition", "all 0.3s");
+        .style("transition", "all 0.3s")
 
     const history = [];
 
@@ -1065,13 +1076,14 @@ function setupSearch(styling, svg, simulations, nodes, link) {
         .style("position", "absolute")
         .style("top", "50px")
         .style("right", "20px")
-        .style("background", "white")
+        .style("background", "black")
         .style("border", "1px solid #ccc")
         .style("border-radius", "6px")
         .style("max-height", "150px")
         .style("overflow-y", "auto")
         .style("box-shadow", "0 4px 8px rgba(0,0,0,0.1)")
-        .style("display", "none");
+        .style("display", "none")
+        .style("width", "200px");
 
     // Define a custom CSS animation for glow pulse
     const styleEl = d3.select("head").append("style").text(`
@@ -1107,6 +1119,7 @@ function setupSearch(styling, svg, simulations, nodes, link) {
                         searchInput.property("value", match.name);
                         focusNode(match);
                         dropdown.style("display", "none");
+                        
                     });
             });
         }
@@ -1269,7 +1282,7 @@ const styling = {
     zoomSpeed: 0.05,
 
     nodeRadius: 12,
-    nodeStrokeWidth: 2,
+    nodestrokeWidth:  2,
     nodeStrokeColor: "#fff",
     defaultNodeColor: "#888",
     unknownNodeColor: "#ff4444",
@@ -1279,13 +1292,13 @@ const styling = {
 
     fontFamily: "Fira Code, monospace",
     fontSize: 12,
-    fontColor: "#333",
+    fontColor: "#ffffff",
     textDy: 4,
     showLabelsOnHover: true,
 
     linkColor: "#bbb",
     linkHoverColor: "#ff5722",
-    linkStrokeWidth: 1.5,
+    linkstrokeWidth:  1.5,
     dashedLinks: true,
     linkHighlightWidth: 3,
 
@@ -1332,7 +1345,7 @@ const styling = {
         color: "#222"
     },
 
-    theme: "light",  
+    theme: "dark",  
 };
 
 
@@ -1349,7 +1362,7 @@ function generateGraph(jsonData) {
 function getNodeStyle(node) {
     const baseNodeStyle = {
         stroke: "#444",
-        strokeWidth: 1.5,
+        strokeWidth:  1.5,
         fontSize: 13,
         filter: "url(#drop-shadow)",
         transition: "fill 0.25s ease, r 0.2s ease, stroke 0.2s ease",
@@ -1362,7 +1375,7 @@ function getNodeStyle(node) {
             fill: "url(#main-gradient)",        // Gradient fill (defined in SVG defs)
             radius: 20,
             hoverFill: "#a7ffeb",
-            textColor: "#000",
+            textColor: "#ccffff",
             glow: true,
             pulse: true
         };
@@ -1374,7 +1387,7 @@ function getNodeStyle(node) {
             fill: "#f06292",                    // Elegant pink
             radius: 14,
             hoverFill: "#f8bbd0",
-            textColor: "#fff",
+            textColor: "#ccffff",
             dashedBorder: true
         };
     }
@@ -1384,7 +1397,7 @@ function getNodeStyle(node) {
     //         fill: "#ff8a65",                    // Vibrant orange
     //         radius: 16,
     //         hoverFill: "#ffccbc",
-    //         textColor: "#000",
+    //         textColor: "#ccffff",
     //         pulse: true
     //     };
     // }
@@ -1395,7 +1408,7 @@ function getNodeStyle(node) {
             fill: "#81d4fa",                    // Light sky blue
             radius: 14,
             hoverFill: "#b3e5fc",
-            textColor: "#000",
+            textColor: "#ccffff",
             borderGlow: true
         };
     }
@@ -1407,7 +1420,7 @@ function getNodeStyle(node) {
                     fill: "#42a5f5",
                     radius: 13,
                     hoverFill: "#bbdefb",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             case "java":
@@ -1415,7 +1428,7 @@ function getNodeStyle(node) {
                     fill: "#fbc02d",
                     radius: 13,
                     hoverFill: "#fff176",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             case "cpp":
@@ -1424,7 +1437,7 @@ function getNodeStyle(node) {
                     fill: "#ba68c8",
                     radius: 13,
                     hoverFill: "#e1bee7",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             case "javascript":
@@ -1432,7 +1445,7 @@ function getNodeStyle(node) {
                     fill: "#4db6ac",
                     radius: 13,
                     hoverFill: "#b2dfdb",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             case "html":
@@ -1440,7 +1453,7 @@ function getNodeStyle(node) {
                     fill: "#ef9a9a",
                     radius: 13,
                     hoverFill: "#ffcdd2",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             case "css":
@@ -1448,7 +1461,7 @@ function getNodeStyle(node) {
                     fill: "#90caf9",
                     radius: 13,
                     hoverFill: "#e3f2fd",
-                    textColor: "#000"
+                    textColor: "#ccffff"
                 };
                 break;
             default:
@@ -1456,7 +1469,7 @@ function getNodeStyle(node) {
                     fill: "#cfd8dc",             // Subtle grey
                     radius: 12,
                     hoverFill: "#eceff1",
-                    textColor: "#000",
+                    textColor: "#ccffff",
                     pulse: node.isRecentlyModified
                 };
         }
@@ -1467,11 +1480,12 @@ function getNodeStyle(node) {
 
 
 function getLinkStyle(link) {
+    // renderLink(link); // Call renderLink to create the SVG element
     const baseLinkStyle = {
-        opacity: 0.85,
+        opacity: 0.95,
         pointerEvents: "auto",
         transition: "stroke-dasharray 0.3s ease, stroke 0.3s ease, opacity 0.2s ease",
-        markerEnd: "url(#arrow)", // Add arrow marker (ensure you defined it in defs)
+        markerEnd: "url(#arrow)", // Ensure you've defined an SVG arrow marker in <defs>
     };
 
     let specificStyle = {};
@@ -1480,7 +1494,7 @@ function getLinkStyle(link) {
     if (link.isInsideClass) {
         specificStyle = {
             stroke: "#5c6bc0", // Indigo
-            strokeWidth: 2.5,
+            strokeWidth:  2.5,
             strokeDasharray: "4,4"
         };
     }
@@ -1489,7 +1503,7 @@ function getLinkStyle(link) {
     else if (link.isInsideIfElseOrSwitch) {
         specificStyle = {
             stroke: "#90a4ae", // Cool gray
-            strokeWidth: 2.2,
+            strokeWidth:  2.2,
             strokeDasharray: "6,4"
         };
     }
@@ -1498,7 +1512,7 @@ function getLinkStyle(link) {
     else if (link.isInsideLoopOrEnvironment) {
         specificStyle = {
             stroke: "#26a69a", // Teal
-            strokeWidth: 2.2,
+            strokeWidth:  2.2,
             strokeDasharray: "3,3"
         };
     }
@@ -1507,16 +1521,35 @@ function getLinkStyle(link) {
     else if (link.isInsideFunction) {
         specificStyle = {
             stroke: "#455a64", // Slate blue-gray
-            strokeWidth: 2,
+            strokeWidth:  2,
             strokeDasharray: ""
         };
     }
 
+    // 🚀 Experimental: Interfunction & intermodule calls (light, thick, with animated pulse)
+    else if (link.isInterFunction || link.isInterModule) {
+        specificStyle = {
+            stroke: "#e0e0e0",   // Light color (suits dark backgrounds)
+            strokeWidth:  3.5,    // Thicker line
+            strokeDasharray: "",
+            // For experimental pulse effect: add an SVG animation via a custom property.
+            svgAnimation: `
+              <animate 
+                attributeName="stroke-width" 
+                from="3.5" 
+                to="4.5" 
+                dur="0.6s" 
+                begin="0s" 
+                repeatCount="indefinite" 
+                fill="freeze" />`
+        };
+    }
+
     // 🧪 Test-specific link (yellow glow)
-    else if (link.path?.includes("/tests/")) {
+    else if (link.path && link.path.includes("/tests/")) {
         specificStyle = {
             stroke: "#fdd835",
-            strokeWidth: 2,
+            strokeWidth:  2,
             strokeDasharray: "1,5",
             glow: true // Optional: apply glow via CSS or SVG filter
         };
@@ -1526,7 +1559,7 @@ function getLinkStyle(link) {
     else if (link.isAsync) {
         specificStyle = {
             stroke: "#7e57c2", // Purple
-            strokeWidth: 2,
+            strokeWidth:  2,
             strokeDasharray: "5,5"
         };
     }
@@ -1535,14 +1568,13 @@ function getLinkStyle(link) {
     else {
         specificStyle = {
             stroke: "#cfd8dc", // Light cool gray
-            strokeWidth: 1.8,
+            strokeWidth:  1.8,
             strokeDasharray: ""
         };
     }
 
     return { ...baseLinkStyle, ...specificStyle };
 }
-
 
 
 
@@ -1555,6 +1587,8 @@ function clicked(node, nodeId, x, y) {
         GeneratedSidePanel[nodeId] = true;
         createPanel(nodeId, x, y);
         updateInfoPanel(node, nodeId, 0.85, 0.85);
+        updateEthicsPanel(nodeId)
+        updateOptimizationPanel(nodeId);
     }
     console.log("Node clicked:", nodeId, x, y);
 }
@@ -1568,7 +1602,7 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
     const cardBoxShadow = "0 4px 12px rgba(0,0,0,0.3)";
     const cardMarginBottom = "2px";
     
-    const infoPanel = d3.select(`#info-panel-${id}`);
+    const infoPanel = d3.select(`#info-panel-1-${id}`);
     infoPanel.html(`
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -1693,15 +1727,74 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
       </script>
     `);
 }
+function updateOptimizationPanel(id) {
+    const infoPanel = d3.select(`#info-panel-2-${id}`);
+    infoPanel.html(`
+      <div class="card description-card" id="optimization-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header">
+          <h3>Optimization</h3>
+        </div>
+        <div class="description-body" id="optimization-body-${id}">
+          <div class="loading">
+            <div class="spinner"></div>
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function(){
+          const dotsEl = document.getElementById('opt-dots-${id}');
+          let count = 0;
+          setInterval(() => {
+            count = (count + 1) % 4;
+            dotsEl.textContent = '.'.repeat(count);
+          }, 500);
+        })();
+      </script>
+    `);
+  }
+  function updateEthicsPanel(id) {
+    const infoPanel = d3.select(`#info-panel-3-${id}`);
+    infoPanel.html(`
+      <div class="card description-card" id="ethics-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header">
+          <h3>Code Ethics</h3>
+        </div>
+        <div class="description-body" id="ethics-body-${id}">
+          <div class="loading">
+            <div class="spinner"></div>
+            Analyzing<span id="ethics-dots-${id}"></span>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function(){
+          const dotsEl = document.getElementById('ethics-dots-${id}');
+          let count = 0;
+          setInterval(() => {
+            count = (count + 1) % 4;
+            dotsEl.textContent = '.'.repeat(count);
+          }, 500);
+        })();
+      </script>
+    `);
+  }
+    
 
   // Call this function when your description is ready
   function updateDescriptionPanel(id, description, type) {
-    if(type ===1){
-        const descriptionBody = d3.select(`#description-body-${id}`);
-        descriptionBody.html(description);
+    if (type === 1) {
+      const descriptionBody = d3.select(`#description-body-${id}`);
+      descriptionBody.html(description);
+    } else if (type === 2) {
+      const optimizationBody = d3.select(`#optimization-body-${id}`);
+      optimizationBody.html(description);
+    } else if (type === 3) {
+      const ethicsBody = d3.select(`#ethics-body-${id}`);
+      ethicsBody.html(description);
     }
-    
   }
+  
   
   
 // function updateInfoPanel(node) {

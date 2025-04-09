@@ -1,28 +1,38 @@
-// import { spawn } from 'child_process';
-import {updateDescriptionPanel} from './fun.js';
+import { updateDescriptionPanel } from './fun.js';
+
+async function fetchWithTimeout(url, timeout) {
+    return Promise.race([
+        fetch(url),
+        new Promise(resolve => setTimeout(() => resolve('timeout'), timeout))
+    ]);
+}
+
 async function getDescription(id, task) {
     console.log("Fetching description for ID:", id, "and task:", task);
-    let output = null;
-    let a = fetch(`/api/desc/${id}/${task}`);
-    console.log(a);
-    while (!output) {
-        const res = await fetch(`/api/desc/${id}/${task}`);
+    const url = `/api/desc/${id}/${task}`;
+
+    // First request with 15s timeout
+    let res = await fetchWithTimeout(url, 15000);
+    if (res !== 'timeout') {
         const data = await res.json();
-
-        output = data.output;
-
-        if (!output) {
-            // Wait before trying again (e.g., every 1 second)
-            await new Promise(resolve => setTimeout(resolve, 1000));
+        if (data.output) {
+            updateDescriptionPanel(id, data.output, task);
+            return;
         }
     }
 
-    updateDescriptionPanel(id, output, 1);
+    // Second request with 20s timeout
+    res = await fetchWithTimeout(url, 20000);
+    if (res !== 'timeout') {
+        const data = await res.json();
+        if (data.output) {
+            updateDescriptionPanel(id, data.output, task);
+            return;
+        }
+    }
+
+    // Timeout or no valid response
+    updateDescriptionPanel(id, 'Timeout: No response received', task);
 }
 
-// Example usage
-// getDescription(8684, 1);  // Replace with actual ID and task
-
-
 export { getDescription };
-// updateDescriptionPanel

@@ -1,4 +1,7 @@
-
+import { getDescription } from "./getInfo.js";
+let GeneratedSidePanel = [];
+GeneratedSidePanel[2] = [];
+GeneratedSidePanel[3] = [];
 function createAnimatedPanel(panelId, clickX, clickY) {
   // Create a <style> tag if not already present to hold our custom animation
   if (!document.getElementById('dynamic-panel-styles')) {
@@ -128,11 +131,16 @@ function createAnimatedPanel(panelId, clickX, clickY) {
         cursor: pointer;
         transition: background 0.2s ease, color 0.2s ease;
       }
-      .panel-header button.tab-btn:hover,
       .panel-header button.tab-btn.active {
-        background: rgba(255, 255, 255, 0.3);
+        background: #ffffff;
+        color: #0056b3;
+        font-weight: bold;
         border-radius: 4px;
       }
+      .panel-header button.tab-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
       .panel-header button#closePanel-${panelId} {
         background: transparent;
         border: none;
@@ -166,16 +174,37 @@ function createAnimatedPanel(panelId, clickX, clickY) {
     `;
     document.head.appendChild(styleEl);
   }
+  function setActiveTab(panelId, tabNum) {
+    for (let i = 1; i <= 3; i++) {
+      const btn = document.getElementById(`tab-btn-${i}-${panelId}`);
+      if (btn) {
+        btn.classList.toggle("active", i === tabNum);
+      }
+    }
+  }
   
+  const panelWidth = 400;
+  const panelHeight = 350;
+
+  const openUpward = clickY > window.innerHeight / 2;
+  const openLeftward = clickX > window.innerWidth / 2;
+
+  const panelTop = openUpward ? (clickY - panelHeight) : clickY;
+  const panelLeft = openLeftward ? (clickX - panelWidth) : clickX;
+
+  const originY = openUpward ? 'bottom' : 'top';
+  const originX = openLeftward ? 'right' : 'left';
+
   // Create the container element with the panel HTML
   const container = document.createElement("div");
   container.innerHTML = `
     <div id="sidePanel-${panelId}" class="side-panel" 
          style="
             position: fixed; 
-            top: ${clickY}px; 
-            left: ${clickX}px;
-            transform-origin: top left;
+            top: ${panelTop}px;
+            left: ${panelLeft}px;
+            transform-origin: ${originY} ${originX};
+
          ">
       <!-- Resize Handles -->
       <div class="resize-handle top-left" data-dir="top-left"></div>
@@ -200,16 +229,22 @@ function createAnimatedPanel(panelId, clickX, clickY) {
   
       <!-- Tab Contents -->
       <div id="tab-content-1-${panelId}" class="panel-content" style="display: block;">
-        <div id="info-panel-${panelId}" >
+        <div id="info-panel-1-${panelId}" >
           <h3>Movable & Resizable Panel</h3>
           <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
         </div>
       </div>
       <div id="tab-content-2-${panelId}" class="panel-content" style="display: none;">
-        <!-- Empty for now -->
+        <div id="info-panel-2-${panelId}" >
+          <h3>Movable & Resizable Panel</h3>
+          <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
+        </div>
       </div>
       <div id="tab-content-3-${panelId}" class="panel-content" style="display: none;">
-        <!-- Empty for now -->
+        <div id="info-panel-3-${panelId}" >
+          <h3>Movable & Resizable Panel</h3>
+          <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
+        </div>
       </div>
     </div>
   `;
@@ -217,24 +252,37 @@ function createAnimatedPanel(panelId, clickX, clickY) {
 
   // Append the container to the body
   document.body.appendChild(container);
+  setActiveTab(panelId, 1);
   // Script to handle tab switching using element.style.display
   document.getElementById(`tab-btn-1-${panelId}`).addEventListener('click', function() {
+    setActiveTab(panelId, 1);
     document.getElementById(`tab-content-1-${panelId}`).style.display = "block";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "none";
   });
-
+  
   document.getElementById(`tab-btn-2-${panelId}`).addEventListener('click', function() {
+    setActiveTab(panelId, 2);
+    if (!GeneratedSidePanel[2][panelId]) {
+      getDescription(panelId, 2);
+      GeneratedSidePanel[2][panelId] = true;
+    }
     document.getElementById(`tab-content-1-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "block";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "none";
   });
-
+  
   document.getElementById(`tab-btn-3-${panelId}`).addEventListener('click', function() {
+    setActiveTab(panelId, 3);
+    if (!GeneratedSidePanel[3][panelId]) {
+      getDescription(panelId, 3);
+      GeneratedSidePanel[3][panelId] = true;
+    }
     document.getElementById(`tab-content-1-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "block";
   });
+  
 
   // Use requestAnimationFrame to trigger the animation once rendered.
   requestAnimationFrame(() => {
@@ -382,7 +430,7 @@ function reactivatePanel(panelId, clickX, clickY) {
 
 
 // Create multiple panels
-createPanel(0); 
+// createPanel(0); 
 
 export { createPanel, reactivatePanel };
 export default createPanel;

@@ -73,9 +73,9 @@ def extract_code_from_file(path, start, end, max_lines=40):
 def format_prompt_for_structure(code, task):
     code = code.strip()[:1000]  # limit input chars
     prefix = {
-        1: "Briefly explain:",
-        2: "One improvement:",
-        3: "One code smell:"
+        1: "Briefly explain this:",
+        2: "Some improvement in:",
+        3: "Some code smell in:"
     }.get(task, "")
     return f"{prefix}\n{code}"
 

@@ -9,11 +9,46 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="sidePanel.css">
-  
+  <link rel="stylesheet" href="navStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
   
+  <nav>
+    <div class="logo">InterLinker</div>
+
+    <div class="nav-left">
+      <div class="nav-links">
+        <div class="dropdown">
+          <a href="#">Settings <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Preferences</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+        <a href="#">About</a>
+        <button class="refresh-btn" title="Refresh" onclick="rotateAndReload(this)">
+          <i class="fas fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <!-- <input type="text" placeholder="Search..." /> -->
+        
+      </div>
+      <i class="fas fa-search"></i>
+
+      <!-- Toggle button -->
+      <button class="toggle-btn" title="Toggle Dark Mode" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
   <!-- <header class="site-header">
     <div class="logo">WebPro</div>
     <nav class="navbar">
@@ -31,8 +66,8 @@
   <div>
     <div>
       <div id="overlay" class="overlay"></div>
-      <button id="togglePanel" class="settings-icon1"
-        style="position: fixed; top: 20px; right: 60px; z-index:1100;">Open Panel</button>
+      <!-- <button id="togglePanel" class="settings-icon1"
+        style="position: fixed; top: 20px; right: 60px; z-index:1100;">Open Panel</button> -->
 
       <!-- Side Panel -->
       <!-- <div id="sidePanel" class="side-panel">
@@ -73,6 +108,7 @@
   <script type="module" src="./getInfo.js"></script>
 <script type="module" src="./fun.js"></script>
 <script type="module" src="./HeaderAndPanel.js"></script>
+<script type="module" src="./navFunc.js"></script>
 
 <script>
 

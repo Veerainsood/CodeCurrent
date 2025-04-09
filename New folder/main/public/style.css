@@ -10,8 +10,34 @@
     marker-end: url(#arrow);
 } */
 
-.node text {
+/* .node text {
     font-size: 12px;
     text-anchor: middle;
-    fill: #333;
-} 
+    fill: #ffffff;
+}  */
+@keyframes pulse {
+    0%, 100% {
+        stroke-width: 3.5;
+    }
+    50% {
+        stroke-width: 4.5;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes dash-move {
+    to {
+      stroke-dashoffset: -1000;
+    }
+  }
+  
+  .link.animated {
+    /* stroke-dasharray: 5, 5; */
+    stroke-dashoffset: 0;
+    animation: dash-move 100s linear infinite;
+  }
+  
