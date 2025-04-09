@@ -1,0 +1,22 @@
+; Please config file
+; This file is necessary, even empty, to specify the root of the Please repository.
+;
+; We don't specify any version for this repo, so when running the wrapper
+; script for the first time it will fetch the latest version. Users can
+; run `./pleasew update` to update again.
+;
+
+[python]
+; Makes recursive imports of third-party packages happier about this location.
+moduledir = third_party.python
+
+[proto]
+; Use a downloaded protoc and deps where available, this is
+; easier to manage than a global installation.
+protoctool = //third_party/proto:protoc
+protocgoplugin = //third_party/go:protoc-gen-go
+grpcjavaplugin = //third_party/java:protoc-gen-grpc-java
+
+[cpp]
+TestMain = ///third_party/cc/gtest//:gtest_main
+
