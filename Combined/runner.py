@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+import subprocess
+import os
+import sys
+import time
+from pathlib import Path
+
+# Configuration
+base_dir = Path(os.getcwd())
+
+def is_container_running(name):
+    try:
+        output = subprocess.check_output(
+            ["docker", "ps", "--filter", f"name={name}", "--format", "{{.Names}}"],
+            universal_newlines=True,
+        )
+        return output.strip() == name
+    except subprocess.CalledProcessError:
+        return False
+
+def container_exists(name):
+    try:
+        output = subprocess.check_output(
+            ["docker", "ps", "-a", "--filter", f"name={name}", "--format", "{{.Names}}"],
+            universal_newlines=True,
+        )
+        return output.strip() == name
+    except subprocess.CalledProcessError:
+        return False
+
+def remove_existing_container(name):
+    try:
+        subprocess.check_call(["docker", "rm", "-f", name])
+        print(f"Removed existing container: {name}")
+    except subprocess.CalledProcessError as e:
+        print("Error removing existing container:", e)
+        sys.exit(1)
+
+def start_container(container_name, image_name):
+    if container_exists(container_name):
+        remove_existing_container(container_name)
+
+    cmd = [
+        "docker", "run", "-dit", "--name", container_name,
+        "--mount", f"type=bind,src={base_dir},dst=/src",
+        image_name,
+        "bash"
+    ]
+    try:
+        subprocess.check_call(cmd)
+        print(f"Started container: {container_name}")
+        time.sleep(2)  # Let container settle
+    except subprocess.CalledProcessError as e:
+        print("Error starting container:", e)
+        sys.exit(1)
+
+def run_generator_in_container(container_name, mode):
+    # mode: 0 = cpp, 1 = java, 2 = interlangcpp
+    if mode == 0:
+        bash_file = "./tester.sh"
+    elif mode == 1:
+        bash_file = "./tester_java.sh"
+    elif mode == 2:
+        bash_file = "./tester_interlang.sh"
+    else:
+        raise ValueError("Unknown mode for generator script")
+
+    docker_cmd = ["docker", "exec", container_name, "bash", "-c", bash_file]
+    try:
+        subprocess.check_call(docker_cmd)
+        print(f"Generator command ({bash_file}) executed successfully in container: {container_name}")
+    except subprocess.CalledProcessError as e:
+        print("Error executing generator command:", e)
+        sys.exit(1)
+
+
+def stop_and_remove_container(container_name):
+    try:
+        subprocess.check_call(["docker", "stop", container_name])
+        subprocess.check_call(["docker", "rm", container_name])
+        print(f"Container {container_name} stopped and removed.")
+    except subprocess.CalledProcessError as e:
+        print("Error stopping/removing container:", e)
+
+def main(container_name, image_name, mode):
+    if not is_container_running(container_name):
+        print(f"Container {container_name} not running. Starting container...")
+        start_container(container_name, image_name)
+    else:
+        print(f"Container {container_name} is already running.")
+
+    run_generator_in_container(container_name=container_name, mode=mode)
+    stop_and_remove_container(container_name=container_name)
+
+#Run the three containers
+# main("cpp_parser_container", "veerain/cplusplusparser:latest", 0)
+# main("java_parser_container", "veerain/cplusplusparser:javaInterlang", 1)
+
+# # # Final steps
+# os.system("python3 pythonMaker.py")
+# os.system("python3 combineJsons.py")
+
+main("interlang_parser_container", "veerain/cplusplusparser:interlangcpp", 2)
+import json
+
+def load_json(path):
+    with open(path, 'r') as f:
+        return json.load(f)
+
+def save_json(data, path):
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=4)
+
+# Load the caller-callee pairs JSON file.
+caller_callee_pairs = load_json("interlangCpp.json")
+    
+# Load the function_calls_combined JSON file.
+function_calls_combined = load_json("function_calls_combined.json")
+
+# Concatenate the two lists.
+combined = caller_callee_pairs + function_calls_combined
+    
+    # Save the combined list to a new file.
+save_json(combined, "function_calls_combined.json")
+print(f"Combined JSON written with {len(combined)} entries.")
