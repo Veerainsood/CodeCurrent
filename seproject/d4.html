@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Flow Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        svg {
+            width: 100%;
+            height: 600px;
+            border: 1px solid black;
+        }
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+            marker-end: url(#arrow);
+        }
+        .node text {
+            font-size: 12px;
+            text-anchor: middle;
+            fill: #333;
+        }
+    </style>
+</head>
+<body>
+
+<svg></svg>
+
+<script>
+    const filePath = "./function_analysis_test.json";  
+
+    async function loadJSON() {
+        try {
+            const response = await fetch(filePath);
+            if (!response.ok) throw new Error("Failed to load JSON file.");
+
+            const jsonData = await response.json();
+            generateGraph(jsonData);
+        } catch (error) {
+            console.error("Error loading JSON:", error);
+            alert("Failed to load JSON file. Check the path and try again.");
+        }
+    }
+
+    function generateGraph(jsonData) {
+        d3.select("svg").selectAll("*").remove(); 
+
+        const width = window.innerWidth, height = 600;
+        const svg = d3.select("svg")
+                      .attr("width", width)
+                      .attr("height", height);
+
+        const zoomGroup = svg.append("g");
+
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 3])  
+            .on("zoom", (event) => {
+                zoomGroup.attr("transform", event.transform);
+            });
+
+        svg.call(zoom);  
+
+        const nodesMap = new Map();
+
+        jsonData.uniqueFunctions.forEach(d => {
+            if (!d.id) {
+                console.error("Missing id for function:", d);
+            } else {
+                nodesMap.set(d.id, { id: d.id, name: d.name });
+            }
+        });
+
+        let unknownCounter = 0; 
+
+        const links = jsonData.functionCalls.map(d => {
+            let sourceId = d.callerId;
+            let targetId = d.calleeId;
+
+            if (sourceId === "UNKNOWN") {
+                sourceId = `UNKNOWN_${unknownCounter++}`;
+                if (!nodesMap.has(sourceId)) {
+                    nodesMap.set(sourceId, { id: sourceId, name: `Unknown Caller ${unknownCounter}` });
+                }
+            }
+
+            if (!nodesMap.has(targetId) && targetId !== undefined) {
+                console.error("Missing target node:", targetId);
+                targetId = `UNKNOWN_${unknownCounter++}`;
+                nodesMap.set(targetId, { id: targetId, name: `Unknown Function ${targetId}` });
+            }
+
+            if (nodesMap.has(sourceId) && nodesMap.has(targetId)) {
+                return { source: sourceId, target: targetId };
+            } else {
+                console.warn("Skipping invalid link between:", sourceId, targetId);
+                return null;
+            }
+        }).filter(link => link !== null);
+
+        const nodes = Array.from(nodesMap.values());
+
+        console.log("Nodes Data:", nodes);
+
+        const simulation = d3.forceSimulation(nodes)
+            .force("link", d3.forceLink(links).id(d => d.id).distance(120))
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        zoomGroup.append("defs").append("marker")
+            .attr("id", "arrow")
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 15)
+            .attr("refY", 0)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,-5L10,0L0,5")
+            .attr("fill", "#999");
+
+        const link = zoomGroup.selectAll(".link")
+            .data(links)
+            .enter().append("line")
+            .attr("class", "link")
+            .attr("stroke", "#999")
+            .attr("stroke-width", 2)
+            .attr("marker-end", "url(#arrow)");
+
+        const node = zoomGroup.selectAll(".node")
+            .data(nodes)
+            .enter().append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragStart)
+                .on("drag", dragged)
+                .on("end", dragEnd));
+
+        node.append("circle")
+            .attr("r", 10)
+            .attr("fill", d => d.id.toString().startsWith("UNKNOWN") ? "red" : "steelblue")
+            .on("mouseover", function(event, d) {
+                d3.select(this).attr("fill", "orange");
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this).attr("fill", d.id.toString().startsWith("UNKNOWN") ? "red" : "steelblue");
+            });
+
+        node.append("text")
+            .attr("dy", -15)
+            .text(d => d.name);
+
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+
+        function dragStart(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragEnd(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+    }
+
+    window.onload = loadJSON;
+</script>
+
+</body>
+</html>

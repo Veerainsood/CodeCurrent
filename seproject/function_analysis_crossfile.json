@@ -1,0 +1,136 @@
+{
+    "uniqueFunctions": [
+        {
+            "id": 1,
+            "name": "main",
+            "file": "main.py",
+            "path": "./new/main.py",
+            "language": "Python",
+            "module": "main",
+            "parameters": {
+                "count": 0,
+                "types": []
+            },
+            "parentClass": null,
+            "parentFunction": null,
+            "startLine": 4,
+            "endLine": 7
+        },
+        {
+            "id": 2,
+            "name": "greet",
+            "file": "utils.py",
+            "path": "./new/utils.py",
+            "language": "Python",
+            "module": "utils",
+            "parameters": {
+                "count": 1,
+                "types": [
+                    "unknown"
+                ]
+            },
+            "parentClass": null,
+            "parentFunction": null,
+            "startLine": 1,
+            "endLine": 2
+        },
+        {
+            "id": 3,
+            "name": "add",
+            "file": "math_utils.py",
+            "path": "./new/helper/math_utils.py",
+            "language": "Python",
+            "module": "math_utils",
+            "parameters": {
+                "count": 2,
+                "types": [
+                    "unknown",
+                    "unknown"
+                ]
+            },
+            "parentClass": null,
+            "parentFunction": null,
+            "startLine": 1,
+            "endLine": 2
+        },
+        {
+            "id": 4,
+            "name": "subtract",
+            "file": "math_utils.py",
+            "path": "./new/helper/math_utils.py",
+            "language": "Python",
+            "module": "math_utils",
+            "parameters": {
+                "count": 2,
+                "types": [
+                    "unknown",
+                    "unknown"
+                ]
+            },
+            "parentClass": null,
+            "parentFunction": null,
+            "startLine": 4,
+            "endLine": 5
+        }
+    ],
+    "functionCalls": [
+        {
+            "callerId": 1,
+            "module": "main",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": "main",
+            "calleeId": 2
+        },
+        {
+            "callerId": 1,
+            "module": "main",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 2,
+            "callerClass": null,
+            "callerFunction": "main",
+            "calleeId": 3
+        },
+        {
+            "callerId": 1,
+            "module": "main",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": "main"
+        },
+        {
+            "callerId": "UNKNOWN",
+            "module": "main",
+            "isInsideIfElseOrSwitch": true,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": false,
+            "argCount": 0,
+            "callerClass": null,
+            "callerFunction": null,
+            "calleeId": 1
+        },
+        {
+            "callerId": 2,
+            "module": "utils",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": "greet"
+        }
+    ]
+}

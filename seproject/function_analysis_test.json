@@ -1,0 +1,111 @@
+{
+    "uniqueFunctions": [
+        {
+            "id": 1,
+            "name": "main",
+            "file": "hi.py",
+            "path": "./new/hi.py",
+            "language": "Python",
+            "parameters": {
+                "count": 0,
+                "types": []
+            },
+            "parentClass": null,
+            "parentFunction": null,
+            "startLine": 10,
+            "endLine": 13
+        }
+    ],
+    "functionCalls": [
+        {
+            "callerId": "UNKNOWN",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": false,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": null
+        },
+        {
+            "callerId": "UNKNOWN",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": false,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": null
+        },
+        {
+            "callerId": "UNKNOWN",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": false,
+            "argCount": 2,
+            "callerClass": null,
+            "callerFunction": null
+        },
+        {
+            "callerId": "UNKNOWN",
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": false,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": null
+        },
+        {
+            "callerId": 1,
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 2,
+            "callerClass": null,
+            "callerFunction": "main"
+        },
+        {
+            "callerId": 1,
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 2,
+            "callerClass": null,
+            "callerFunction": "main"
+        },
+        {
+            "callerId": 1,
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 0,
+            "callerClass": null,
+            "callerFunction": "main"
+        },
+        {
+            "callerId": 1,
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 1,
+            "callerClass": null,
+            "callerFunction": "main"
+        },
+        {
+            "callerId": 1,
+            "isInsideIfElseOrSwitch": false,
+            "isInsideLoopOrEnvironment": false,
+            "isInsideClass": false,
+            "isInsideFunction": true,
+            "argCount": 0,
+            "callerClass": null,
+            "callerFunction": "main"
+        }
+    ]
+}
