@@ -1,0 +1,48 @@
+[
+    {
+        "caller_id": 47,
+        "callee_id": 51,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 47,
+        "callee_id": 54,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 47,
+        "callee_id": 55,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 54,
+        "callee_id": 49,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    }
+],
+{"caller_id":47,"callee_id":51,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":47,"callee_id":54,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":47,"callee_id":55,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true},{"caller_id":54,"callee_id":49,"is_foreign_call":false,"isInsideIfElseOrSwitch":false,"isInsideLoopOrEnvironment":false,"isDifferentLanguage":false,"isDifferentModule":false,"isInsideClass":true,"isInsideFunction":true}
+]

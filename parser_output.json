@@ -1,0 +1,201 @@
+{
+  "functions": [
+    {
+      "name": "introduce",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 0
+      },
+      "parentClass": "Person",
+      "parentFunction": "main",
+      "parentFunctionClass": "Main",
+      "parentFunctionParameters": {
+        "types": [
+          "String[]"
+        ],
+        "count": 1
+      },
+      "callee_path": "/src/java_test1.java",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "void",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "introduce",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 0
+      },
+      "parentClass": "Employee",
+      "parentFunction": "main",
+      "parentFunctionClass": "Main",
+      "parentFunctionParameters": {
+        "types": [
+          "String[]"
+        ],
+        "count": 1
+      },
+      "callee_path": "/src/java_test1.java",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "void",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "calculateBonus",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 0
+      },
+      "parentClass": "Employee",
+      "parentFunction": "main",
+      "parentFunctionClass": "Main",
+      "parentFunctionParameters": {
+        "types": [
+          "String[]"
+        ],
+        "count": 1
+      },
+      "callee_path": "/src/java_test1.java",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "double",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "println",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 1
+      },
+      "parentClass": "java.io.PrintStream",
+      "parentFunction": "main",
+      "parentFunctionClass": "Main",
+      "parentFunctionParameters": {
+        "types": [
+          "String[]"
+        ],
+        "count": 1
+      },
+      "callee_path": "Unknown",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "void",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "println",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 1
+      },
+      "parentClass": "java.io.PrintStream",
+      "parentFunction": "introduce",
+      "parentFunctionClass": "Person",
+      "parentFunctionParameters": {
+        "types": [],
+        "count": 0
+      },
+      "callee_path": "Unknown",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "void",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "getName",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 0
+      },
+      "parentClass": "Person",
+      "parentFunction": "introduce",
+      "parentFunctionClass": "Employee",
+      "parentFunctionParameters": {
+        "types": [],
+        "count": 0
+      },
+      "callee_path": "/src/java_test1.java",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "String",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    },
+    {
+      "name": "println",
+      "file": "java_test1.java",
+      "caller_path": "/src/java_test1.java",
+      "language": "Java",
+      "parameters": {
+        "types": [],
+        "count": 1
+      },
+      "parentClass": "java.io.PrintStream",
+      "parentFunction": "introduce",
+      "parentFunctionClass": "Employee",
+      "parentFunctionParameters": {
+        "types": [],
+        "count": 0
+      },
+      "callee_path": "Unknown",
+      "parentFunctionReturnType": "void",
+      "calleeReturnType": "void",
+      "is_foreign_call": false,
+      "isInsideIfElseOrSwitch": false,
+      "isInsideLoopOrEnvironment": false,
+      "isDifferentLanguage": false,
+      "isDifferentModule": false,
+      "isInsideClass": true,
+      "isInsideFunction": true
+    }
+  ]
+}
