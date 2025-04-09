@@ -3,8 +3,10 @@ import { getDescription } from "./getInfo.js";
 // import uniqueFunctionsData from '../unique_functions_combined.json';
 // import functionCallsData from '../function_calls_combined.json';
 let jsonData;
-const uniqueFunctionsPath = "/unique_functions_combined.json";
-const functionCallsPath = "/function_calls_combined.json";
+const uniqueFunctionsPath = "../unique_functions_combined.json";
+const functionCallsPath = "../function_calls_combined.json";
+
+
 
 // Asynchronously load both JSON files and combine the data into one object.
 async function loadJSON() {
