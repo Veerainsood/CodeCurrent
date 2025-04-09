@@ -428,11 +428,11 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
             .datum(d)
             .attr("class", `node language-${d.language}`)
             .attr("data-file", d.file)
-            .attr("data-return-type", d.details.returnType || "unknown")
-            .attr("data-class-name", d.details.parentClass || "unknown")
-            .attr("data-function-name", d.details.parentFunction || "unknown")
-            .attr("data-parameters", d.details.parameters || "unknown")
-            .attr("data-path", d.details.path || "unknown")
+            // .attr("data-return-type", d.details.returnType || "unknown")
+            // .attr("data-class-name", d.details.parentClass || "unknown")
+            // .attr("data-function-name", d.details.parentFunction || "unknown")
+            // .attr("data-parameters", d.details.parameters || "unknown")
+            // .attr("data-path", d.details.path || "unknown")
             .attr("filter", "url(#drop-shadow)")
             .call(d3.drag()
                 .on("start", dragStart)
@@ -1758,38 +1758,25 @@ function clicked(node, nodeId, x, y) {
     console.log("Node clicked:", nodeId, x, y);
 }
 function updateInfoPanel(node, id, scale = 1, textScale = 1) {
-    // Define style variables for card dimensions and appearance.
-    const infoCardWidth = "400px";
-    const infoCardHeight = "auto";
-    const descriptionCardWidth = "400px";
-    const descriptionCardHeight = "auto";
-    const cardBorderRadius = "6px";
-    const cardBoxShadow = "0 4px 12px rgba(0,0,0,0.3)";
-    const cardMarginBottom = "2px";
-    
     const infoPanel = d3.select(`#info-panel-1-${id}`);
+  
     infoPanel.html(`
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
         .info-card, .description-card {
             font-family: 'Roboto', sans-serif;
             border: 1px solid #444;
-            border-radius: ${cardBorderRadius};
-            box-shadow: ${cardBoxShadow};
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             overflow: hidden;
             background-color: #1e1e1e;
             transform: scale(${scale});
             transition: transform 1s linear;
-            margin-bottom: ${cardMarginBottom};
+            margin-bottom: 2px;
         }
-        .info-card {
-            width: ${infoCardWidth};
-            height: ${infoCardHeight};
-        }
-        .description-card {
-            width: ${descriptionCardWidth};
-            height: ${descriptionCardHeight};
-        }
+        .info-card { width: 400px; height: auto; }
+        .description-card { width: 400px; height: auto; }
+  
         .card-header, .description-header {
             background: linear-gradient(135deg, #212121, #424242);
             color: #fff;
@@ -1833,30 +1820,16 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-        }
-        /* Spinner style */
-        .spinner {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            border-top-color: #333;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
+        
+        
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
       </style>
+  
       <div class="card info-card" style="animation: fadeIn 0.5s ease-in-out;">
         <div class="card-header">
           <h3>${node.name}</h3>
-          
         </div>
         <div class="card-body">
           <div class="info-item">
@@ -1873,138 +1846,143 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
           </div>
         </div>
       </div>
+  
       <div class="card description-card" id="description-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
         <div class="description-header flex-class">
-        <div></div>
+          <div></div>
           <h3>Description</h3>
-          <button class="refresh-btn" id="reload-1" title="Refresh">
+          <button class="refresh-btn" id="reload-1-${id}" title="Refresh">
             <i class="fas fa-rotate-right"></i>
-        </button>
+          </button>
         </div>
-        <div class="description-body" id="description-body-${id}">
-          <div class="loading">
-            <div class="spinner"></div>
-            Analyzing<span id="dots-${id}"></span>
-          </div>
-        </div>
-      </div>
-      <script>
-        // Dynamic dot animation for the loading text
-        (function(){
-          const dotsEl = document.getElementById('dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
-    `);
-    console.log(document.querySelector(`#reload-1`));
-    document.querySelector(`#reload-1`).onclick = function() {
-        d3.select(`#description-body-1`).html(`
-            <div>
-            <div class="loading">
-            <div class="spinner"></div>
-            Analyzing<span id="ethics-dots-${id}"></span>
-            </div>
-            </div>`);
-        getDescription(id, 1);
-    };
-}
-function updateOptimizationPanel(id) {
-    const infoPanel = d3.select(`#info-panel-2-${id}`);
-    infoPanel.html(`
-      <div class="card description-card" id="optimization-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
-        <div class="description-header flex-class">
-            <div></div>
-          <h3>Optimization</h3>
-          <button class="refresh-btn" id="reload-2" title="Refresh">
-            <i class="fas fa-rotate-right"></i>
-        </button>
-        </div>
-        <div class="description-body" id="optimization-body-${id}">
-          <div class="loading">
+        <div class="description-body">
+          <div class="loading" id="spinner-1-${id}">
             <div class="spinner"></div>
             Analyzing<span id="opt-dots-${id}"></span>
           </div>
-        </div>
-      </div>
-      <script>
-        (function(){
-          const dotsEl = document.getElementById('opt-dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
-    `);
-    document.querySelector(`#reload-2`).onclick = function () {
-        d3.select(`#description-body-2`).html(`
-            <div>
-                <div class="loading">
-                    <div class="spinner"></div>
-                    Analyzing<span id="ethics-dots-${id}"></span>
-                </div>
-            </div>`);
-        getDescription(id, 2);
-    };
-    
-  }
-  function updateEthicsPanel(id) {
-    const infoPanel = d3.select(`#info-panel-3-${id}`);
-    infoPanel.html(`
-      <div class="card description-card" id="ethics-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
-        <div class="description-header flex-class">
-        <div></div>
-          <h3>Code Ethics</h3>
-          <button class="refresh-btn" id="reload-3" title="Refresh">
-            <i class="fas fa-rotate-right"></i>
-        </button>
-        </div>
-        <div class="description-body" id="ethics-body-${id}">
-          <div class="loading">
-            <div class="spinner"></div>
-            Analyzing<span id="ethics-dots-${id}"></span>
+          <div id="description-body-${id}">
           </div>
         </div>
       </div>
-      <script>
-        (function(){
-          const dotsEl = document.getElementById('ethics-dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
     `);
-    document.querySelector(`#reload-3`).onclick = function() {
-        d3.select(`#description-body-3`).html(`
-            <div>
-            <div class="loading">
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`desc-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Attach refresh functionality
+    const reloadBtn = document.querySelector(`#reload-1-${id}`);
+    if (reloadBtn) {
+      reloadBtn.onclick = function () {
+        d3.select(`#spinner-1-${id}`).style("display", "flex");
+        d3.select(`#description-body-${id}`).style("display", "none");
+        getDescription(id, 1);
+      };
+    }
+  }
+  
+function updateOptimizationPanel(id) {
+    const infoPanel = d3.select(`#info-panel-2-${id}`);
+  
+    infoPanel.html(`
+      <div class="card description-card" id="optimization-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header flex-class">
+          <div></div>
+          <h3>Optimization</h3>
+          <button class="refresh-btn" id="reload-2-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
+        </div>
+        <div class="description-body">
+          <div class="loading" id="spinner-2-${id}">
             <div class="spinner"></div>
-            Analyzing<span id="ethics-dots-${id}"></span>
-            </div>
-            </div>`);
-        getDescription(id, 3);
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+          <div id="optimization-body-${id}">
+
+          </div>
+        </div>
+      </div>
+    `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`opt-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Bind reload button
+    document.querySelector(`#reload-2-${id}`).onclick = function () {
+      d3.select(`#spinner-2-${id}`).style("display", "flex");
+      d3.select(`#optimization-body-${id}`).style("display", "none");
+      getDescription(id, 2);
     };
   }
+  
+  function updateEthicsPanel(id) {
+    const infoPanel = d3.select(`#info-panel-3-${id}`);
     
+    // Update HTML safely (fixed duplicate ID and dots ID)
+    infoPanel.html(`
+      <div class="card description-card" id="ethics-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header flex-class">
+          <div></div>
+          <h3>Code Ethics</h3>
+          <button class="refresh-btn" id="reload-3-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
+        </div>
+        <div class="description-body">
+          <div class="loading" id="spinner-3-${id}">
+            <div class="spinner"></div>
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+          <div id="ethics-body-${id}">
+          </div>
+        </div>
+      </div>
+    `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`ethics-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Bind refresh button logic
+    document.querySelector(`#reload-3-${id}`).onclick = function () {
+      d3.select(`#spinner-3-${id}`).style("display", "flex");
+      d3.select(`#ethics-body-${id}`).style("display", "none");
+      getDescription(id, 3);
+    };
+  }
+  
 
   // Call this function when your description is ready
   function updateDescriptionPanel(id, description, type) {
+    d3.select(`#spinner-${type}-${id}`).style("display", "none");  
     if (type === 1) {
       const descriptionBody = d3.select(`#description-body-${id}`);
+      descriptionBody.style("display", "block");  
       descriptionBody.html(description);
     } else if (type === 2) {
       const optimizationBody = d3.select(`#optimization-body-${id}`);
+      optimizationBody.style("display", "block"); 
       optimizationBody.html(description);
     } else if (type === 3) {
       const ethicsBody = d3.select(`#ethics-body-${id}`);
+      ethicsBody.style("display", "block"); 
       ethicsBody.html(description);
     }
   }
@@ -2026,9 +2004,15 @@ function updateOptimizationPanel(id) {
 
 
 // Load the JSON file and generate the graph when the window loads.
+function Start() {
+    loadJSON()
+        .then(data => {
+            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+            document.getElementById("main-screen").style.display = "block"; // Show graph container
+        })
 
-
-window.onload = loadJSON;
+}
+document.getElementById("reload-All").onclick = function () {Start();}
 // freezeNodes(); // Freeze nodes on load.
 
 export {updateDescriptionPanel};

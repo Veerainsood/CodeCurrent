@@ -59,9 +59,10 @@ def find_function_by_id(file_path, target_id):
     return None
 
 def extract_code_from_file(path, start, end, max_lines=40):
+    
     real_base = os.path.abspath(os.path.join(BASE_DIR, ".."))
     normalized_path = os.path.join(real_base, path.removeprefix("/src").lstrip("/"))
-
+    log(f"{path} Extracting code from {normalized_path} lines {start}-{end}...")
     try:
         with open(normalized_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
@@ -69,6 +70,10 @@ def extract_code_from_file(path, start, end, max_lines=40):
             return "".join(lines[:max_lines])  # Limit lines
     except Exception:
         return None
+def log(message):
+    with open("AILog.txt", "a", encoding="utf-8") as log_file:
+        timestamp = time.strftime("[%Y-%m-%d %H:%M:%S]")
+        log_file.write(f"{timestamp} {message}\n")
 
 def format_prompt_for_structure(code, task):
     code = code.strip()[:1000]  # limit input chars
