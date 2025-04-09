@@ -1,0 +1,46 @@
+[
+    {
+        "caller_id": 80,
+        "callee_id": 84,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 80,
+        "callee_id": 87,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 80,
+        "callee_id": 88,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    },
+    {
+        "caller_id": 87,
+        "callee_id": 82,
+        "is_foreign_call": false,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": false,
+        "isDifferentModule": false,
+        "isInsideClass": true,
+        "isInsideFunction": true
+    }
+]
