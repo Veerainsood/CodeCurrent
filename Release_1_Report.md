@@ -152,32 +152,17 @@ Each function call captures:
 
 ## Individual Contributions
 
-1) **Ashish Raj**(CS22B055):
-    - Java JSON generation
-    - Inter-language call detection for C++
-    - Parser To Json creater
+1) **Ashish Raj**(CS22B055): Java JSON generation, Inter-language call detection for C++, Integrated and managed all json generation and management.
 
-2) **Anuj Sharma**(CS22B007):
-    - Frontend development using D3.js
-    - Visualization of function calls and metadata
-    - Graph generation from JSON
-3) **Veerain**(CS22B049):
-    - C++ JSON generation
-    - Function call detection in C++
-    - Docker setup
-    -  Integration of all modules
-4) **Lavkush**(CS22B034):
-    - Python Parser bug fixes
-    - Nav Bar and UI improvements
-    - Python JSON 2 generation
-5) **Kowshik**(CS22B015):
-    - Python JSON generation
-    - Function call detection in Python
-    -  Code Testing and bug fixes
-6) **Preet Bobde**(CS22B043):
-    - C++ JSON 2 generation
-    - Code smell detection and improvement suggestions using LLM
-    - Js_python interlang function calls
+2) **Anuj Sharma**(CS22B007): Frontend development using D3.js, Visualization of function calls and metadata, Filter specific language and specific nodes(functions).
+
+3) **Veerain**(CS22B049): C++ generator python implementation and generation, Code smell detection and improvement suggestions using LLM, Integration of all modules.
+
+4) **Lavkush**(CS22B034): Resolved bugs in the Python parser,  Graph generation from JSON, Enhanced UI elements including the navigation bar.
+
+5) **Kowshik**(CS22B015): Implemented Python function extraction,Developed  Function call detection in Python,Conducted Code Testing and bug fixes.
+
+6) **Preet Bobde**(CS22B043): C++ JSON 2 generation, Set up Docker for environment, detection of inter-language function calls between JavaScript and Python.
 
 ## Release-2 Plan (Future Work)
 
