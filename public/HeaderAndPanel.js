@@ -427,7 +427,12 @@ function reactivatePanel(panelId, clickX, clickY) {
   panel.classList.add('animate');
 }
 
-
+const dotsEl = document.getElementById(`opt-dots`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
 
 // Create multiple panels
 // createPanel(0); 

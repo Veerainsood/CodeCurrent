@@ -9,8 +9,19 @@ const port = 8000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Serve static files from public
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve JSON directly from root (no extra 'main')
+app.get('/unique_functions_combined.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'unique_functions_combined.json'));
+});
+
+app.get('/function_calls_combined.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'function_calls_combined.json'));
+});
+
+// Python API route
 app.get('/api/desc/:id/:task', (req, res) => {
   console.log('Received request for description:', req.params);
   const { id, task } = req.params;
@@ -21,7 +32,7 @@ app.get('/api/desc/:id/:task', (req, res) => {
   py.stdout.on('data', (data) => {
     result += data.toString();
   });
-  console.log(result);
+
   py.stderr.on('data', (err) => {
     console.error('Python error:', err.toString());
   });

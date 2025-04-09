@@ -16,10 +16,10 @@
 
 <body>
   
-  <nav>
+  <nav class = "navbar">
     <div class="logo">InterLinker</div>
 
-    <div class="nav-left">
+    <div class="nav-left navbar">
       <div class="nav-links">
         <div class="dropdown">
           <a href="#">Settings <i class="fa fa-caret-down"></i></a>
@@ -30,13 +30,13 @@
           </div>
         </div>
         <a href="#">About</a>
-        <button class="refresh-btn" title="Refresh" onclick="rotateAndReload(this)">
+        <button class="refresh-btn" id="reload-All" title="Refresh" onclick="rotateAndReload(this)">
           <i class="fas fa-rotate-right"></i>
         </button>
       </div>
     </div>
 
-    <div class="nav-right">
+    <div class="nav-right navbar">
       <div class="search-box">
         <!-- <input type="text" placeholder="Search..." /> -->
         
@@ -90,7 +90,12 @@
         </div>
       </div> -->
     </div>
-    <div><svg></svg></div>
+    <div id="main-screen"><svg></svg></div>
+    <div id="loading-screen" class="loading">
+      <div class="spinner main-spinner"></div>
+      <h1>Loading</h1><span id="opt-dots"></span>
+
+    </div>
     <!-- <button id="new-simulation">New Simulation</button>
     <div id="tab-buttons"></div>
     <div id="tab-content"></div> -->

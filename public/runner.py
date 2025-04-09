@@ -10,7 +10,7 @@ def index():
 @app.route('/api/desc/<id>/<task>')
 def run_script(id, task):
     try:
-        result = subprocess.check_output(['python3', '../AIChatter.py', id, task])
+        result = subprocess.check_output(['python3', 'AIChatter.py', id, task])
         return result
     except subprocess.CalledProcessError as e:
         return str(e), 500
