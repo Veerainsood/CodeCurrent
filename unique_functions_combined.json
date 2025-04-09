@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "name": "consume",
-        "file": "consumer.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/consumer.cc",
+        "name": "test_python_c_api",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 1,
             "types": [
-                "void *"
+                "int"
             ]
         },
-        "parentClass": "Consumer",
+        "parentClass": null,
         "parentFunction": null,
         "startLine": 10,
-        "endLine": 28
+        "endLine": 19
     },
     {
         "id": 2,
-        "name": "ContextSwitch",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
+        "name": "test_pybind11",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
@@ -28,64 +28,14 @@
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 23,
-        "endLine": 23
-    },
-    {
-        "id": 3,
-        "name": "MonitorProcess",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "unsigned long"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 24,
-        "endLine": 24
-    },
-    {
-        "id": 4,
-        "name": "LetMeBeMonitored",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 25,
+        "startLine": 21,
         "endLine": 25
     },
     {
-        "id": 5,
-        "name": "SetUp",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned long"
-            ]
-        },
-        "parentClass": "PreemptiveScheduler",
-        "parentFunction": null,
-        "startLine": 33,
-        "endLine": 52
-    },
-    {
-        "id": 6,
-        "name": "LetMeBeMonitored",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
+        "id": 3,
+        "name": "test_boost_python",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
@@ -93,599 +43,14 @@
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 55,
-        "endLine": 64
-    },
-    {
-        "id": 7,
-        "name": "MonitorProcess",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "unsigned long"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 67,
-        "endLine": 126
-    },
-    {
-        "id": 8,
-        "name": "ContextSwitch",
-        "file": "preemptive.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/preemptive.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 133,
-        "endLine": 170
-    },
-    {
-        "id": 9,
-        "name": "ThreadTest",
-        "file": "threadtest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/threadtest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 45,
-        "endLine": 71
-    },
-    {
-        "id": 10,
-        "name": "ReadyToRun",
-        "file": "scheduler.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/scheduler.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Thread *"
-            ]
-        },
-        "parentClass": "Scheduler",
-        "parentFunction": null,
-        "startLine": 53,
-        "endLine": 60
-    },
-    {
-        "id": 11,
-        "name": "FindNextToRun",
-        "file": "scheduler.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/scheduler.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Scheduler",
-        "parentFunction": null,
-        "startLine": 70,
-        "endLine": 74
-    },
-    {
-        "id": 12,
-        "name": "Run",
-        "file": "scheduler.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/scheduler.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Thread *"
-            ]
-        },
-        "parentClass": "Scheduler",
-        "parentFunction": null,
-        "startLine": 90,
-        "endLine": 135
-    },
-    {
-        "id": 13,
-        "name": "ThreadPrint",
-        "file": "scheduler.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/scheduler.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Thread *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 143,
-        "endLine": 146
-    },
-    {
-        "id": 14,
-        "name": "Print",
-        "file": "scheduler.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/scheduler.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Scheduler",
-        "parentFunction": null,
-        "startLine": 148,
-        "endLine": 153
-    },
-    {
-        "id": 15,
-        "name": "Fork",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "VoidFunctionPtr",
-                "void *"
-            ]
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 87,
-        "endLine": 105
-    },
-    {
-        "id": 16,
-        "name": "CheckOverflow",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 122,
-        "endLine": 128
-    },
-    {
-        "id": 17,
-        "name": "Finish",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 146,
-        "endLine": 157
-    },
-    {
-        "id": 18,
-        "name": "Yield",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 177,
-        "endLine": 193
-    },
-    {
-        "id": 19,
-        "name": "Sleep",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 214,
-        "endLine": 230
-    },
-    {
-        "id": 20,
-        "name": "ThreadFinish",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 240,
-        "endLine": 240
-    },
-    {
-        "id": 21,
-        "name": "InterruptEnable",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 241,
-        "endLine": 241
-    },
-    {
-        "id": 22,
-        "name": "StackAllocate",
-        "file": "thread.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/thread.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "VoidFunctionPtr",
-                "void *"
-            ]
-        },
-        "parentClass": "Thread",
-        "parentFunction": null,
-        "startLine": 255,
-        "endLine": 276
-    },
-    {
-        "id": 23,
-        "name": "P",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Semaphore",
-        "parentFunction": null,
-        "startLine": 64,
-        "endLine": 77
-    },
-    {
-        "id": 24,
-        "name": "V",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Semaphore",
-        "parentFunction": null,
-        "startLine": 87,
-        "endLine": 98
-    },
-    {
-        "id": 25,
-        "name": "isHeldByCurrentThread",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Lock",
-        "parentFunction": null,
-        "startLine": 114,
-        "endLine": 117
-    },
-    {
-        "id": 26,
-        "name": "Acquire",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Lock",
-        "parentFunction": null,
-        "startLine": 119,
-        "endLine": 132
-    },
-    {
-        "id": 27,
-        "name": "Release",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Lock",
-        "parentFunction": null,
-        "startLine": 134,
-        "endLine": 149
-    },
-    {
-        "id": 28,
-        "name": "Wait",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Lock *"
-            ]
-        },
-        "parentClass": "Condition",
-        "parentFunction": null,
-        "startLine": 161,
-        "endLine": 171
-    },
-    {
-        "id": 29,
-        "name": "Signal",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Lock *"
-            ]
-        },
-        "parentClass": "Condition",
-        "parentFunction": null,
-        "startLine": 173,
-        "endLine": 183
-    },
-    {
-        "id": 30,
-        "name": "Broadcast",
-        "file": "synch.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/synch.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Lock *"
-            ]
-        },
-        "parentClass": "Condition",
-        "parentFunction": null,
-        "startLine": 185,
-        "endLine": 197
-    },
-    {
-        "id": 31,
-        "name": "ThreadTest",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 59,
-        "endLine": 59
-    },
-    {
-        "id": 32,
-        "name": "Copy",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 60,
-        "endLine": 60
-    },
-    {
-        "id": 33,
-        "name": "Print",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 61,
-        "endLine": 61
-    },
-    {
-        "id": 34,
-        "name": "PerformanceTest",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 62,
-        "endLine": 62
-    },
-    {
-        "id": 35,
-        "name": "StartProcess",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 63,
-        "endLine": 63
-    },
-    {
-        "id": 36,
-        "name": "ConsoleTest",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 64,
-        "endLine": 64
-    },
-    {
-        "id": 37,
-        "name": "MailTest",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 65,
-        "endLine": 65
-    },
-    {
-        "id": 38,
-        "name": "main",
-        "file": "main.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/main.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "char **"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 81,
-        "endLine": 158
-    },
-    {
-        "id": 39,
-        "name": "DebugInit",
-        "file": "utility.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/utility.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 28,
+        "startLine": 27,
         "endLine": 32
     },
     {
-        "id": 40,
-        "name": "DebugIsEnabled",
-        "file": "utility.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/utility.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "char"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 39,
-        "endLine": 47
-    },
-    {
-        "id": 41,
-        "name": "DEBUG",
-        "file": "utility.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/utility.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "char",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 55,
-        "endLine": 66
-    },
-    {
-        "id": 42,
-        "name": "produce",
-        "file": "producer.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/producer.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": "Producer",
-        "parentFunction": null,
-        "startLine": 17,
-        "endLine": 37
-    },
-    {
-        "id": 43,
-        "name": "Cleanup",
-        "file": "system.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/system.cc",
+        "id": 4,
+        "name": "test_swig_wrapper",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
@@ -693,49 +58,14 @@
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 45,
-        "endLine": 45
+        "startLine": 34,
+        "endLine": 36
     },
     {
-        "id": 44,
-        "name": "TimerInterruptHandler",
-        "file": "system.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/system.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 67,
-        "endLine": 72
-    },
-    {
-        "id": 45,
-        "name": "Initialize",
-        "file": "system.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/system.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "char **"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 84,
-        "endLine": 194
-    },
-    {
-        "id": 46,
-        "name": "Cleanup",
-        "file": "system.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/threads/system.cc",
+        "id": 5,
+        "name": "test_system_python",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
@@ -743,2608 +73,770 @@
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 200,
-        "endLine": 230
+        "startLine": 38,
+        "endLine": 40
     },
     {
-        "id": 47,
-        "name": "StartProcess",
-        "file": "progtest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/progtest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 23,
-        "endLine": 45
-    },
-    {
-        "id": 48,
-        "name": "ReadAvail",
-        "file": "progtest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/progtest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 59,
-        "endLine": 59
-    },
-    {
-        "id": 49,
-        "name": "WriteDone",
-        "file": "progtest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/progtest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 60,
-        "endLine": 60
-    },
-    {
-        "id": 50,
-        "name": "ConsoleTest",
-        "file": "progtest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/progtest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 68,
-        "endLine": 84
-    },
-    {
-        "id": 51,
-        "name": "Mark",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 46,
-        "endLine": 51
-    },
-    {
-        "id": 52,
-        "name": "Clear",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 60,
-        "endLine": 65
-    },
-    {
-        "id": 53,
-        "name": "Test",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 74,
-        "endLine": 83
-    },
-    {
-        "id": 54,
-        "name": "Find",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
+        "id": 6,
+        "name": "test_zmq_python",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "BitMap",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 94,
-        "endLine": 103
+        "startLine": 42,
+        "endLine": 49
     },
     {
-        "id": 55,
-        "name": "NumClear",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
+        "id": 7,
+        "name": "test_java_jni",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 111,
-        "endLine": 119
-    },
-    {
-        "id": 56,
-        "name": "Print",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 129,
-        "endLine": 137
-    },
-    {
-        "id": 57,
-        "name": "FetchFrom",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int *"
-            ]
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 148,
-        "endLine": 152
-    },
-    {
-        "id": 58,
-        "name": "WriteBack",
-        "file": "bitmap.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/bitmap.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int *"
-            ]
-        },
-        "parentClass": "BitMap",
-        "parentFunction": null,
-        "startLine": 161,
-        "endLine": 165
-    },
-    {
-        "id": 59,
-        "name": "ExceptionHandler",
-        "file": "exception.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/exception.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
         },
         "parentClass": null,
         "parentFunction": null,
         "startLine": 51,
-        "endLine": 63
+        "endLine": 67
     },
     {
-        "id": 60,
-        "name": "SwapHeader",
-        "file": "addrspace.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/addrspace.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 30,
-        "endLine": 43
-    },
-    {
-        "id": 61,
-        "name": "InitRegisters",
-        "file": "addrspace.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/addrspace.cc",
+        "id": 8,
+        "name": "test_system_java",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "AddrSpace",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 138,
-        "endLine": 158
+        "startLine": 69,
+        "endLine": 71
     },
     {
-        "id": 62,
-        "name": "SaveState",
-        "file": "addrspace.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/addrspace.cc",
+        "id": 9,
+        "name": "test_http_java",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "AddrSpace",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 168,
-        "endLine": 169
+        "startLine": 73,
+        "endLine": 75
     },
     {
-        "id": 63,
-        "name": "RestoreState",
-        "file": "addrspace.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/userprog/addrspace.cc",
+        "id": 10,
+        "name": "test_socket_java",
+        "file": "test1.cc",
+        "path": "/src/please-examples/temi/test1.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "AddrSpace",
-        "parentFunction": null,
-        "startLine": 179,
-        "endLine": 183
-    },
-    {
-        "id": 64,
-        "name": "MailTest",
-        "file": "nettest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/nettest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
         "parentClass": null,
-        "parentFunction": null,
-        "startLine": 33,
-        "endLine": 72
-    },
-    {
-        "id": 65,
-        "name": "PrintHeader",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "MailHeader"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 77,
-        "endLine": 82
-    },
-    {
-        "id": 66,
-        "name": "Put",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "MailHeader",
-                "const char *"
-            ]
-        },
-        "parentClass": "MailBox",
-        "parentFunction": null,
-        "startLine": 97,
-        "endLine": 105
-    },
-    {
-        "id": 67,
-        "name": "Get",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int *",
-                "MailHeader *",
-                "char *"
-            ]
-        },
-        "parentClass": "MailBox",
-        "parentFunction": null,
-        "startLine": 119,
-        "endLine": 137
-    },
-    {
-        "id": 68,
-        "name": "PostalHelper",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 148,
-        "endLine": 149
-    },
-    {
-        "id": 69,
-        "name": "ReadAvail",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 150,
-        "endLine": 151
-    },
-    {
-        "id": 70,
-        "name": "WriteDone",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 152,
-        "endLine": 153
-    },
-    {
-        "id": 71,
-        "name": "PostalDelivery",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "PostOffice",
-        "parentFunction": null,
-        "startLine": 219,
-        "endLine": 244
-    },
-    {
-        "id": 72,
-        "name": "Send",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "MailHeader",
-                "const char *"
-            ]
-        },
-        "parentClass": "PostOffice",
-        "parentFunction": null,
-        "startLine": 259,
-        "endLine": 289
-    },
-    {
-        "id": 73,
-        "name": "Receive",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 4,
-            "types": [
-                "int",
-                "int *",
-                "MailHeader *",
-                "char *"
-            ]
-        },
-        "parentClass": "PostOffice",
-        "parentFunction": null,
-        "startLine": 306,
-        "endLine": 314
-    },
-    {
-        "id": 74,
-        "name": "IncomingPacket",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "PostOffice",
-        "parentFunction": null,
-        "startLine": 323,
-        "endLine": 327
-    },
-    {
-        "id": 75,
-        "name": "PacketSent",
-        "file": "post.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/network/post.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "PostOffice",
-        "parentFunction": null,
-        "startLine": 339,
-        "endLine": 343
-    },
-    {
-        "id": 76,
-        "name": "DiskRequestDone",
-        "file": "synchdisk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/synchdisk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 26,
-        "endLine": 32
-    },
-    {
-        "id": 77,
-        "name": "ReadSector",
-        "file": "synchdisk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/synchdisk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "char *"
-            ]
-        },
-        "parentClass": "SynchDisk",
-        "parentFunction": null,
-        "startLine": 72,
-        "endLine": 79
-    },
-    {
-        "id": 78,
-        "name": "WriteSector",
-        "file": "synchdisk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/synchdisk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "const char *"
-            ]
-        },
-        "parentClass": "SynchDisk",
-        "parentFunction": null,
-        "startLine": 90,
-        "endLine": 97
-    },
-    {
-        "id": 79,
-        "name": "RequestDone",
-        "file": "synchdisk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/synchdisk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "SynchDisk",
-        "parentFunction": null,
-        "startLine": 105,
-        "endLine": 109
-    },
-    {
-        "id": 80,
-        "name": "Allocate",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int *",
-                "int"
-            ]
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 41,
-        "endLine": 52
-    },
-    {
-        "id": 81,
-        "name": "Deallocate",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int *"
-            ]
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 61,
-        "endLine": 68
-    },
-    {
-        "id": 82,
-        "name": "FetchFrom",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "FileHeader",
         "parentFunction": null,
         "startLine": 77,
         "endLine": 81
     },
     {
-        "id": 83,
-        "name": "WriteBack",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 90,
-        "endLine": 94
-    },
-    {
-        "id": 84,
-        "name": "ByteToSector",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 106,
-        "endLine": 110
-    },
-    {
-        "id": 85,
-        "name": "FileLength",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 117,
-        "endLine": 121
-    },
-    {
-        "id": 86,
-        "name": "Print",
-        "file": "filehdr.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filehdr.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "FileHeader",
-        "parentFunction": null,
-        "startLine": 129,
-        "endLine": 150
-    },
-    {
-        "id": 87,
-        "name": "Seek",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "OpenFile",
-        "parentFunction": null,
-        "startLine": 52,
-        "endLine": 56
-    },
-    {
-        "id": 88,
-        "name": "Read",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "char *",
-                "int"
-            ]
-        },
-        "parentClass": "OpenFile",
-        "parentFunction": null,
-        "startLine": 71,
-        "endLine": 77
-    },
-    {
-        "id": 89,
-        "name": "Write",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": "OpenFile",
-        "parentFunction": null,
-        "startLine": 79,
-        "endLine": 85
-    },
-    {
-        "id": 90,
-        "name": "ReadAt",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
+        "id": 11,
+        "name": "GetFlag",
+        "file": "flags.cc",
+        "path": "/src/please-examples/cc/flags.cc",
         "language": "C++",
         "parameters": {
             "count": 3,
             "types": [
-                "char *",
-                "int",
-                "int"
+                "const char **",
+                "const char **",
+                "const std::string &"
             ]
         },
-        "parentClass": "OpenFile",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 113,
-        "endLine": 141
+        "startLine": 6,
+        "endLine": 12
     },
     {
-        "id": 91,
-        "name": "WriteAt",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "const char *",
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": "OpenFile",
-        "parentFunction": null,
-        "startLine": 143,
-        "endLine": 183
-    },
-    {
-        "id": 92,
-        "name": "Length",
-        "file": "openfile.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/openfile.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "OpenFile",
-        "parentFunction": null,
-        "startLine": 190,
-        "endLine": 194
-    },
-    {
-        "id": 93,
-        "name": "Create",
-        "file": "filesys.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filesys.cc",
+        "id": 12,
+        "name": "main",
+        "file": "client.cc",
+        "path": "/src/please-examples/cc/client.cc",
         "language": "C++",
         "parameters": {
             "count": 2,
             "types": [
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": "FileSystem",
-        "parentFunction": null,
-        "startLine": 174,
-        "endLine": 215
-    },
-    {
-        "id": 94,
-        "name": "Open",
-        "file": "filesys.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filesys.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": "FileSystem",
-        "parentFunction": null,
-        "startLine": 227,
-        "endLine": 241
-    },
-    {
-        "id": 95,
-        "name": "Remove",
-        "file": "filesys.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filesys.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": "FileSystem",
-        "parentFunction": null,
-        "startLine": 257,
-        "endLine": 288
-    },
-    {
-        "id": 96,
-        "name": "List",
-        "file": "filesys.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filesys.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "FileSystem",
-        "parentFunction": null,
-        "startLine": 295,
-        "endLine": 303
-    },
-    {
-        "id": 97,
-        "name": "Print",
-        "file": "filesys.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/filesys.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "FileSystem",
-        "parentFunction": null,
-        "startLine": 315,
-        "endLine": 341
-    },
-    {
-        "id": 98,
-        "name": "FetchFrom",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "OpenFile *"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 63,
-        "endLine": 67
-    },
-    {
-        "id": 99,
-        "name": "WriteBack",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "OpenFile *"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 76,
-        "endLine": 80
-    },
-    {
-        "id": 100,
-        "name": "FindIndex",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 90,
-        "endLine": 97
-    },
-    {
-        "id": 101,
-        "name": "Find",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 108,
-        "endLine": 116
-    },
-    {
-        "id": 102,
-        "name": "Add",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 129,
-        "endLine": 143
-    },
-    {
-        "id": 103,
-        "name": "Remove",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 153,
-        "endLine": 162
-    },
-    {
-        "id": 104,
-        "name": "List",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 169,
-        "endLine": 175
-    },
-    {
-        "id": 105,
-        "name": "Print",
-        "file": "directory.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/directory.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Directory",
-        "parentFunction": null,
-        "startLine": 183,
-        "endLine": 197
-    },
-    {
-        "id": 106,
-        "name": "Copy",
-        "file": "fstest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/fstest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 31,
-        "endLine": 70
-    },
-    {
-        "id": 107,
-        "name": "Print",
-        "file": "fstest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/fstest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 77,
-        "endLine": 97
-    },
-    {
-        "id": 108,
-        "name": "FileWrite",
-        "file": "fstest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/fstest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 116,
-        "endLine": 142
-    },
-    {
-        "id": 109,
-        "name": "FileRead",
-        "file": "fstest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/fstest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 144,
-        "endLine": 170
-    },
-    {
-        "id": 110,
-        "name": "PerformanceTest",
-        "file": "fstest.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/filesys/fstest.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 172,
-        "endLine": 184
-    },
-    {
-        "id": 111,
-        "name": "NetworkReadPoll",
-        "file": "network.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/network.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 15,
-        "endLine": 16
-    },
-    {
-        "id": 112,
-        "name": "NetworkSendDone",
-        "file": "network.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/network.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 17,
-        "endLine": 18
-    },
-    {
-        "id": 113,
-        "name": "Mult",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 5,
-            "types": [
                 "int",
-                "int",
-                "bool",
-                "int *",
-                "int *"
+                "const char **"
             ]
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 19,
+        "startLine": 7,
         "endLine": 19
     },
     {
-        "id": 114,
-        "name": "Run",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
+        "id": 13,
+        "name": "GetKitten",
+        "file": "server.cc",
+        "path": "/src/please-examples/cc/server.cc",
         "language": "C++",
         "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 30,
-        "endLine": 45
-    },
-    {
-        "id": 115,
-        "name": "TypeToReg",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
+            "count": 3,
             "types": [
-                "RegType",
-                "Instruction *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 53,
-        "endLine": 68
-    },
-    {
-        "id": 116,
-        "name": "OneInstruction",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "Instruction *"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 93,
-        "endLine": 565
-    },
-    {
-        "id": 117,
-        "name": "DelayedLoad",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 575,
-        "endLine": 582
-    },
-    {
-        "id": 118,
-        "name": "Decode",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Instruction",
-        "parentFunction": null,
-        "startLine": 589,
-        "endLine": 626
-    },
-    {
-        "id": 119,
-        "name": "Mult",
-        "file": "mipssim.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/mipssim.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 5,
-            "types": [
-                "int",
-                "int",
-                "bool",
                 "int *",
+                "const int *",
                 "int *"
             ]
         },
-        "parentClass": null,
+        "parentClass": "PetShopService",
         "parentFunction": null,
-        "startLine": 635,
-        "endLine": 692
+        "startLine": 15,
+        "endLine": 20
     },
     {
-        "id": 120,
-        "name": "WordToHost",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 41,
-        "endLine": 53
-    },
-    {
-        "id": 121,
-        "name": "ShortToHost",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned short"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 55,
-        "endLine": 65
-    },
-    {
-        "id": 122,
-        "name": "WordToMachine",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 67,
-        "endLine": 68
-    },
-    {
-        "id": 123,
-        "name": "ShortToMachine",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned short"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 70,
-        "endLine": 71
-    },
-    {
-        "id": 124,
-        "name": "ReadMem",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "int",
-                "int *"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 87,
-        "endLine": 122
-    },
-    {
-        "id": 125,
-        "name": "WriteMem",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 137,
-        "endLine": 169
-    },
-    {
-        "id": 126,
-        "name": "Translate",
-        "file": "translate.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/translate.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 4,
-            "types": [
-                "int",
-                "int *",
-                "int",
-                "bool"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 186,
-        "endLine": 255
-    },
-    {
-        "id": 127,
-        "name": "DiskDone",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 29,
-        "endLine": 29
-    },
-    {
-        "id": 128,
-        "name": "PrintSector",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "bool",
-                "int",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 86,
-        "endLine": 98
-    },
-    {
-        "id": 129,
-        "name": "ReadRequest",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
+        "id": 14,
+        "name": "main",
+        "file": "server.cc",
+        "path": "/src/please-examples/cc/server.cc",
         "language": "C++",
         "parameters": {
             "count": 2,
             "types": [
                 "int",
-                "char *"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 115,
-        "endLine": 133
-    },
-    {
-        "id": 130,
-        "name": "WriteRequest",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "const char *"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 135,
-        "endLine": 153
-    },
-    {
-        "id": 131,
-        "name": "HandleInterrupt",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 161,
-        "endLine": 166
-    },
-    {
-        "id": 132,
-        "name": "TimeToSeek",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "int *"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 179,
-        "endLine": 194
-    },
-    {
-        "id": 133,
-        "name": "ModuloDiff",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 202,
-        "endLine": 209
-    },
-    {
-        "id": 134,
-        "name": "ComputeLatency",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "bool"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 232,
-        "endLine": 253
-    },
-    {
-        "id": 135,
-        "name": "UpdateLast",
-        "file": "disk.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/disk.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "Disk",
-        "parentFunction": null,
-        "startLine": 261,
-        "endLine": 271
-    },
-    {
-        "id": 136,
-        "name": "ChangeLevel",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "IntStatus",
-                "IntStatus"
-            ]
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 96,
-        "endLine": 101
-    },
-    {
-        "id": 137,
-        "name": "SetLevel",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "IntStatus"
-            ]
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 114,
-        "endLine": 127
-    },
-    {
-        "id": 138,
-        "name": "Enable",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 135,
-        "endLine": 139
-    },
-    {
-        "id": 139,
-        "name": "OneTick",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 150,
-        "endLine": 179
-    },
-    {
-        "id": 140,
-        "name": "YieldOnReturn",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 192,
-        "endLine": 197
-    },
-    {
-        "id": 141,
-        "name": "Idle",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 210,
-        "endLine": 234
-    },
-    {
-        "id": 142,
-        "name": "Halt",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 240,
-        "endLine": 246
-    },
-    {
-        "id": 143,
-        "name": "Schedule",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 4,
-            "types": [
-                "int",
-                "void *",
-                "int",
-                "IntType"
-            ]
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 264,
-        "endLine": 275
-    },
-    {
-        "id": 144,
-        "name": "CheckIfDue",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "bool"
-            ]
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 290,
-        "endLine": 336
-    },
-    {
-        "id": 145,
-        "name": "PrintPending",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "PendingInterrupt *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 344,
-        "endLine": 349
-    },
-    {
-        "id": 146,
-        "name": "DumpState",
-        "file": "interrupt.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/interrupt.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Interrupt",
-        "parentFunction": null,
-        "startLine": 357,
-        "endLine": 367
-    },
-    {
-        "id": 147,
-        "name": "CheckEndian",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 27,
-        "endLine": 45
-    },
-    {
-        "id": 148,
-        "name": "RaiseException",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "ExceptionType",
-                "int"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 100,
-        "endLine": 111
-    },
-    {
-        "id": 149,
-        "name": "Debugger",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 123,
-        "endLine": 155
-    },
-    {
-        "id": 150,
-        "name": "DumpState",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 163,
-        "endLine": 195
-    },
-    {
-        "id": 151,
-        "name": "ReadRegister",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 202,
-        "endLine": 206
-    },
-    {
-        "id": 152,
-        "name": "WriteRegister",
-        "file": "machine.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/machine.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": "Machine",
-        "parentFunction": null,
-        "startLine": 208,
-        "endLine": 213
-    },
-    {
-        "id": 153,
-        "name": "TimerHandler",
-        "file": "timer.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/timer.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 27,
-        "endLine": 28
-    },
-    {
-        "id": 154,
-        "name": "TimerExpired",
-        "file": "timer.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/timer.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Timer",
-        "parentFunction": null,
-        "startLine": 61,
-        "endLine": 70
-    },
-    {
-        "id": 155,
-        "name": "TimeOfNextInterrupt",
-        "file": "timer.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/timer.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Timer",
-        "parentFunction": null,
-        "startLine": 78,
-        "endLine": 85
-    },
-    {
-        "id": 156,
-        "name": "PollFile",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 76,
-        "endLine": 100
-    },
-    {
-        "id": 157,
-        "name": "OpenForWrite",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 110,
-        "endLine": 117
-    },
-    {
-        "id": 158,
-        "name": "OpenForReadWrite",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "bool"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 127,
-        "endLine": 134
-    },
-    {
-        "id": 159,
-        "name": "Read",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 141,
-        "endLine": 146
-    },
-    {
-        "id": 160,
-        "name": "ReadPartial",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 154,
-        "endLine": 158
-    },
-    {
-        "id": 161,
-        "name": "WriteFile",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 166,
-        "endLine": 171
-    },
-    {
-        "id": 162,
-        "name": "Lseek",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "int",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 178,
-        "endLine": 183
-    },
-    {
-        "id": 163,
-        "name": "Tell",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 190,
-        "endLine": 198
-    },
-    {
-        "id": 164,
-        "name": "Close",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 206,
-        "endLine": 211
-    },
-    {
-        "id": 165,
-        "name": "Unlink",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 218,
-        "endLine": 222
-    },
-    {
-        "id": 166,
-        "name": "OpenSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 231,
-        "endLine": 240
-    },
-    {
-        "id": 167,
-        "name": "CloseSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 247,
-        "endLine": 251
-    },
-    {
-        "id": 168,
-        "name": "InitSocketName",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "struct sockaddr_un *",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 258,
-        "endLine": 263
-    },
-    {
-        "id": 169,
-        "name": "AssignNameToSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 271,
-        "endLine": 283
-    },
-    {
-        "id": 170,
-        "name": "DeAssignNameToSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 289,
-        "endLine": 293
-    },
-    {
-        "id": 171,
-        "name": "PollSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 300,
-        "endLine": 304
-    },
-    {
-        "id": 172,
-        "name": "ReadFromSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 3,
-            "types": [
-                "int",
-                "char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 310,
-        "endLine": 328
-    },
-    {
-        "id": 173,
-        "name": "SendToSocket",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 4,
-            "types": [
-                "int",
-                "const char *",
-                "int",
-                "const char *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 335,
-        "endLine": 351
-    },
-    {
-        "id": 174,
-        "name": "CallOnUserAbort",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 360,
-        "endLine": 365
-    },
-    {
-        "id": 175,
-        "name": "Delay",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 374,
-        "endLine": 378
-    },
-    {
-        "id": 176,
-        "name": "Abort",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 385,
-        "endLine": 389
-    },
-    {
-        "id": 177,
-        "name": "Exit",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 396,
-        "endLine": 400
-    },
-    {
-        "id": 178,
-        "name": "RandomInit",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "unsigned int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 408,
-        "endLine": 412
-    },
-    {
-        "id": 179,
-        "name": "Random",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 419,
-        "endLine": 423
-    },
-    {
-        "id": 180,
-        "name": "AllocBoundedArray",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 437,
-        "endLine": 448
-    },
-    {
-        "id": 181,
-        "name": "DeallocBoundedArray",
-        "file": "sysdep.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/sysdep.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 2,
-            "types": [
-                "const char *",
-                "int"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 458,
-        "endLine": 468
-    },
-    {
-        "id": 182,
-        "name": "ConsoleReadPoll",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
-            ]
-        },
-        "parentClass": null,
-        "parentFunction": null,
-        "startLine": 21,
-        "endLine": 22
-    },
-    {
-        "id": 183,
-        "name": "ConsoleWriteDone",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 1,
-            "types": [
-                "void *"
+                "const char **"
             ]
         },
         "parentClass": null,
         "parentFunction": null,
         "startLine": 23,
-        "endLine": 24
+        "endLine": 36
     },
     {
-        "id": 184,
-        "name": "CheckCharAvail",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
+        "id": 15,
+        "name": "ProvideKitten",
+        "file": "kitten.cc",
+        "path": "/src/please-examples/cc/kitten.cc",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "Console",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 87,
-        "endLine": 105
+        "startLine": 14,
+        "endLine": 21
     },
     {
-        "id": 185,
-        "name": "WriteDone",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
+        "id": 16,
+        "name": "GetKitten",
+        "file": "kitten.cc",
+        "path": "/src/please-examples/cc/kitten.cc",
         "language": "C++",
         "parameters": {
-            "count": 0,
-            "types": []
+            "count": 2,
+            "types": [
+                "const std::string &",
+                "int"
+            ]
         },
-        "parentClass": "Console",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 114,
-        "endLine": 120
+        "startLine": 23,
+        "endLine": 41
     },
     {
-        "id": 186,
-        "name": "GetChar",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
-        "language": "C++",
-        "parameters": {
-            "count": 0,
-            "types": []
-        },
-        "parentClass": "Console",
-        "parentFunction": null,
-        "startLine": 128,
-        "endLine": 135
-    },
-    {
-        "id": 187,
-        "name": "PutChar",
-        "file": "console.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/console.cc",
+        "id": 17,
+        "name": "stub",
+        "file": "kitten.cc",
+        "path": "/src/please-examples/cc/kitten.cc",
         "language": "C++",
         "parameters": {
             "count": 1,
             "types": [
-                "char"
+                "int"
             ]
         },
-        "parentClass": "Console",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 143,
-        "endLine": 151
+        "startLine": 31,
+        "endLine": 31
     },
     {
-        "id": 188,
-        "name": "Print",
-        "file": "stats.cc",
-        "path": "/src/New folder/nachos/Nachos 1/code/machine/stats.cc",
+        "id": 18,
+        "name": "test_python_c_api",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
         "language": "C++",
         "parameters": {
             "count": 0,
             "types": []
         },
-        "parentClass": "Statistics",
+        "parentClass": null,
         "parentFunction": null,
-        "startLine": 33,
-        "endLine": 44
+        "startLine": 10,
+        "endLine": 19
     },
     {
-        "id": 189,
-        "name": "sayHello",
-        "file": "Helper.java",
-        "path": "/src/New folder/nachos/Helper.java",
+        "id": 19,
+        "name": "test_pybind11",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 21,
+        "endLine": 25
+    },
+    {
+        "id": 20,
+        "name": "test_boost_python",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 27,
+        "endLine": 32
+    },
+    {
+        "id": 21,
+        "name": "test_swig_wrapper",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 34,
+        "endLine": 36
+    },
+    {
+        "id": 22,
+        "name": "test_system_python",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 38,
+        "endLine": 40
+    },
+    {
+        "id": 23,
+        "name": "test_zmq_python",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 42,
+        "endLine": 49
+    },
+    {
+        "id": 24,
+        "name": "test_java_jni",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 51,
+        "endLine": 67
+    },
+    {
+        "id": 25,
+        "name": "test_system_java",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 69,
+        "endLine": 71
+    },
+    {
+        "id": 26,
+        "name": "test_http_java",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 73,
+        "endLine": 75
+    },
+    {
+        "id": 27,
+        "name": "test_socket_java",
+        "file": "main.cpp",
+        "path": "/src/public/main.cpp",
+        "language": "C++",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 77,
+        "endLine": 81
+    },
+    {
+        "id": 28,
+        "name": "serve",
+        "file": "KittenServer.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenServer.java",
         "language": "Java",
         "parameters": {
             "types": [],
             "count": 0
         },
         "returnType": "void",
-        "parentClass": "Helper",
+        "parentClass": "KittenServer",
         "parentFunction": null,
-        "startLine": 2,
+        "startLine": 18,
         "endLine": null
     },
     {
-        "id": 190,
-        "name": "main",
-        "file": "MainApp.java",
-        "path": "/src/New folder/nachos/MainApp.java",
-        "language": "Java",
-        "parameters": {
-            "types": [
-                "String[]"
-            ],
-            "count": 1
-        },
-        "returnType": "void",
-        "parentClass": "MainApp",
-        "parentFunction": null,
-        "startLine": 2,
-        "endLine": null
-    },
-    {
-        "id": 191,
-        "name": "main",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
-        "language": "Java",
-        "parameters": {
-            "types": [
-                "String[]"
-            ],
-            "count": 1
-        },
-        "returnType": "void",
-        "parentClass": "Main",
-        "parentFunction": null,
-        "startLine": 4,
-        "endLine": null
-    },
-    {
-        "id": 192,
-        "name": "Person",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
-        "language": "Java",
-        "parameters": {
-            "types": [
-                "String",
-                "int"
-            ],
-            "count": 2
-        },
-        "returnType": null,
-        "parentClass": "Person",
-        "parentFunction": null,
-        "startLine": 20,
-        "endLine": null
-    },
-    {
-        "id": 193,
-        "name": "getName",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 29,
+        "name": "run",
+        "file": "KittenServer.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenServer.java",
         "language": "Java",
         "parameters": {
             "types": [],
             "count": 0
         },
-        "returnType": "String",
-        "parentClass": "Person",
+        "returnType": "void",
+        "parentClass": "KittenServer",
         "parentFunction": null,
         "startLine": 26,
         "endLine": null
     },
     {
-        "id": 194,
-        "name": "setName",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
-        "language": "Java",
-        "parameters": {
-            "types": [
-                "String"
-            ],
-            "count": 1
-        },
-        "returnType": "void",
-        "parentClass": "Person",
-        "parentFunction": null,
-        "startLine": 30,
-        "endLine": null
-    },
-    {
-        "id": 195,
-        "name": "introduce",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 30,
+        "name": "stop",
+        "file": "KittenServer.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenServer.java",
         "language": "Java",
         "parameters": {
             "types": [],
             "count": 0
         },
         "returnType": "void",
-        "parentClass": "Person",
+        "parentClass": "KittenServer",
         "parentFunction": null,
         "startLine": 35,
         "endLine": null
     },
     {
-        "id": 196,
-        "name": "Employee",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 31,
+        "name": "main",
+        "file": "KittenServer.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenServer.java",
         "language": "Java",
         "parameters": {
             "types": [
-                "String",
-                "int",
-                "String",
-                "double"
+                "String[]"
             ],
-            "count": 4
+            "count": 1
         },
-        "returnType": null,
-        "parentClass": "Employee",
+        "returnType": "void",
+        "parentClass": "KittenServer",
         "parentFunction": null,
-        "startLine": 46,
+        "startLine": 41,
         "endLine": null
     },
     {
-        "id": 197,
-        "name": "Employee",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 32,
+        "name": "getKitten",
+        "file": "KittenServer.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenServer.java",
         "language": "Java",
         "parameters": {
             "types": [
-                "String",
-                "int",
-                "String",
-                "double"
+                "KittenProto",
+                "StreamObserver<KittenProto>"
             ],
-            "count": 4
+            "count": 2
         },
-        "returnType": "int",
-        "parentClass": "Employee",
+        "returnType": "void",
+        "parentClass": "PetShopService",
         "parentFunction": null,
-        "startLine": 52,
+        "startLine": 50,
         "endLine": null
     },
     {
-        "id": 198,
-        "name": "introduce",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 33,
+        "name": "run",
+        "file": "KittenClient.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenClient.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "String[]"
+            ],
+            "count": 1
+        },
+        "returnType": "void",
+        "parentClass": "KittenClient",
+        "parentFunction": null,
+        "startLine": 15,
+        "endLine": null
+    },
+    {
+        "id": 34,
+        "name": "main",
+        "file": "KittenClient.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenClient.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "String[]"
+            ],
+            "count": 1
+        },
+        "returnType": "void",
+        "parentClass": "KittenClient",
+        "parentFunction": null,
+        "startLine": 22,
+        "endLine": null
+    },
+    {
+        "id": 35,
+        "name": "provideKitten",
+        "file": "Kittens.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/Kittens.java",
+        "language": "Java",
+        "parameters": {
+            "types": [],
+            "count": 0
+        },
+        "returnType": "KittenProto",
+        "parentClass": "Kittens",
+        "parentFunction": null,
+        "startLine": 11,
+        "endLine": null
+    },
+    {
+        "id": 36,
+        "name": "fetchKitten",
+        "file": "Kittens.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/Kittens.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "KittenProto",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "KittenProto",
+        "parentClass": "Kittens",
+        "parentFunction": null,
+        "startLine": 20,
+        "endLine": null
+    },
+    {
+        "id": 37,
+        "name": "getKitten",
+        "file": "Kittens.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/Kittens.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "KittenProto"
+            ],
+            "count": 2
+        },
+        "returnType": "KittenProto",
+        "parentClass": "Kittens",
+        "parentFunction": null,
+        "startLine": 37,
+        "endLine": null
+    },
+    {
+        "id": 38,
+        "name": "getKitten",
+        "file": "Kittens.java",
+        "path": "/src/please-examples/java/src/main/java/net/thoughtmachine/please/examples/Kittens.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int"
+            ],
+            "count": 1
+        },
+        "returnType": "KittenProto",
+        "parentClass": "Kittens",
+        "parentFunction": null,
+        "startLine": 49,
+        "endLine": null
+    },
+    {
+        "id": 39,
+        "name": "setUp",
+        "file": "KittensTest.java",
+        "path": "/src/please-examples/java/src/test/java/net/thoughtmachine/please/examples/KittensTest.java",
         "language": "Java",
         "parameters": {
             "types": [],
             "count": 0
         },
         "returnType": "void",
-        "parentClass": "Employee",
+        "parentClass": "KittensTest",
         "parentFunction": null,
-        "startLine": 60,
+        "startLine": 19,
         "endLine": null
     },
     {
-        "id": 199,
-        "name": "calculateBonus",
-        "file": "java_test1.java",
-        "path": "/src/New folder/nachos/java_test1.java",
+        "id": 40,
+        "name": "testGetKitten",
+        "file": "KittensTest.java",
+        "path": "/src/please-examples/java/src/test/java/net/thoughtmachine/please/examples/KittensTest.java",
         "language": "Java",
         "parameters": {
             "types": [],
             "count": 0
         },
-        "returnType": "double",
-        "parentClass": "Employee",
+        "returnType": "void",
+        "parentClass": "KittensTest",
         "parentFunction": null,
-        "startLine": 65,
+        "startLine": 33,
         "endLine": null
     },
     {
-        "id": 201,
+        "id": 41,
+        "name": "testGetKittenOfWrongBreed",
+        "file": "KittensTest.java",
+        "path": "/src/please-examples/java/src/test/java/net/thoughtmachine/please/examples/KittensTest.java",
+        "language": "Java",
+        "parameters": {
+            "types": [],
+            "count": 0
+        },
+        "returnType": "void",
+        "parentClass": "KittensTest",
+        "parentFunction": null,
+        "startLine": 40,
+        "endLine": null
+    },
+    {
+        "id": 42,
+        "name": "add",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "ParserTest",
+        "parentFunction": null,
+        "startLine": 25,
+        "endLine": null
+    },
+    {
+        "id": 43,
+        "name": "add",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "mymodule",
+        "parentFunction": null,
+        "startLine": 30,
+        "endLine": null
+    },
+    {
+        "id": 44,
+        "name": "add",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "JavaCPPDemo",
+        "parentFunction": null,
+        "startLine": 35,
+        "endLine": null
+    },
+    {
+        "id": 45,
+        "name": "add",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "BridJDemo",
+        "parentFunction": null,
+        "startLine": 40,
+        "endLine": null
+    },
+    {
+        "id": 46,
+        "name": "main",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "String[]"
+            ],
+            "count": 1
+        },
+        "returnType": "void",
+        "parentClass": "ParserTest",
+        "parentFunction": null,
+        "startLine": 43,
+        "endLine": null
+    },
+    {
+        "id": 47,
+        "name": "my_func",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "ParserTest",
+        "parentFunction": null,
+        "startLine": 119,
+        "endLine": null
+    },
+    {
+        "id": 48,
+        "name": "Client",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "TProtocol"
+            ],
+            "count": 1
+        },
+        "returnType": null,
+        "parentClass": "Client",
+        "parentFunction": null,
+        "startLine": 126,
+        "endLine": null
+    },
+    {
+        "id": 49,
+        "name": "my_func",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "Client",
+        "parentFunction": null,
+        "startLine": 127,
+        "endLine": null
+    },
+    {
+        "id": 50,
+        "name": "add",
+        "file": "main.java",
+        "path": "/src/public/main.java",
+        "language": "Java",
+        "parameters": {
+            "types": [
+                "int",
+                "int"
+            ],
+            "count": 2
+        },
+        "returnType": "int",
+        "parentClass": "JNIDemo",
+        "parentFunction": null,
+        "startLine": 134,
+        "endLine": null
+    },
+    {
+        "id": 52,
         "name": "is_ollama_running",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3359,7 +851,7 @@
         "endLine": 16
     },
     {
-        "id": 202,
+        "id": 53,
         "name": "is_model_available",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3374,7 +866,7 @@
         "endLine": 23
     },
     {
-        "id": 203,
+        "id": 54,
         "name": "start_ollama",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3389,7 +881,7 @@
         "endLine": 29
     },
     {
-        "id": 204,
+        "id": 55,
         "name": "pull_model",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3404,7 +896,7 @@
         "endLine": 33
     },
     {
-        "id": 205,
+        "id": 56,
         "name": "find_function_by_id",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3422,7 +914,7 @@
         "endLine": 42
     },
     {
-        "id": 206,
+        "id": 57,
         "name": "extract_code_from_file",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3441,7 +933,7 @@
         "endLine": 52
     },
     {
-        "id": 207,
+        "id": 58,
         "name": "format_prompt_for_structure",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3459,7 +951,7 @@
         "endLine": 61
     },
     {
-        "id": 208,
+        "id": 59,
         "name": "analyze_with_deepseek",
         "file": "AIChatter.py",
         "path": "./AIChatter.py",
@@ -3477,7 +969,260 @@
         "endLine": 81
     },
     {
-        "id": 209,
+        "id": 60,
+        "name": "process_file",
+        "file": "interlang_runner.py",
+        "path": "./interlang_runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 12,
+        "endLine": 41
+    },
+    {
+        "id": 61,
+        "name": "main",
+        "file": "interlang_runner.py",
+        "path": "./interlang_runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 43,
+        "endLine": 60
+    },
+    {
+        "id": 62,
+        "name": "__init__",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 7,
+        "endLine": 15
+    },
+    {
+        "id": 63,
+        "name": "visit_FunctionDef",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 17,
+        "endLine": 20
+    },
+    {
+        "id": 64,
+        "name": "visit_Import",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 22,
+        "endLine": 30
+    },
+    {
+        "id": 65,
+        "name": "visit_ImportFrom",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 32,
+        "endLine": 47
+    },
+    {
+        "id": 66,
+        "name": "visit_Assign",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 49,
+        "endLine": 95
+    },
+    {
+        "id": 67,
+        "name": "visit_Call",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 97,
+        "endLine": 126
+    },
+    {
+        "id": 68,
+        "name": "_get_type",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 128,
+        "endLine": 133
+    },
+    {
+        "id": 69,
+        "name": "_report",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 4,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 135,
+        "endLine": 166
+    },
+    {
+        "id": 70,
+        "name": "main",
+        "file": "python_cross_final.py",
+        "path": "./python_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 168,
+        "endLine": 180
+    },
+    {
+        "id": 71,
+        "name": "infer_types",
+        "file": "cpp_cross_final.py",
+        "path": "./cpp_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 12,
+        "endLine": 23
+    },
+    {
+        "id": 72,
+        "name": "parse_sig",
+        "file": "cpp_cross_final.py",
+        "path": "./cpp_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 26,
+        "endLine": 43
+    },
+    {
+        "id": 73,
+        "name": "collect_calls_in_file",
+        "file": "cpp_cross_final.py",
+        "path": "./cpp_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 46,
+        "endLine": 203
+    },
+    {
+        "id": 74,
+        "name": "main",
+        "file": "cpp_cross_final.py",
+        "path": "./cpp_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 206,
+        "endLine": 224
+    },
+    {
+        "id": 75,
         "name": "is_container_running",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3494,7 +1239,7 @@
         "endLine": 19
     },
     {
-        "id": 210,
+        "id": 76,
         "name": "container_exists",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3511,7 +1256,7 @@
         "endLine": 29
     },
     {
-        "id": 211,
+        "id": 77,
         "name": "remove_existing_container",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3528,7 +1273,7 @@
         "endLine": 37
     },
     {
-        "id": 212,
+        "id": 78,
         "name": "start_container",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3546,7 +1291,7 @@
         "endLine": 55
     },
     {
-        "id": 213,
+        "id": 79,
         "name": "run_generator_in_container",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3561,10 +1306,10 @@
         "parentClass": null,
         "parentFunction": null,
         "startLine": 57,
-        "endLine": 67
+        "endLine": 74
     },
     {
-        "id": 214,
+        "id": 80,
         "name": "stop_and_remove_container",
         "file": "runner.py",
         "path": "./runner.py",
@@ -3577,29 +1322,30 @@
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 69,
-        "endLine": 75
+        "startLine": 77,
+        "endLine": 83
     },
     {
-        "id": 215,
+        "id": 81,
         "name": "main",
         "file": "runner.py",
         "path": "./runner.py",
         "language": "Python",
         "parameters": {
-            "count": 2,
+            "count": 3,
             "types": [
+                "unknown",
                 "unknown",
                 "unknown"
             ]
         },
         "parentClass": null,
         "parentFunction": null,
-        "startLine": 77,
-        "endLine": 89
+        "startLine": 85,
+        "endLine": 93
     },
     {
-        "id": 216,
+        "id": 82,
         "name": "extract_code_from_file",
         "file": "deepseekExternalCPP.py",
         "path": "./deepseekExternalCPP.py",
@@ -3616,7 +1362,7 @@
         "endLine": 15
     },
     {
-        "id": 217,
+        "id": 83,
         "name": "format_prompt_for_structure",
         "file": "deepseekExternalCPP.py",
         "path": "./deepseekExternalCPP.py",
@@ -3633,7 +1379,7 @@
         "endLine": 41
     },
     {
-        "id": 218,
+        "id": 84,
         "name": "analyze_with_deepseek",
         "file": "deepseekExternalCPP.py",
         "path": "./deepseekExternalCPP.py",
@@ -3651,7 +1397,7 @@
         "endLine": 64
     },
     {
-        "id": 219,
+        "id": 85,
         "name": "load_external_call_files",
         "file": "deepseekExternalCPP.py",
         "path": "./deepseekExternalCPP.py",
@@ -3668,7 +1414,7 @@
         "endLine": 74
     },
     {
-        "id": 220,
+        "id": 86,
         "name": "load_id_counter",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3683,7 +1429,7 @@
         "endLine": 12
     },
     {
-        "id": 221,
+        "id": 87,
         "name": "save_id_counter",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3700,7 +1446,7 @@
         "endLine": 16
     },
     {
-        "id": 222,
+        "id": 88,
         "name": "__init__",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3718,7 +1464,7 @@
         "endLine": 25
     },
     {
-        "id": 223,
+        "id": 89,
         "name": "visit_FunctionDef",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3735,7 +1481,7 @@
         "endLine": 51
     },
     {
-        "id": 224,
+        "id": 90,
         "name": "visit_Call",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3752,7 +1498,7 @@
         "endLine": 83
     },
     {
-        "id": 225,
+        "id": 91,
         "name": "_get_called_class_name",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3769,7 +1515,7 @@
         "endLine": 91
     },
     {
-        "id": 226,
+        "id": 92,
         "name": "visit_ClassDef",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3786,7 +1532,7 @@
         "endLine": 97
     },
     {
-        "id": 227,
+        "id": 93,
         "name": "_get_function_id",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3805,7 +1551,7 @@
         "endLine": 112
     },
     {
-        "id": 228,
+        "id": 94,
         "name": "_is_inside",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3823,7 +1569,7 @@
         "endLine": 119
     },
     {
-        "id": 229,
+        "id": 95,
         "name": "analyze_python_files",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3840,7 +1586,7 @@
         "endLine": 206
     },
     {
-        "id": 230,
+        "id": 96,
         "name": "analyze_metrics",
         "file": "pythonMaker.py",
         "path": "./pythonMaker.py",
@@ -3858,7 +1604,128 @@
         "endLine": 223
     },
     {
-        "id": 231,
+        "id": 97,
+        "name": "infer_type",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 6,
+        "endLine": 18
+    },
+    {
+        "id": 98,
+        "name": "extract_calls_from_string_literal",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 20,
+        "endLine": 37
+    },
+    {
+        "id": 99,
+        "name": "extract_calls",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 39,
+        "endLine": 89
+    },
+    {
+        "id": 100,
+        "name": "get_java_function_ranges",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 91,
+        "endLine": 106
+    },
+    {
+        "id": 101,
+        "name": "find_enclosing_function",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 108,
+        "endLine": 112
+    },
+    {
+        "id": 102,
+        "name": "guess_language",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 114,
+        "endLine": 118
+    },
+    {
+        "id": 103,
+        "name": "main",
+        "file": "java_cross_final.py",
+        "path": "./java_cross_final.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 120,
+        "endLine": 134
+    },
+    {
+        "id": 104,
         "name": "extract_relevant_functions",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3875,7 +1742,7 @@
         "endLine": 44
     },
     {
-        "id": 232,
+        "id": 105,
         "name": "format_prompt",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3892,7 +1759,7 @@
         "endLine": 65
     },
     {
-        "id": 233,
+        "id": 106,
         "name": "analyze_code",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3909,7 +1776,7 @@
         "endLine": 79
     },
     {
-        "id": 234,
+        "id": 107,
         "name": "dump_result",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3928,7 +1795,7 @@
         "endLine": 86
     },
     {
-        "id": 235,
+        "id": 108,
         "name": "process_file",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3946,7 +1813,7 @@
         "endLine": 95
     },
     {
-        "id": 236,
+        "id": 109,
         "name": "load_files",
         "file": "deepseekExternFast.py",
         "path": "./deepseekExternFast.py",
@@ -3963,7 +1830,40 @@
         "endLine": 103
     },
     {
-        "id": 237,
+        "id": 110,
+        "name": "home",
+        "file": "app.py",
+        "path": "./app.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 7,
+        "endLine": 8
+    },
+    {
+        "id": 111,
+        "name": "get_description",
+        "file": "app.py",
+        "path": "./app.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 11,
+        "endLine": 16
+    },
+    {
+        "id": 112,
         "name": "extract_relevant_functions",
         "file": "externalAnalyser.py",
         "path": "./externalAnalyser.py",
@@ -3980,7 +1880,7 @@
         "endLine": 44
     },
     {
-        "id": 238,
+        "id": 113,
         "name": "format_prompt",
         "file": "externalAnalyser.py",
         "path": "./externalAnalyser.py",
@@ -3997,7 +1897,7 @@
         "endLine": 65
     },
     {
-        "id": 239,
+        "id": 114,
         "name": "analyze_code",
         "file": "externalAnalyser.py",
         "path": "./externalAnalyser.py",
@@ -4014,7 +1914,7 @@
         "endLine": 79
     },
     {
-        "id": 240,
+        "id": 115,
         "name": "process_file",
         "file": "externalAnalyser.py",
         "path": "./externalAnalyser.py",
@@ -4031,7 +1931,7 @@
         "endLine": 88
     },
     {
-        "id": 241,
+        "id": 116,
         "name": "load_files",
         "file": "externalAnalyser.py",
         "path": "./externalAnalyser.py",
@@ -4048,7 +1948,7 @@
         "endLine": 96
     },
     {
-        "id": 242,
+        "id": 117,
         "name": "extract_code_from_file",
         "file": "analyser.py",
         "path": "./analyser.py",
@@ -4067,7 +1967,7 @@
         "endLine": 13
     },
     {
-        "id": 243,
+        "id": 118,
         "name": "analyze_with_ollama",
         "file": "analyser.py",
         "path": "./analyser.py",
@@ -4083,5 +1983,1100 @@
         "parentFunction": null,
         "startLine": 15,
         "endLine": 30
+    },
+    {
+        "id": 119,
+        "name": "load_and_flatten",
+        "file": "combineJsons.py",
+        "path": "./combineJsons.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 3,
+        "endLine": 15
+    },
+    {
+        "id": 120,
+        "name": "myfunc",
+        "file": "mymodule.py",
+        "path": "./please-examples/temi/mymodule.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 1,
+        "endLine": 3
+    },
+    {
+        "id": 121,
+        "name": "setUp",
+        "file": "kitten_test.py",
+        "path": "./please-examples/python/kitten_test.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": "KittenTest",
+        "parentFunction": null,
+        "startLine": 9,
+        "endLine": 13
+    },
+    {
+        "id": 122,
+        "name": "test_any_breed",
+        "file": "kitten_test.py",
+        "path": "./please-examples/python/kitten_test.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": "KittenTest",
+        "parentFunction": null,
+        "startLine": 15,
+        "endLine": 19
+    },
+    {
+        "id": 123,
+        "name": "test_breed_request",
+        "file": "kitten_test.py",
+        "path": "./please-examples/python/kitten_test.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": "KittenTest",
+        "parentFunction": null,
+        "startLine": 21,
+        "endLine": 24
+    },
+    {
+        "id": 124,
+        "name": "fetch_kitten",
+        "file": "kitten_lib.py",
+        "path": "./please-examples/python/kitten_lib.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 5,
+        "endLine": 15
+    },
+    {
+        "id": 125,
+        "name": "get_kitten",
+        "file": "kitten_lib.py",
+        "path": "./please-examples/python/kitten_lib.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 18,
+        "endLine": 32
+    },
+    {
+        "id": 126,
+        "name": "provide_kitten",
+        "file": "kitten_lib.py",
+        "path": "./please-examples/python/kitten_lib.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 35,
+        "endLine": 42
+    },
+    {
+        "id": 127,
+        "name": "main",
+        "file": "client.py",
+        "path": "./please-examples/python/client.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 13,
+        "endLine": 15
+    },
+    {
+        "id": 128,
+        "name": "GetKitten",
+        "file": "server.py",
+        "path": "./please-examples/python/server.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "PetShop",
+        "parentFunction": null,
+        "startLine": 17,
+        "endLine": 18
+    },
+    {
+        "id": 129,
+        "name": "main",
+        "file": "server.py",
+        "path": "./please-examples/python/server.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 21,
+        "endLine": 31
+    },
+    {
+        "id": 130,
+        "name": "__init__",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 9,
+        "endLine": 14
+    },
+    {
+        "id": 131,
+        "name": "visit_FunctionDef",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 16,
+        "endLine": 39
+    },
+    {
+        "id": 132,
+        "name": "visit_Call",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 41,
+        "endLine": 60
+    },
+    {
+        "id": 133,
+        "name": "visit_ClassDef",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 62,
+        "endLine": 67
+    },
+    {
+        "id": 134,
+        "name": "_get_function_id",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 68,
+        "endLine": 78
+    },
+    {
+        "id": 135,
+        "name": "_is_inside",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "PythonFunctionAnalyzer",
+        "parentFunction": null,
+        "startLine": 80,
+        "endLine": 86
+    },
+    {
+        "id": 136,
+        "name": "analyze_python_files",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 88,
+        "endLine": 135
+    },
+    {
+        "id": 137,
+        "name": "analyze_metrics",
+        "file": "2.py",
+        "path": "./public/2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 137,
+        "endLine": 154
+    },
+    {
+        "id": 138,
+        "name": "infer_types",
+        "file": "un3.py",
+        "path": "./public/un3.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 12,
+        "endLine": 23
+    },
+    {
+        "id": 139,
+        "name": "parse_sig",
+        "file": "un3.py",
+        "path": "./public/un3.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 26,
+        "endLine": 43
+    },
+    {
+        "id": 140,
+        "name": "collect_calls_in_file",
+        "file": "un3.py",
+        "path": "./public/un3.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 46,
+        "endLine": 203
+    },
+    {
+        "id": 141,
+        "name": "main",
+        "file": "un3.py",
+        "path": "./public/un3.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 206,
+        "endLine": 224
+    },
+    {
+        "id": 142,
+        "name": "find_cpp_files",
+        "file": "inc1.py",
+        "path": "./public/inc1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 17,
+        "endLine": 22
+    },
+    {
+        "id": 143,
+        "name": "is_user_function",
+        "file": "inc1.py",
+        "path": "./public/inc1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 24,
+        "endLine": 31
+    },
+    {
+        "id": 144,
+        "name": "collect_calls",
+        "file": "inc1.py",
+        "path": "./public/inc1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 33,
+        "endLine": 47
+    },
+    {
+        "id": 145,
+        "name": "main",
+        "file": "inc1.py",
+        "path": "./public/inc1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 49,
+        "endLine": 76
+    },
+    {
+        "id": 146,
+        "name": "parse_python_c_api",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 20,
+        "endLine": 45
+    },
+    {
+        "id": 147,
+        "name": "parse_pybind11",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 48,
+        "endLine": 65
+    },
+    {
+        "id": 148,
+        "name": "parse_boost_python",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 68,
+        "endLine": 90
+    },
+    {
+        "id": 149,
+        "name": "parse_swig",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 93,
+        "endLine": 118
+    },
+    {
+        "id": 150,
+        "name": "parse_python_subprocess",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 121,
+        "endLine": 138
+    },
+    {
+        "id": 151,
+        "name": "parse_jni",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 141,
+        "endLine": 177
+    },
+    {
+        "id": 152,
+        "name": "parse_sig",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": "parse_jni",
+        "startLine": 149,
+        "endLine": 164
+    },
+    {
+        "id": 153,
+        "name": "parse_java_subprocess",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 180,
+        "endLine": 196
+    },
+    {
+        "id": 154,
+        "name": "parse_grpc",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 199,
+        "endLine": 209
+    },
+    {
+        "id": 155,
+        "name": "parse_rest",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 212,
+        "endLine": 231
+    },
+    {
+        "id": 156,
+        "name": "collect_calls",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 234,
+        "endLine": 245
+    },
+    {
+        "id": 157,
+        "name": "main",
+        "file": "Untitled-1.py",
+        "path": "./public/Untitled-1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 248,
+        "endLine": 281
+    },
+    {
+        "id": 158,
+        "name": "infer_type",
+        "file": "unj1.py",
+        "path": "./public/unj1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 6,
+        "endLine": 18
+    },
+    {
+        "id": 159,
+        "name": "extract_calls_from_string_literal",
+        "file": "unj1.py",
+        "path": "./public/unj1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 3,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 20,
+        "endLine": 30
+    },
+    {
+        "id": 160,
+        "name": "extract_calls",
+        "file": "unj1.py",
+        "path": "./public/unj1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 32,
+        "endLine": 61
+    },
+    {
+        "id": 161,
+        "name": "main",
+        "file": "unj1.py",
+        "path": "./public/unj1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 63,
+        "endLine": 92
+    },
+    {
+        "id": 162,
+        "name": "index",
+        "file": "runner.py",
+        "path": "./public/runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 7,
+        "endLine": 8
+    },
+    {
+        "id": 163,
+        "name": "run_script",
+        "file": "runner.py",
+        "path": "./public/runner.py",
+        "language": "Python",
+        "parameters": {
+            "count": 2,
+            "types": [
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 11,
+        "endLine": 16
+    },
+    {
+        "id": 164,
+        "name": "__init__",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 7,
+        "endLine": 12
+    },
+    {
+        "id": 165,
+        "name": "visit_Import",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 14,
+        "endLine": 21
+    },
+    {
+        "id": 166,
+        "name": "visit_ImportFrom",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 23,
+        "endLine": 37
+    },
+    {
+        "id": 167,
+        "name": "visit_Assign",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 39,
+        "endLine": 97
+    },
+    {
+        "id": 168,
+        "name": "visit_Call",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 99,
+        "endLine": 128
+    },
+    {
+        "id": 169,
+        "name": "_get_type",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 130,
+        "endLine": 136
+    },
+    {
+        "id": 170,
+        "name": "_report",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 4,
+            "types": [
+                "unknown",
+                "unknown",
+                "unknown",
+                "unknown"
+            ]
+        },
+        "parentClass": "CallVisitor",
+        "parentFunction": null,
+        "startLine": 138,
+        "endLine": 150
+    },
+    {
+        "id": 171,
+        "name": "main",
+        "file": "unp1.py",
+        "path": "./public/unp1.py",
+        "language": "Python",
+        "parameters": {
+            "count": 0,
+            "types": []
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 152,
+        "endLine": 161
+    },
+    {
+        "id": 172,
+        "name": "infer_types",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 12,
+        "endLine": 19
+    },
+    {
+        "id": 173,
+        "name": "parse_python_c_api",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 22,
+        "endLine": 35
+    },
+    {
+        "id": 174,
+        "name": "parse_pybind_like",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 38,
+        "endLine": 44
+    },
+    {
+        "id": 175,
+        "name": "parse_swig",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 47,
+        "endLine": 55
+    },
+    {
+        "id": 176,
+        "name": "parse_python_subprocess",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 58,
+        "endLine": 67
+    },
+    {
+        "id": 177,
+        "name": "parse_zmq_python",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 70,
+        "endLine": 76
+    },
+    {
+        "id": 178,
+        "name": "parse_jni",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 79,
+        "endLine": 98
+    },
+    {
+        "id": 179,
+        "name": "parse_java_subprocess",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 101,
+        "endLine": 110
+    },
+    {
+        "id": 180,
+        "name": "parse_rest",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 113,
+        "endLine": 132
+    },
+    {
+        "id": 181,
+        "name": "parse_socket_java",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 135,
+        "endLine": 141
+    },
+    {
+        "id": 182,
+        "name": "parse_grpc",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 144,
+        "endLine": 150
+    },
+    {
+        "id": 183,
+        "name": "collect_calls",
+        "file": "un2.py",
+        "path": "./public/un2.py",
+        "language": "Python",
+        "parameters": {
+            "count": 1,
+            "types": [
+                "unknown"
+            ]
+        },
+        "parentClass": null,
+        "parentFunction": null,
+        "startLine": 153,
+        "endLine": 166
     }
 ]

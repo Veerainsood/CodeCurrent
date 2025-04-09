@@ -67,7 +67,7 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         )
 
         call_info = {
-            "callerId": self._get_function_id(name=self.current_function, parent_class=self.current_class, param_count=caller_param_count),
+            "caller_Id": self._get_function_id(name=self.current_function, parent_class=self.current_class, param_count=caller_param_count),
             "calleeName": callee_name,
             "calleeClass": callee_class,
             "isInsideIfElseOrSwitch": self._is_inside(node, (ast.If, ast.Match)),
@@ -149,7 +149,7 @@ def analyze_python_files(directory):
                 except Exception as e:
                     print(f"Error parsing {file_path}: {e}")
 
-    # Update each call with calleeId by matching against known functions.
+    # Update each call with callee_Id by matching against known functions.
     for call in all_calls:
         callee_name = call.get("calleeName")
         callee_class = call.get("calleeClass")
@@ -162,7 +162,7 @@ def analyze_python_files(directory):
                 func["parameters"]["count"] == arg_count and
                 func.get("parentClass") == callee_class
             ):
-                call["calleeId"] = func["id"]
+                call["callee_Id"] = func["id"]
                 matched = True
                 break
 
@@ -172,14 +172,14 @@ def analyze_python_files(directory):
                     func["name"] == callee_name and
                     func["parameters"]["count"] == arg_count
                 ):
-                    call["calleeId"] = func["id"]
+                    call["callee_Id"] = func["id"]
                     matched = True
                     break
 
         if not matched:
             for func in all_functions:
                 if func["name"] == callee_name:
-                    call["calleeId"] = func["id"]
+                    call["callee_Id"] = func["id"]
                     matched = True
                     break
 
@@ -189,13 +189,13 @@ def analyze_python_files(directory):
     with open("unique_functions_python.json", "w", encoding="utf-8") as f:
         json.dump(all_functions, f, indent=4)
 
-    # Keep only calls with both callerId and calleeId defined and not "UNKNOWN"
+    # Keep only calls with both caller_Id and callee_Id defined and not "UNKNOWN"
     final_calls = [
         call for call in all_calls 
-        if call.get("callerId") is not None and 
-           call.get("calleeId") is not None and 
-           str(call.get("callerId")) != "UNKNOWN" and 
-           str(call.get("calleeId")) != "UNKNOWN"
+        if call.get("caller_Id") is not None and 
+           call.get("callee_Id") is not None and 
+           str(call.get("caller_Id")) != "UNKNOWN" and 
+           str(call.get("callee_Id")) != "UNKNOWN"
     ]
 
     with open("function_calls_python.json", "w", encoding="utf-8") as f:
@@ -206,7 +206,7 @@ def analyze_python_files(directory):
     analyze_metrics(all_functions, all_calls)
 
 def analyze_metrics(all_functions, all_calls):
-    call_counts = Counter(call["calleeId"] for call in all_calls if "calleeId" in call)
+    call_counts = Counter(call["callee_Id"] for call in all_calls if "callee_Id" in call)
 
     most_called = sorted(call_counts.items(), key=lambda x: x[1], reverse=True)
     print("Most Called Functions:")

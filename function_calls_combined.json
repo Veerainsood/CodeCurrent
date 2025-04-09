@@ -1,457 +1,171 @@
 [
     {
-        "caller_id": 5,
-        "callee_id": 6,
-        "is_foreign_call": false,
+        "caller_id": 18,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 5,
-        "callee_id": 7,
-        "is_foreign_call": false,
+        "caller_id": 19,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
+    },
+    {
+        "caller_id": 19,
+        "callee_id": 120,
+        "is_foreign_call": true,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
+        "isInsideClass": false,
+        "isInsideFunction": false
     },
     {
         "caller_id": 20,
-        "callee_id": 17,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 27,
-        "callee_id": 25,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 28,
-        "callee_id": 27,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 28,
-        "callee_id": 26,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 41,
-        "callee_id": 40,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 54,
-        "callee_id": 53,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": true,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 54,
-        "callee_id": 51,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": true,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 55,
-        "callee_id": 53,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": true,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 56,
-        "callee_id": 53,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": true,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 101,
-        "callee_id": 100,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 102,
-        "callee_id": 100,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 103,
-        "callee_id": 100,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 110,
-        "callee_id": 108,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 110,
-        "callee_id": 109,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 116,
-        "callee_id": 115,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 116,
-        "callee_id": 115,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 116,
-        "callee_id": 115,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 116,
-        "callee_id": 119,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 116,
-        "callee_id": 119,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 122,
         "callee_id": 120,
-        "is_foreign_call": false,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 123,
-        "callee_id": 121,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 124,
-        "callee_id": 121,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 124,
+        "caller_id": 20,
         "callee_id": 120,
-        "is_foreign_call": false,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 129,
-        "callee_id": 128,
-        "is_foreign_call": false,
+        "caller_id": 1,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 130,
-        "callee_id": 128,
-        "is_foreign_call": false,
+        "caller_id": 2,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 134,
-        "callee_id": 132,
-        "is_foreign_call": false,
+        "caller_id": 2,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 135,
-        "callee_id": 132,
-        "is_foreign_call": false,
+        "caller_id": 3,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 137,
-        "callee_id": 136,
-        "is_foreign_call": false,
+        "caller_id": 3,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 138,
-        "callee_id": 137,
-        "is_foreign_call": false,
+        "caller_id": 18,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 139,
-        "callee_id": 136,
-        "is_foreign_call": false,
+        "caller_id": 19,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 139,
-        "callee_id": 136,
-        "is_foreign_call": false,
+        "caller_id": 19,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 169,
-        "callee_id": 168,
-        "is_foreign_call": false,
+        "caller_id": 20,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 171,
-        "callee_id": 156,
-        "is_foreign_call": false,
+        "caller_id": 20,
+        "callee_id": 120,
+        "is_foreign_call": true,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
+        "isDifferentLanguage": true,
+        "isDifferentModule": true,
         "isInsideClass": false,
-        "isInsideFunction": true
+        "isInsideFunction": false
     },
     {
-        "caller_id": 173,
-        "callee_id": 168,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": false,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 190,
-        "callee_id": 189,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": true,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 191,
-        "callee_id": 195,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": true,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 191,
-        "callee_id": 198,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": true,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 191,
-        "callee_id": 199,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": true,
-        "isInsideFunction": true
-    },
-    {
-        "caller_id": 198,
-        "callee_id": 193,
-        "is_foreign_call": false,
-        "isInsideIfElseOrSwitch": false,
-        "isInsideLoopOrEnvironment": false,
-        "isDifferentLanguage": false,
-        "isDifferentModule": false,
-        "isInsideClass": true,
-        "isInsideFunction": true
-    },
-    {
-        "callerId": 208,
+        "caller_Id": 59,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -459,10 +173,197 @@
         "argCount": 2,
         "callerClass": null,
         "callerFunction": "analyze_with_deepseek",
-        "calleeId": 207
+        "callee_Id": 58
     },
     {
-        "callerId": 212,
+        "caller_Id": 61,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 60
+    },
+    {
+        "caller_Id": 62,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 0,
+        "callerClass": "CallVisitor",
+        "callerFunction": "__init__",
+        "callee_Id": 62
+    },
+    {
+        "caller_Id": 67,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 4,
+        "callerClass": "CallVisitor",
+        "callerFunction": "visit_Call",
+        "callee_Id": 69
+    },
+    {
+        "caller_Id": 67,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 4,
+        "callerClass": "CallVisitor",
+        "callerFunction": "visit_Call",
+        "callee_Id": 69
+    },
+    {
+        "caller_Id": 69,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": "CallVisitor",
+        "callerFunction": "_report",
+        "callee_Id": 68
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 72
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 73,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 74,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 73
+    },
+    {
+        "caller_Id": 78,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -470,10 +371,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "start_container",
-        "calleeId": 210
+        "callee_Id": 76
     },
     {
-        "callerId": 212,
+        "caller_Id": 78,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -481,10 +382,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "start_container",
-        "calleeId": 211
+        "callee_Id": 77
     },
     {
-        "callerId": 215,
+        "caller_Id": 81,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -492,10 +393,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "main",
-        "calleeId": 209
+        "callee_Id": 75
     },
     {
-        "callerId": 215,
+        "caller_Id": 81,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -503,32 +404,10 @@
         "argCount": 2,
         "callerClass": null,
         "callerFunction": "main",
-        "calleeId": 212
+        "callee_Id": 78
     },
     {
-        "callerId": 215,
-        "isInsideIfElseOrSwitch": true,
-        "isInsideLoopOrEnvironment": false,
-        "isInsideClass": false,
-        "isInsideFunction": true,
-        "argCount": 0,
-        "callerClass": null,
-        "callerFunction": "main",
-        "calleeId": 213
-    },
-    {
-        "callerId": 215,
-        "isInsideIfElseOrSwitch": true,
-        "isInsideLoopOrEnvironment": false,
-        "isInsideClass": false,
-        "isInsideFunction": true,
-        "argCount": 0,
-        "callerClass": null,
-        "callerFunction": "main",
-        "calleeId": 213
-    },
-    {
-        "callerId": 215,
+        "caller_Id": 81,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -536,10 +415,21 @@
         "argCount": 0,
         "callerClass": null,
         "callerFunction": "main",
-        "calleeId": 214
+        "callee_Id": 79
     },
     {
-        "callerId": 218,
+        "caller_Id": 81,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 0,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 80
+    },
+    {
+        "caller_Id": 84,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -547,10 +437,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "analyze_with_deepseek",
-        "calleeId": 217
+        "callee_Id": 83
     },
     {
-        "callerId": 224,
+        "caller_Id": 90,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": true,
@@ -558,10 +448,10 @@
         "argCount": 1,
         "callerClass": "PythonFunctionAnalyzer",
         "callerFunction": "visit_Call",
-        "calleeId": 225
+        "callee_Id": 91
     },
     {
-        "callerId": 224,
+        "caller_Id": 90,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": true,
@@ -569,10 +459,10 @@
         "argCount": 0,
         "callerClass": "PythonFunctionAnalyzer",
         "callerFunction": "visit_Call",
-        "calleeId": 227
+        "callee_Id": 93
     },
     {
-        "callerId": 224,
+        "caller_Id": 90,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": true,
@@ -580,10 +470,10 @@
         "argCount": 2,
         "callerClass": "PythonFunctionAnalyzer",
         "callerFunction": "visit_Call",
-        "calleeId": 228
+        "callee_Id": 94
     },
     {
-        "callerId": 224,
+        "caller_Id": 90,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": true,
@@ -591,10 +481,10 @@
         "argCount": 2,
         "callerClass": "PythonFunctionAnalyzer",
         "callerFunction": "visit_Call",
-        "calleeId": 228
+        "callee_Id": 94
     },
     {
-        "callerId": 229,
+        "caller_Id": 95,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -602,10 +492,10 @@
         "argCount": 0,
         "callerClass": null,
         "callerFunction": "analyze_python_files",
-        "calleeId": 220
+        "callee_Id": 86
     },
     {
-        "callerId": 229,
+        "caller_Id": 95,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -613,10 +503,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "analyze_python_files",
-        "calleeId": 221
+        "callee_Id": 87
     },
     {
-        "callerId": 229,
+        "caller_Id": 95,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -624,10 +514,98 @@
         "argCount": 2,
         "callerClass": null,
         "callerFunction": "analyze_python_files",
-        "calleeId": 230
+        "callee_Id": 96
     },
     {
-        "callerId": 233,
+        "caller_Id": 98,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls_from_string_literal",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 98,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls_from_string_literal",
+        "callee_Id": 102
+    },
+    {
+        "caller_Id": 99,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 100
+    },
+    {
+        "caller_Id": 99,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 101
+    },
+    {
+        "caller_Id": 99,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 3,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 98
+    },
+    {
+        "caller_Id": 99,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 99,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 103,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 99
+    },
+    {
+        "caller_Id": 106,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -635,10 +613,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "analyze_code",
-        "calleeId": 232
+        "callee_Id": 105
     },
     {
-        "callerId": 235,
+        "caller_Id": 108,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -646,10 +624,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 231
+        "callee_Id": 104
     },
     {
-        "callerId": 235,
+        "caller_Id": 108,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -657,10 +635,10 @@
         "argCount": 3,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 234
+        "callee_Id": 107
     },
     {
-        "callerId": 235,
+        "caller_Id": 108,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -668,10 +646,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 233
+        "callee_Id": 106
     },
     {
-        "callerId": 235,
+        "caller_Id": 108,
         "isInsideIfElseOrSwitch": true,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -679,10 +657,10 @@
         "argCount": 3,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 234
+        "callee_Id": 107
     },
     {
-        "callerId": 239,
+        "caller_Id": 114,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -690,10 +668,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "analyze_code",
-        "calleeId": 232
+        "callee_Id": 105
     },
     {
-        "callerId": 240,
+        "caller_Id": 115,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -701,10 +679,10 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 231
+        "callee_Id": 104
     },
     {
-        "callerId": 240,
+        "caller_Id": 115,
         "isInsideIfElseOrSwitch": false,
         "isInsideLoopOrEnvironment": false,
         "isInsideClass": false,
@@ -712,6 +690,743 @@
         "argCount": 1,
         "callerClass": null,
         "callerFunction": "process_file",
-        "calleeId": 233
+        "callee_Id": 106
+    },
+    {
+        "caller_Id": 121,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 0,
+        "callerClass": "KittenTest",
+        "callerFunction": "setUp",
+        "callee_Id": 126
+    },
+    {
+        "caller_Id": 122,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": "KittenTest",
+        "callerFunction": "test_any_breed",
+        "callee_Id": 125
+    },
+    {
+        "caller_Id": 123,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": "KittenTest",
+        "callerFunction": "test_breed_request",
+        "callee_Id": 125
+    },
+    {
+        "caller_Id": 124,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "fetch_kitten",
+        "callee_Id": 128
+    },
+    {
+        "caller_Id": 125,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "get_kitten",
+        "callee_Id": 124
+    },
+    {
+        "caller_Id": 127,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 125
+    },
+    {
+        "caller_Id": 128,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 0,
+        "callerClass": "PetShop",
+        "callerFunction": "GetKitten",
+        "callee_Id": 126
+    },
+    {
+        "caller_Id": 132,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": "PythonFunctionAnalyzer",
+        "callerFunction": "visit_Call",
+        "callee_Id": 134
+    },
+    {
+        "caller_Id": 132,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": "PythonFunctionAnalyzer",
+        "callerFunction": "visit_Call",
+        "callee_Id": 94
+    },
+    {
+        "caller_Id": 132,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": "PythonFunctionAnalyzer",
+        "callerFunction": "visit_Call",
+        "callee_Id": 94
+    },
+    {
+        "caller_Id": 136,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "analyze_python_files",
+        "callee_Id": 137
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 72
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 140,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls_in_file",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 141,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 73
+    },
+    {
+        "caller_Id": 144,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 143
+    },
+    {
+        "caller_Id": 145,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 142
+    },
+    {
+        "caller_Id": 145,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 144
+    },
+    {
+        "caller_Id": 151,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_jni",
+        "callee_Id": 72
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 146
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 147
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 148
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 149
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 150
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 151
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 153
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 154
+    },
+    {
+        "caller_Id": 156,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 155
+    },
+    {
+        "caller_Id": 157,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 156
+    },
+    {
+        "caller_Id": 157,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 156
+    },
+    {
+        "caller_Id": 159,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls_from_string_literal",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 160,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 3,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 98
+    },
+    {
+        "caller_Id": 160,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 160,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "extract_calls",
+        "callee_Id": 97
+    },
+    {
+        "caller_Id": 161,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 2,
+        "callerClass": null,
+        "callerFunction": "main",
+        "callee_Id": 99
+    },
+    {
+        "caller_Id": 164,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 0,
+        "callerClass": "CallVisitor",
+        "callerFunction": "__init__",
+        "callee_Id": 62
+    },
+    {
+        "caller_Id": 168,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 4,
+        "callerClass": "CallVisitor",
+        "callerFunction": "visit_Call",
+        "callee_Id": 69
+    },
+    {
+        "caller_Id": 168,
+        "isInsideIfElseOrSwitch": true,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 4,
+        "callerClass": "CallVisitor",
+        "callerFunction": "visit_Call",
+        "callee_Id": 69
+    },
+    {
+        "caller_Id": 170,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": true,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": "CallVisitor",
+        "callerFunction": "_report",
+        "callee_Id": 68
+    },
+    {
+        "caller_Id": 174,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_pybind_like",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 175,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_swig",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 176,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_python_subprocess",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 177,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_zmq_python",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 179,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_java_subprocess",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 180,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_rest",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 180,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_rest",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 181,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_socket_java",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 182,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": true,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "parse_grpc",
+        "callee_Id": 71
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 146
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 174
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 174
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 149
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 150
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 177
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 151
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 153
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 155
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 181
+    },
+    {
+        "caller_Id": 183,
+        "isInsideIfElseOrSwitch": false,
+        "isInsideLoopOrEnvironment": false,
+        "isInsideClass": false,
+        "isInsideFunction": true,
+        "argCount": 1,
+        "callerClass": null,
+        "callerFunction": "collect_calls",
+        "callee_Id": 154
     }
 ]
