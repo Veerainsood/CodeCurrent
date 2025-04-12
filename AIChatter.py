@@ -9,7 +9,7 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "tinyllama"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_FILE = os.path.join(BASE_DIR, "cache.json")
-FILE_JSON = os.path.join(BASE_DIR, "public", "file.json")
+FILE_JSON = os.path.join(BASE_DIR, "unique_functions_combined.json")
 
 def load_cache():
     if os.path.exists(CACHE_FILE):
@@ -52,19 +52,15 @@ def find_function_by_id(file_path, target_id):
     # print(f"🔍 Searching for function ID {target_id} in {file_path}...")
     with open(file_path, "r") as f:
         data = json.load(f)
-    for group in data:
-        for func in group:
+        for func in data:
             if func["id"] == target_id:
                 return func
     return None
 
 def extract_code_from_file(path, start, end, max_lines=40):
     
-    real_base = os.path.abspath(os.path.join(BASE_DIR, ".."))
-    normalized_path = os.path.join(real_base, path.removeprefix("/src").lstrip("/"))
-    log(f"{path} Extracting code from {normalized_path} lines {start}-{end}...")
     try:
-        with open(normalized_path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             lines = f.readlines()
             lines = lines[start - 1:end]
             return "".join(lines[:max_lines])  # Limit lines
@@ -80,7 +76,7 @@ def format_prompt_for_structure(code, task):
     prefix = {
         1: "Briefly explain this:",
         2: "Some improvement in:",
-        3: "Some code smell in:"
+        3: "List code smells in the following Python function.Be specific and concise:\n"
     }.get(task, "")
     return f"{prefix}\n{code}"
 
@@ -144,15 +140,17 @@ if not func:
     print(f"❌ Function ID {id} not found.")
     sys.exit(1)
 
-code = extract_code_from_file_cached(func["path"], func["startLine"], func["endLine"])
 cache = load_cache()
 key = f"{func['id']}-{task}"
 
 if key in cache:
     result = cache[key]
+    # log("Found in cache")
+    print(result,flush=True)
 else:
+    # log(f"Came in else with path: {func['path']}")
+    code = extract_code_from_file_cached(func["path"], func["startLine"], func["endLine"])
     result = analyze_with_deepseek(code, task)
     cache[key] = result
     save_cache(cache)
-
-print(result)
+    print(result,flush=True)

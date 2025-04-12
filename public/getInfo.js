@@ -16,6 +16,7 @@ async function getDescription(id, task) {
     if (res !== 'timeout') {
         const data = await res.json();
         if (data.output) {
+            console.log("got the output 15");
             updateDescriptionPanel(id, data.output, task);
             return;
         }
@@ -26,6 +27,7 @@ async function getDescription(id, task) {
     if (res !== 'timeout') {
         const data = await res.json();
         if (data.output) {
+            console.log("got the output 20");
             updateDescriptionPanel(id, data.output, task);
             return;
         }

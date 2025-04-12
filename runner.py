@@ -96,7 +96,7 @@ def main(container_name, image_name, mode):
 main("cpp_parser_container", "veerain/cplusplusparser:latest", 0)
 main("java_parser_container", "veerain/cplusplusparser:javaInterlang", 1)
 
-# # # Final steps
+# # # # Final steps
 os.system("python3 pythonMaker.py")
 os.system("python3 combineJsons.py")
 
@@ -111,7 +111,7 @@ def save_json(data, path):
     with open(path, 'w') as f:
         json.dump(data, f, indent=4)
 
-# Load the caller-callee pairs JSON file.
+Load the caller-callee pairs JSON file.
 caller_callee_pairs = load_json("interlangCpp.json")
     
 # Load the function_calls_combined JSON file.
@@ -122,4 +122,30 @@ combined = caller_callee_pairs + function_calls_combined
     
     # Save the combined list to a new file.
 save_json(combined, "function_calls_combined.json")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def fix_path(path):
+    if isinstance(path, str) and path.startswith("/src"):
+        return os.path.join(BASE_DIR, path[len("/src"):].lstrip("/"))
+    return path
+
+def fix_paths_in_json(obj):
+    if isinstance(obj, dict):
+        return {k: fix_path(v) if k == "path" else fix_paths_in_json(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [fix_paths_in_json(item) for item in obj]
+    else:
+        return obj
+
+with open("unique_functions_combined.json", "r", encoding="utf-8") as f:
+    data2 = json.load(f)
+
+
+fixed_data2 = fix_paths_in_json(data2)
+
+with open("unique_functions_combined.json", "w", encoding="utf-8") as f:
+    json.dump(fixed_data2, f, indent=2)
+
 print(f"Combined JSON written with {len(combined)} entries.")
+
