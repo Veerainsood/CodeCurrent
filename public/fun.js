@@ -50,6 +50,71 @@ async function loadJSON() {
 // }
 
 // Prepare the graph data using the updated JSON structure and property names.
+function prepareGraphData(jsonData) { 
+    const nodesMap = new Map(); 
+
+    // Use the data from uniqueFunctions.
+    jsonData.uniqueFunctions.forEach(d => {
+        if (!d.id) {
+            console.error("Missing id for function:", d);
+        } else {
+            const styledNode = { 
+                id: d.id, 
+                name: d.name,
+                file: d.file,
+                language: d.language,
+                details: d  // store complete details for additional panels or info
+            };
+            styledNode.style = getNodeStyle(d);  // Apply logic-based style for nodes
+            nodesMap.set(d.id, styledNode);
+        }
+    });
+
+    // Counter for unknown nodes.
+    let unknownCounter = 0;
+    const links = jsonData.functionCalls.map(d => {
+        // Use the updated property names: caller_id and callee_id.
+        let sourceId = d.caller_id;
+        let targetId = d.callee_id;
+        if(!sourceId) {
+            console.log("Missing source node:", d);
+        }
+
+        // If the caller is explicitly marked as "UNKNOWN", create an unknown node.
+        if (sourceId === "UNKNOWN") {
+            sourceId = `UNKNOWN_${unknownCounter++}`;
+            if (!nodesMap.has(sourceId)) {
+                const unknownNode = { id: sourceId, name: `Unknown Caller ${unknownCounter}` };
+                unknownNode.style = getNodeStyle(d);
+                nodesMap.set(sourceId, unknownNode);
+            }
+        }
+
+        // If the target does not exist in nodesMap, create an unknown node.
+        if (!nodesMap.has(targetId) && targetId !== undefined) {
+            console.error("Missing target node:", targetId);
+            targetId = `UNKNOWN_${unknownCounter++}`;
+            const unknownNode = { id: targetId, name: `Unknown Function ${targetId}` };
+            unknownNode.style = getNodeStyle(d);
+            nodesMap.set(targetId, unknownNode);
+        }
+
+        // Only add the link if both source and target nodes exist.
+        
+        if (nodesMap.has(sourceId) && nodesMap.has(targetId)) {
+            const link = { source: sourceId, target: targetId };
+            link.style = getLinkStyle(d);  // Apply style logic for links
+            return link;
+        } else {
+            console.log("Skipping invalid link between:", sourceId, targetId);
+            // console.log(nodesMap);
+            return null;
+        }
+    }).filter(link => link !== null);
+
+    const nodes = Array.from(nodesMap.values());
+    return { nodes, links };
+}
 
 
 let GeneratedSidePanel = [];
@@ -64,61 +129,95 @@ let currentID = 0;
 
 
 
+// Suppose that you have loaded the two JSON files, for instance:
+// import uniqueFunctionsData from '../unique_functions_combined.json';
+// import functionCallsData from '../function_calls_combined.json';
 
-function prepareGraphData(jsonData) {
-    const nodesMap = new Map(); 
-        jsonData.uniqueFunctions.forEach(d => {
-            if (!d.id) {
-                console.error("Missing id for function:", d);
-            } else {
-                const styledNode = { 
-                    id: d.id, 
-                    name: d.name,
-                    file: d.file,
-                    language: d.language,
-                    details: d  // store complete details for the panel
-                };
-                styledNode.style = getNodeStyle(d);  // Apply logic-based style
-                nodesMap.set(d.id, styledNode);
-            }
-        });
-    
+// // Combine the arrays into one object to pass to the prepareGraphData function.
+// const graphData = {
+//     uniqueFunctions: uniqueFunctionsData,   // from main/unique_functions_combined.json
+//     functionCalls: functionCallsData          // from main/function_calls_combined.json
+// };
 
-    let unknownCounter = 0;
-    const links = jsonData.functionCalls.map(d => {
-        let sourceId = d.callerId;
-        let targetId = d.calleeId;
+// function getNodeStyle(d) {
+//     // Your style logic here; for example:
+//     return { color: d.language === 'C++' ? 'blue' : 'gray' };
+// }
 
-        if (sourceId === "UNKNOWN") {
-            sourceId = `UNKNOWN_${unknownCounter++}`;
-            if (!nodesMap.has(sourceId)) {
-                const unknownNode = { id: sourceId, name: `Unknown Caller ${unknownCounter}` };
-                unknownNode.style = getNodeStyle(d);
-                nodesMap.set(sourceId, unknownNode);
-            }
-        }
+// function getLinkStyle(d) {
+//     // Style logic for links, possibly based on flags in d:
+//     return { stroke: d.is_foreign_call ? 'red' : 'green' };
+// }
 
-        if (!nodesMap.has(targetId) && targetId !== undefined) {
-            console.error("Missing target node:", targetId);
-            targetId = `UNKNOWN_${unknownCounter++}`;
-            const unknownNode = { id: targetId, name: `Unknown Function ${targetId}` };
-            unknownNode.style = getNodeStyle(d);
-            nodesMap.set(targetId, unknownNode);
-        }
+// function prepareGraphData(jsonData) {
+//     const nodesMap = new Map(); 
 
-        if (nodesMap.has(sourceId) && nodesMap.has(targetId)) {
-            const link = { source: sourceId, target: targetId };
-            link.style = getLinkStyle(d);  // Apply logic-based style
-            return link;
-        } else {
-            console.warn("Skipping invalid link between:", sourceId, targetId);
-            return null;
-        }
-    }).filter(link => link !== null);
+//     jsonData.uniqueFunctions.forEach(d => {
+//         if (!d.id) {
+//             console.error("Missing id for function:", d);
+//         } else {
+//             const styledNode = { 
+//                 id: d.id, 
+//                 name: d.name,
+//                 file: d.file,
+//                 language: d.language,
+//                 details: d  // store the complete details for later use (e.g., in a panel)
+//             };
+//             styledNode.style = getNodeStyle(d);  // Apply logic-based node style
+//             nodesMap.set(d.id, styledNode);
+//         }
+//     });
 
-    const nodes = Array.from(nodesMap.values());
-    return { nodes, links };
-}
+//     // We'll use a counter for unknown nodes
+//     let unknownCounter = 0;
+//     const links = jsonData.functionCalls.map(d => {
+//         // Use d.caller_id and d.callee_id (adjusted based on your new JSON data)
+//         let sourceId = d.caller_id;
+//         let targetId = d.callee_id;
+
+//         if (sourceId === "UNKNOWN") {
+//             sourceId = `UNKNOWN_${unknownCounter++}`;
+//             if (!nodesMap.has(sourceId)) {
+//                 const unknownNode = { 
+//                     id: sourceId, 
+//                     name: `Unknown Caller ${unknownCounter}` 
+//                 };
+//                 unknownNode.style = getNodeStyle(d);
+//                 nodesMap.set(sourceId, unknownNode);
+//             }
+//         }
+
+//         if (!nodesMap.has(targetId) && targetId !== undefined) {
+//             console.error("Missing target node:", targetId);
+//             targetId = `UNKNOWN_${unknownCounter++}`;
+//             const unknownNode = { 
+//                 id: targetId, 
+//                 name: `Unknown Function ${targetId}` 
+//             };
+//             unknownNode.style = getNodeStyle(d);
+//             nodesMap.set(targetId, unknownNode);
+//         }
+
+//         // Only add a link if both nodes exist
+//         if (nodesMap.has(sourceId) && nodesMap.has(targetId)) {
+//             const link = { source: sourceId, target: targetId };
+//             link.style = getLinkStyle(d);  // Apply logic-based link style
+//             return link;
+//         } else {
+//             console.warn("Skipping invalid link between:", sourceId, targetId);
+//             return null;
+//         }
+//     }).filter(link => link !== null);
+
+//     const nodes = Array.from(nodesMap.values());
+//     return { nodes, links };
+// }
+
+// // Example usage:
+// const graph = prepareGraphData(graphData);
+// console.log("Graph nodes:", graph.nodes);
+// console.log("Graph links:", graph.links);
+
 function buildGraph(nodes, links, styling) {
     clearSVG();
     const svg = setupSVGCanvas();
@@ -192,37 +291,53 @@ function createGraphLayers(zoomGroup) {
         modulesLayer: zoomGroup.append("g").attr("class", "modules-layer"),
     };
 }
-
 function createLanguageLegend(svg, nodes, styling) {
     const languages = Array.from(new Set(nodes.map(n => n.language)));
-    const legend = svg.append("g").attr("class", "legend").attr("transform", "translate(20,20)");
+    const legend = svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(20,20)");
 
     languages.forEach((lang, i) => {
+        // Use CSS.escape to safely escape any special characters in the language string.
+        const safeLang = CSS.escape(lang);
+
         const row = legend.append("g")
-            .attr("transform", `translate(0, ${i * 20})`)
+            .attr("transform", `translate(0, ${i * 30})`)
             .style("cursor", "pointer")
             .on("click", () => {
-                const visible = d3.selectAll(`.node.language-${lang}`).style("opacity") !== "0.2";
-                d3.selectAll(`.node.language-${lang}`)
+                // Safely select nodes using the escaped language string.
+                const selector = `.node.language-${safeLang}`;
+                // Toggle opacity: if it's at full opacity, fade it; else, restore it.
+                const currentOpacity = d3.selectAll(selector).style("opacity");
+                const visible = currentOpacity === "" || currentOpacity === "1";
+                d3.selectAll(selector)
                   .transition().duration(500)
                   .style("opacity", visible ? 0.2 : 1);
             });
 
+        // Make the legend square have rounded corners and a subtle drop shadow.
         row.append("rect")
-            .attr("width", 15)
-            .attr("height", 15)
-            .attr("fill", styling.languageColors[lang] || styling.defaultNodeColor);
+            .attr("width", 20)
+            .attr("height", 20)
+            .attr("rx", 4) // Rounded corners.
+            .attr("ry", 4)
+            .attr("fill", styling.languageColors[lang] || styling.defaultNodeColor)
+            .attr("stroke", "#fff")
+            .attr("stroke-width", 1)
+            .style("filter", "drop-shadow(2px 2px 2px rgba(0,0,0,0.3))");
 
         row.append("text")
-            .attr("x", 20)
-            .attr("y", 12)
-            .attr("fill", "#ffffff")
+            .attr("x", 30)
+            .attr("y", 15)
+            .attr("fill", styling.textColor || "#ffffff")
             .text(lang)
-            .style("font-size", graphConfig.fontSize);
+            .style("font-size", styling.fontSize || "14px")
+            .style("font-family", "sans-serif");
     });
 
     return legend;
 }
+
 
 function setupSimulation(nodes, links, styling) {
     return d3.forceSimulation(nodes)
@@ -272,7 +387,7 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
         // group.append("rect")
         //     .attr("class", "module-bg")
         //     .attr("fill", styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length])
-        //     .attr("fill-opacity", 0)
+        //     .attr("fill-opacity", 0.1)
         //     .attr("stroke", styling.moduleBorderColor || styling.groupColors[i % styling.groupColors.length])
         //     .attr("stroke-dasharray", "4 2")
         //     .style("pointer-events", "none")
@@ -301,13 +416,13 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
             group = modulesLayer.append("g")
                 .attr("class", "module-group")
                 .attr("data-file", fileKey);
-            group.append("rect")
-                .attr("class", "module-bg")
-                .attr("fill", styling.moduleBgColor || styling.defaultModuleColor || "#ccc")
-                .attr("fill-opacity", 0.1)
-                .attr("stroke", styling.moduleBorderColor || styling.defaultModuleColor || "#ccc")
-                .attr("stroke-dasharray", "4 2")
-                .style("pointer-events", "none");
+            // group.append("rect")
+            //     .attr("class", "module-bg")
+            //     .attr("fill", styling.moduleBgColor || styling.defaultModuleColor || "#ccc")
+            //     .attr("fill-opacity", 0.1)
+            //     .attr("stroke", styling.moduleBorderColor || styling.defaultModuleColor || "#ccc")
+            //     .attr("stroke-dasharray", "4 2")
+            //     .style("pointer-events", "none");
             moduleGroups.set(fileKey, group);
         }
 
@@ -315,11 +430,11 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
             .datum(d)
             .attr("class", `node language-${d.language}`)
             .attr("data-file", d.file)
-            .attr("data-return-type", d.details.returnType || "unknown")
-            .attr("data-class-name", d.details.parentClass || "unknown")
-            .attr("data-function-name", d.details.parentFunction || "unknown")
-            .attr("data-parameters", d.details.parameters || "unknown")
-            .attr("data-path", d.details.path || "unknown")
+            // .attr("data-return-type", d.details.returnType || "unknown")
+            // .attr("data-class-name", d.details.parentClass || "unknown")
+            // .attr("data-function-name", d.details.parentFunction || "unknown")
+            // .attr("data-parameters", d.details.parameters || "unknown")
+            // .attr("data-path", d.details.path || "unknown")
             .attr("filter", "url(#drop-shadow)")
             .call(d3.drag()
                 .on("start", dragStart)
@@ -850,46 +965,62 @@ function isolateNode(node) {
 // }
 
 function defineArrowMarkers(zoomGroup, options) {
-    const defs = zoomGroup.append("defs").append("linearGradient")
-    .attr("id", "main-gradient")
-    .attr("x1", "0%").attr("y1", "0%")
-    .attr("x2", "100%").attr("y2", "100%")
-    .selectAll("stop")
-    .data([
-        { offset: "0%", color: "#00e5ff" },
-        { offset: "100%", color: "#18ffff" }
-    ])
-    .enter().append("stop")
-    .attr("offset", d => d.offset)
-    .attr("stop-color", d => d.color);
+    const defs = zoomGroup.append("defs");
 
+    // Reuse a simpler gradient if desired, or omit it to stick with a solid color.
+    defs.append("linearGradient")
+        .attr("id", "main-gradient")
+        .attr("x1", "0%").attr("y1", "0%")
+        .attr("x2", "100%").attr("y2", "100%")
+        .selectAll("stop")
+        .data([
+            { offset: "0%", color: "#00e5ff" },
+            { offset: "100%", color: "#18ffff" }
+        ])
+        .enter().append("stop")
+        .attr("offset", d => d.offset)
+        .attr("stop-color", d => d.color);
+
+    // Marker configuration parameters.
+    // Adjust refX to properly position the arrow relative to the node.
+    const arrowRefX = 20;
+    // Let the arrow use a solid color, or you can choose the gradient by "url(#main-gradient)"
+    const arrowColor = options.arrowColor || "#a8d8ff";
+    const arrowSize = options.arrowSize || 6;
+
+    // Define a conventional arrow marker shape:
+    // The shape "M0,-5 L10,0 L0,5 L2,0 Z" creates an arrow with a pointed tip,
+    // a small notch at the base, and a closed path (Z) for a filled marker.
     const markerData = options.markers || [
-        { id: "arrow", refX: 10, color: "#000", pathD: "M0,-5L10,0L0,5", width: 12, height: 12 }
+        {
+            id: "arrow",
+            refX: arrowRefX,
+            color: arrowColor,
+            pathD: "M0,-5 L10,0 L0,5 L2,0 Z",
+            width: arrowSize,
+            height: arrowSize
+        }
     ];
 
+    // Append the marker elements.
     markerData.forEach(marker => {
         const m = defs.append("marker")
             .attr("id", marker.id)
-            .attr("viewBox", "0 -5 10 10")
+            .attr("viewBox", "0 -5 12 10")
             .attr("refX", marker.refX)
             .attr("refY", 0)
             .attr("markerWidth", marker.width)
             .attr("markerHeight", marker.height)
             .attr("orient", "auto");
 
-        const path = m.append("path")
+        m.append("path")
             .attr("d", marker.pathD)
             .attr("fill", marker.color);
-
-        if (marker.animate) {
-            path.append("animate")
-                .attr("attributeName", "fill")
-                .attr("values", `${marker.color};#ff0000;${marker.color}`)
-                .attr("dur", "1s")
-                .attr("repeatCount", "indefinite");
-        }
     });
 }
+
+
+
 function defineGlowFilter(svg) {
     const defs = svg.select("defs").empty()
         ? svg.append("defs")
@@ -1467,6 +1598,7 @@ function getNodeStyle(node) {
                 };
                 break;
             case "cpp":
+            case "C++":
             case "c++":
                 specificStyle = {
                     fill: "#ba68c8",
@@ -1628,38 +1760,25 @@ function clicked(node, nodeId, x, y) {
     console.log("Node clicked:", nodeId, x, y);
 }
 function updateInfoPanel(node, id, scale = 1, textScale = 1) {
-    // Define style variables for card dimensions and appearance.
-    const infoCardWidth = "400px";
-    const infoCardHeight = "auto";
-    const descriptionCardWidth = "400px";
-    const descriptionCardHeight = "auto";
-    const cardBorderRadius = "6px";
-    const cardBoxShadow = "0 4px 12px rgba(0,0,0,0.3)";
-    const cardMarginBottom = "2px";
-    
     const infoPanel = d3.select(`#info-panel-1-${id}`);
+    console.log("Hi hello" , node)
     infoPanel.html(`
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
         .info-card, .description-card {
             font-family: 'Roboto', sans-serif;
             border: 1px solid #444;
-            border-radius: ${cardBorderRadius};
-            box-shadow: ${cardBoxShadow};
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             overflow: hidden;
             background-color: #1e1e1e;
             transform: scale(${scale});
             transition: transform 1s linear;
-            margin-bottom: ${cardMarginBottom};
+            margin-bottom: 2px;
         }
-        .info-card {
-            width: ${infoCardWidth};
-            height: ${infoCardHeight};
-        }
-        .description-card {
-            width: ${descriptionCardWidth};
-            height: ${descriptionCardHeight};
-        }
+        .info-card { width: 400px; height: auto; }
+        .description-card { width: 400px; height: auto; }
+  
         .card-header, .description-header {
             background: linear-gradient(135deg, #212121, #424242);
             color: #fff;
@@ -1675,7 +1794,10 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
             color: #ddd;
             font-size: ${1 * textScale}em;
         }
-        
+        .flex-class {
+            display: flex;
+            justify-content: space-between;
+        }
         .info-item {
             margin-bottom: 5px;
             display: flex;
@@ -1700,26 +1822,13 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-        }
-        /* Spinner style */
-        .spinner {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            border-top-color: #333;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
+        
+        
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
       </style>
+  
       <div class="card info-card" style="animation: fadeIn 0.5s ease-in-out;">
         <div class="card-header">
           <h3>${node.name}</h3>
@@ -1739,94 +1848,143 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
           </div>
         </div>
       </div>
+  
       <div class="card description-card" id="description-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
-        <div class="description-header">
+        <div class="description-header flex-class">
+          <div></div>
           <h3>Description</h3>
+          <button class="refresh-btn" id="reload-1-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
         </div>
-        <div class="description-body" id="description-body-${id}">
-          <div class="loading">
-            <div class="spinner"></div>
-            Analyzing<span id="dots-${id}"></span>
-          </div>
-        </div>
-      </div>
-      <script>
-        // Dynamic dot animation for the loading text
-        (function(){
-          const dotsEl = document.getElementById('dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
-    `);
-}
-function updateOptimizationPanel(id) {
-    const infoPanel = d3.select(`#info-panel-2-${id}`);
-    infoPanel.html(`
-      <div class="card description-card" id="optimization-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
-        <div class="description-header">
-          <h3>Optimization</h3>
-        </div>
-        <div class="description-body" id="optimization-body-${id}">
-          <div class="loading">
+        <div class="description-body">
+          <div class="loading" id="spinner-1-${id}">
             <div class="spinner"></div>
             Analyzing<span id="opt-dots-${id}"></span>
           </div>
-        </div>
-      </div>
-      <script>
-        (function(){
-          const dotsEl = document.getElementById('opt-dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
-    `);
-  }
-  function updateEthicsPanel(id) {
-    const infoPanel = d3.select(`#info-panel-3-${id}`);
-    infoPanel.html(`
-      <div class="card description-card" id="ethics-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
-        <div class="description-header">
-          <h3>Code Ethics</h3>
-        </div>
-        <div class="description-body" id="ethics-body-${id}">
-          <div class="loading">
-            <div class="spinner"></div>
-            Analyzing<span id="ethics-dots-${id}"></span>
+          <div id="description-body-${id}">
           </div>
         </div>
       </div>
-      <script>
-        (function(){
-          const dotsEl = document.getElementById('ethics-dots-${id}');
-          let count = 0;
-          setInterval(() => {
-            count = (count + 1) % 4;
-            dotsEl.textContent = '.'.repeat(count);
-          }, 500);
-        })();
-      </script>
     `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`desc-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Attach refresh functionality
+    const reloadBtn = document.querySelector(`#reload-1-${id}`);
+    if (reloadBtn) {
+      reloadBtn.onclick = function () {
+        d3.select(`#spinner-1-${id}`).style("display", "flex");
+        d3.select(`#description-body-${id}`).style("display", "none");
+        getDescription(id, 1);
+      };
+    }
   }
+  
+function updateOptimizationPanel(id) {
+    const infoPanel = d3.select(`#info-panel-2-${id}`);
+  
+    infoPanel.html(`
+      <div class="card description-card" id="optimization-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header flex-class">
+          <div></div>
+          <h3>Optimization</h3>
+          <button class="refresh-btn" id="reload-2-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
+        </div>
+        <div class="description-body">
+          <div class="loading" id="spinner-2-${id}">
+            <div class="spinner"></div>
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+          <div id="optimization-body-${id}">
+
+          </div>
+        </div>
+      </div>
+    `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`opt-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Bind reload button
+    document.querySelector(`#reload-2-${id}`).onclick = function () {
+      d3.select(`#spinner-2-${id}`).style("display", "flex");
+      d3.select(`#optimization-body-${id}`).style("display", "none");
+      getDescription(id, 2);
+    };
+  }
+  
+  function updateEthicsPanel(id) {
+    const infoPanel = d3.select(`#info-panel-3-${id}`);
     
+    // Update HTML safely (fixed duplicate ID and dots ID)
+    infoPanel.html(`
+      <div class="card description-card" id="ethics-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header flex-class">
+          <div></div>
+          <h3>Code Ethics</h3>
+          <button class="refresh-btn" id="reload-3-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
+        </div>
+        <div class="description-body">
+          <div class="loading" id="spinner-3-${id}">
+            <div class="spinner"></div>
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+          <div id="ethics-body-${id}">
+          </div>
+        </div>
+      </div>
+    `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`ethics-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Bind refresh button logic
+    document.querySelector(`#reload-3-${id}`).onclick = function () {
+      d3.select(`#spinner-3-${id}`).style("display", "flex");
+      d3.select(`#ethics-body-${id}`).style("display", "none");
+      getDescription(id, 3);
+    };
+  }
+  
 
   // Call this function when your description is ready
   function updateDescriptionPanel(id, description, type) {
+    d3.select(`#spinner-${type}-${id}`).style("display", "none");  
     if (type === 1) {
       const descriptionBody = d3.select(`#description-body-${id}`);
+      descriptionBody.style("display", "block");  
       descriptionBody.html(description);
     } else if (type === 2) {
       const optimizationBody = d3.select(`#optimization-body-${id}`);
+      optimizationBody.style("display", "block"); 
       optimizationBody.html(description);
     } else if (type === 3) {
       const ethicsBody = d3.select(`#ethics-body-${id}`);
+      ethicsBody.style("display", "block"); 
       ethicsBody.html(description);
     }
   }
