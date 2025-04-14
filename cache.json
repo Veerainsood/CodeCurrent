@@ -1,0 +1,4 @@
+{
+  "21-1": "This is a C++ program that prompts the user to input an integer value and calculates and displays the sum of digits in the number. The program uses a loop to iterate through each digit in the inputted number, starting from the rightmost digit (i.e.",
+  "124-1": "The `is_container_running()` function takes a string as input and attempts to execute the command `docker ps -a` with the `--filter` option set to `\"name={}\"`. If the output of this command is not empty, it returns `True`, indicating that the specified container is running."
+}

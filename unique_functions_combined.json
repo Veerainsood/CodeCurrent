@@ -1,0 +1,3702 @@
+[
+  {
+    "id": 1,
+    "name": "reverse",
+    "file": "SolutionByAryamon.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAryamon.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "id": 2,
+    "name": "main",
+    "file": "SolutionByAryamon.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAryamon.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 24
+  },
+  {
+    "id": 3,
+    "name": "main",
+    "file": "SolutionByPrabsimar.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPrabsimar.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 16
+  },
+  {
+    "id": 4,
+    "name": "reverse",
+    "file": "SolutionByAnanthakrishnan.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnanthakrishnan.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "id": 5,
+    "name": "main",
+    "file": "SolutionByAnanthakrishnan.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnanthakrishnan.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 24
+  },
+  {
+    "id": 6,
+    "name": "reverse",
+    "file": "SolutionByKuljeet.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKuljeet.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "id": 7,
+    "name": "main",
+    "file": "SolutionByKuljeet.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKuljeet.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 22
+  },
+  {
+    "id": 8,
+    "name": "reverse",
+    "file": "SolutionByBavleen.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByBavleen.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 11
+  },
+  {
+    "id": 9,
+    "name": "main",
+    "file": "SolutionByBavleen.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByBavleen.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 20
+  },
+  {
+    "id": 10,
+    "name": "Reverse",
+    "file": "SolutionByRishabh.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByRishabh.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 14
+  },
+  {
+    "id": 11,
+    "name": "main",
+    "file": "SolutionByRishabh.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByRishabh.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 22
+  },
+  {
+    "id": 12,
+    "name": "reverse",
+    "file": "solutionByPooja.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/solutionByPooja.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 9,
+    "endLine": 17
+  },
+  {
+    "id": 13,
+    "name": "main",
+    "file": "solutionByPooja.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/solutionByPooja.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 18,
+    "endLine": 26
+  },
+  {
+    "id": 14,
+    "name": "reverse",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 5
+  },
+  {
+    "id": 15,
+    "name": "main",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 8,
+    "endLine": 18
+  },
+  {
+    "id": 16,
+    "name": "reverse",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 28
+  },
+  {
+    "id": 17,
+    "name": "sum",
+    "file": "SolutionByAryamon.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "id": 18,
+    "name": "main",
+    "file": "SolutionByAryamon.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": 23
+  },
+  {
+    "id": 19,
+    "name": "main",
+    "file": "SolutionbyPrabhleen.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionbyPrabhleen.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 14
+  },
+  {
+    "id": 20,
+    "name": "main",
+    "file": "SolutionByAnuj.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnuj.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 15
+  },
+  {
+    "id": 21,
+    "name": "main",
+    "file": "SolutionBySonal.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySonal.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 17
+  },
+  {
+    "id": 22,
+    "name": "sumOfDigits",
+    "file": "SolutionByPrabsimar.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPrabsimar.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "id": 23,
+    "name": "main",
+    "file": "SolutionByPrabsimar.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPrabsimar.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 19
+  },
+  {
+    "id": 24,
+    "name": "getSum",
+    "file": "SolutionByAnanthakrishnan.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnanthakrishnan.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "id": 25,
+    "name": "main",
+    "file": "SolutionByAnanthakrishnan.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnanthakrishnan.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 23
+  },
+  {
+    "id": 26,
+    "name": "getSum",
+    "file": "SolutionByKuljeet.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByKuljeet.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "id": 27,
+    "name": "main",
+    "file": "SolutionByKuljeet.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByKuljeet.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 23
+  },
+  {
+    "id": 28,
+    "name": "calculate_sum",
+    "file": "SolutionByBavleen.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBavleen.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "long"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 11
+  },
+  {
+    "id": 29,
+    "name": "main",
+    "file": "SolutionByBavleen.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBavleen.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 20
+  },
+  {
+    "id": 30,
+    "name": "sumOfDigits",
+    "file": "SolutionByRishabh.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByRishabh.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "id": 31,
+    "name": "main",
+    "file": "SolutionByRishabh.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByRishabh.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 19
+  },
+  {
+    "id": 32,
+    "name": "Sum_Of_Digits",
+    "file": "SolutionByDhruv.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 3
+  },
+  {
+    "id": 33,
+    "name": "main",
+    "file": "SolutionByDhruv.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "id": 34,
+    "name": "Sum_Of_Digits",
+    "file": "SolutionByDhruv.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 23
+  },
+  {
+    "id": 35,
+    "name": "main",
+    "file": "SolutionByBifrost.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBifrost.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 8,
+    "endLine": 20
+  },
+  {
+    "id": 36,
+    "name": "calculatesum",
+    "file": "SolutionByShrishti.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShrishti.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "long"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "id": 37,
+    "name": "main",
+    "file": "SolutionByShrishti.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShrishti.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "id": 38,
+    "name": "add",
+    "file": "SolutionBySamriddhi.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySamriddhi.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "id": 39,
+    "name": "main",
+    "file": "SolutionBySamriddhi.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySamriddhi.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 21
+  },
+  {
+    "id": 40,
+    "name": "sumNumber",
+    "file": "SolutionByAryamon2.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon2.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "id": 41,
+    "name": "main",
+    "file": "SolutionByAryamon2.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon2.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": 22
+  },
+  {
+    "id": 42,
+    "name": "digit_sum",
+    "file": "solutionByPooja.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionByPooja.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 9,
+    "endLine": 17
+  },
+  {
+    "id": 43,
+    "name": "main",
+    "file": "solutionByPooja.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionByPooja.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 18,
+    "endLine": 26
+  },
+  {
+    "id": 44,
+    "name": "sum",
+    "file": "solutionBySeema.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySeema.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 10,
+    "endLine": 18
+  },
+  {
+    "id": 45,
+    "name": "main",
+    "file": "solutionBySeema.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySeema.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 27
+  },
+  {
+    "id": 46,
+    "name": "Sum_Of_Digits",
+    "file": "SolutionByDhavalPandey.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 3
+  },
+  {
+    "id": 47,
+    "name": "main",
+    "file": "SolutionByDhavalPandey.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "id": 48,
+    "name": "Sum_Of_Digits",
+    "file": "SolutionByDhavalPandey.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 23
+  },
+  {
+    "id": 49,
+    "name": "Sum_of_digits",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 3
+  },
+  {
+    "id": 50,
+    "name": "main",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": 15
+  },
+  {
+    "id": 51,
+    "name": "Sum_of_digits",
+    "file": "Solutionbyvaishi1411.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 24
+  },
+  {
+    "id": 52,
+    "name": "find_sum",
+    "file": "SolutionByPiyush.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPiyush.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 10,
+    "endLine": 18
+  },
+  {
+    "id": 53,
+    "name": "main",
+    "file": "SolutionByPiyush.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPiyush.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 27
+  },
+  {
+    "id": 54,
+    "name": "kthSmallestElement",
+    "file": "SampleCode.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Sample Code/SampleCode.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "int []",
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 16
+  },
+  {
+    "id": 55,
+    "name": "main",
+    "file": "SampleCode.cpp",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Sample Code/SampleCode.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 18,
+    "endLine": 34
+  },
+  {
+    "id": 56,
+    "name": "test_python_c_api",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 10,
+    "endLine": 19
+  },
+  {
+    "id": 57,
+    "name": "test_pybind11",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 21,
+    "endLine": 25
+  },
+  {
+    "id": 58,
+    "name": "test_boost_python",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 32
+  },
+  {
+    "id": 59,
+    "name": "test_swig_wrapper",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 34,
+    "endLine": 36
+  },
+  {
+    "id": 60,
+    "name": "test_system_python",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 38,
+    "endLine": 40
+  },
+  {
+    "id": 61,
+    "name": "test_zmq_python",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 42,
+    "endLine": 49
+  },
+  {
+    "id": 62,
+    "name": "test_java_jni",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 51,
+    "endLine": 67
+  },
+  {
+    "id": 63,
+    "name": "test_system_java",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 69,
+    "endLine": 71
+  },
+  {
+    "id": 64,
+    "name": "test_http_java",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 73,
+    "endLine": 75
+  },
+  {
+    "id": 65,
+    "name": "test_socket_java",
+    "file": "main.cpp",
+    "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 77,
+    "endLine": 81
+  },
+  {
+    "id": 66,
+    "name": "reverse",
+    "file": "SolutionByShubham.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByShubham.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "SolutionByShubham",
+    "parentFunction": null,
+    "startLine": 7,
+    "endLine": null
+  },
+  {
+    "id": 67,
+    "name": "main",
+    "file": "SolutionByShubham.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByShubham.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "SolutionByShubham",
+    "parentFunction": null,
+    "startLine": 18,
+    "endLine": null
+  },
+  {
+    "id": 68,
+    "name": "rev",
+    "file": "SolutionByMananpreet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByMananpreet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "ReverseNumber",
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": null
+  },
+  {
+    "id": 69,
+    "name": "main",
+    "file": "SolutionByMananpreet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByMananpreet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "ReverseNumber",
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": null
+  },
+  {
+    "id": 70,
+    "name": "main",
+    "file": "SolutionByPranavGurditta.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "Reverse",
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": null
+  },
+  {
+    "id": 71,
+    "name": "input",
+    "file": "SolutionByPranavGurditta.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
+    "language": "Java",
+    "parameters": {
+      "types": [],
+      "count": 0
+    },
+    "returnType": "int",
+    "parentClass": "Reverse",
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": null
+  },
+  {
+    "id": 72,
+    "name": "reverse",
+    "file": "SolutionByPranavGurditta.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "Reverse",
+    "parentFunction": null,
+    "startLine": 25,
+    "endLine": null
+  },
+  {
+    "id": 73,
+    "name": "main",
+    "file": "SolutionByKriti.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKriti.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "Main",
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": null
+  },
+  {
+    "id": 74,
+    "name": "sum",
+    "file": "SolutionByMananpreet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByMananpreet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "SumOfDigits",
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": null
+  },
+  {
+    "id": 75,
+    "name": "main",
+    "file": "SolutionByMananpreet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByMananpreet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "SumOfDigits",
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": null
+  },
+  {
+    "id": 76,
+    "name": "sumDigits",
+    "file": "SolutionByTrrrey.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByTrrrey.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "Main",
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": null
+  },
+  {
+    "id": 77,
+    "name": "main",
+    "file": "SolutionByTrrrey.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByTrrrey.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "Main",
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": null
+  },
+  {
+    "id": 78,
+    "name": "sum",
+    "file": "SolutionByVicky.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVicky.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "SolutionByVicky",
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": null
+  },
+  {
+    "id": 79,
+    "name": "main",
+    "file": "SolutionByVicky.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVicky.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "SolutionByVicky",
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": null
+  },
+  {
+    "id": 80,
+    "name": "sum",
+    "file": "solutionBySimranjeet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySimranjeet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "solutions_by_Simranjeet",
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": null
+  },
+  {
+    "id": 81,
+    "name": "main",
+    "file": "solutionBySimranjeet.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySimranjeet.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "solutions_by_Simranjeet",
+    "parentFunction": null,
+    "startLine": 25,
+    "endLine": null
+  },
+  {
+    "id": 82,
+    "name": "main",
+    "file": "SolutionByAshutosh.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAshutosh.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "SolutionByAshutosh",
+    "parentFunction": null,
+    "startLine": 4,
+    "endLine": null
+  },
+  {
+    "id": 83,
+    "name": "sumOfDigits",
+    "file": "SolutionByAshutosh.java",
+    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAshutosh.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "long"
+      ],
+      "count": 1
+    },
+    "returnType": "int",
+    "parentClass": "SolutionByAshutosh",
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": null
+  },
+  {
+    "id": 84,
+    "name": "add",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "ParserTest",
+    "parentFunction": null,
+    "startLine": 25,
+    "endLine": null
+  },
+  {
+    "id": 85,
+    "name": "add",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "mymodule",
+    "parentFunction": null,
+    "startLine": 30,
+    "endLine": null
+  },
+  {
+    "id": 86,
+    "name": "add",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "JavaCPPDemo",
+    "parentFunction": null,
+    "startLine": 35,
+    "endLine": null
+  },
+  {
+    "id": 87,
+    "name": "add",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "BridJDemo",
+    "parentFunction": null,
+    "startLine": 40,
+    "endLine": null
+  },
+  {
+    "id": 88,
+    "name": "main",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "String[]"
+      ],
+      "count": 1
+    },
+    "returnType": "void",
+    "parentClass": "ParserTest",
+    "parentFunction": null,
+    "startLine": 43,
+    "endLine": null
+  },
+  {
+    "id": 89,
+    "name": "my_func",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "ParserTest",
+    "parentFunction": null,
+    "startLine": 119,
+    "endLine": null
+  },
+  {
+    "id": 90,
+    "name": "Client",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "TProtocol"
+      ],
+      "count": 1
+    },
+    "returnType": null,
+    "parentClass": "Client",
+    "parentFunction": null,
+    "startLine": 126,
+    "endLine": null
+  },
+  {
+    "id": 91,
+    "name": "my_func",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "Client",
+    "parentFunction": null,
+    "startLine": 127,
+    "endLine": null
+  },
+  {
+    "id": 92,
+    "name": "add",
+    "file": "main.java",
+    "path": "/home/kripaludas/Documents/Combined/public/main.java",
+    "language": "Java",
+    "parameters": {
+      "types": [
+        "int",
+        "int"
+      ],
+      "count": 2
+    },
+    "returnType": "int",
+    "parentClass": "JNIDemo",
+    "parentFunction": null,
+    "startLine": 134,
+    "endLine": null
+  },
+  {
+    "id": 94,
+    "name": "ensure_ollama_installed",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 10,
+    "endLine": 21
+  },
+  {
+    "id": 95,
+    "name": "load_cache",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 29,
+    "endLine": 33
+  },
+  {
+    "id": 96,
+    "name": "save_cache",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 35,
+    "endLine": 37
+  },
+  {
+    "id": 97,
+    "name": "is_ollama_running",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 40,
+    "endLine": 45
+  },
+  {
+    "id": 98,
+    "name": "is_model_available",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 47,
+    "endLine": 52
+  },
+  {
+    "id": 99,
+    "name": "start_ollama",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 54,
+    "endLine": 60
+  },
+  {
+    "id": 100,
+    "name": "pull_model",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 62,
+    "endLine": 64
+  },
+  {
+    "id": 101,
+    "name": "find_function_by_id",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 66,
+    "endLine": 73
+  },
+  {
+    "id": 102,
+    "name": "extract_code_from_file",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 4,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 75,
+    "endLine": 83
+  },
+  {
+    "id": 103,
+    "name": "log",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 84,
+    "endLine": 87
+  },
+  {
+    "id": 104,
+    "name": "format_prompt_for_structure",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 89,
+    "endLine": 96
+  },
+  {
+    "id": 105,
+    "name": "extract_code_from_file_cached",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 101,
+    "endLine": 102
+  },
+  {
+    "id": 106,
+    "name": "analyze_with_deepseek",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 105,
+    "endLine": 134
+  },
+  {
+    "id": 107,
+    "name": "make_request",
+    "file": "AIChatter.py",
+    "path": "AIChatter.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": "analyze_with_deepseek",
+    "startLine": 118,
+    "endLine": 121
+  },
+  {
+    "id": 108,
+    "name": "process_file",
+    "file": "interlang_runner.py",
+    "path": "interlang_runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 41
+  },
+  {
+    "id": 109,
+    "name": "main",
+    "file": "interlang_runner.py",
+    "path": "interlang_runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 43,
+    "endLine": 60
+  },
+  {
+    "id": 110,
+    "name": "__init__",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 7,
+    "endLine": 15
+  },
+  {
+    "id": 111,
+    "name": "visit_FunctionDef",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 20
+  },
+  {
+    "id": 112,
+    "name": "visit_Import",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 30
+  },
+  {
+    "id": 113,
+    "name": "visit_ImportFrom",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 32,
+    "endLine": 47
+  },
+  {
+    "id": 114,
+    "name": "visit_Assign",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 49,
+    "endLine": 95
+  },
+  {
+    "id": 115,
+    "name": "visit_Call",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 97,
+    "endLine": 126
+  },
+  {
+    "id": 116,
+    "name": "_get_type",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 128,
+    "endLine": 133
+  },
+  {
+    "id": 117,
+    "name": "_report",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 4,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 135,
+    "endLine": 166
+  },
+  {
+    "id": 118,
+    "name": "main",
+    "file": "python_cross_final.py",
+    "path": "python_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 168,
+    "endLine": 180
+  },
+  {
+    "id": 119,
+    "name": "infer_types",
+    "file": "cpp_cross_final.py",
+    "path": "cpp_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 23
+  },
+  {
+    "id": 120,
+    "name": "parse_sig",
+    "file": "cpp_cross_final.py",
+    "path": "cpp_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 26,
+    "endLine": 43
+  },
+  {
+    "id": 121,
+    "name": "collect_calls_in_file",
+    "file": "cpp_cross_final.py",
+    "path": "cpp_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 46,
+    "endLine": 203
+  },
+  {
+    "id": 122,
+    "name": "main",
+    "file": "cpp_cross_final.py",
+    "path": "cpp_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 206,
+    "endLine": 224
+  },
+  {
+    "id": 123,
+    "name": "ensure_docker_installed",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 11,
+    "endLine": 49
+  },
+  {
+    "id": 124,
+    "name": "is_container_running",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 51,
+    "endLine": 59
+  },
+  {
+    "id": 125,
+    "name": "container_exists",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 61,
+    "endLine": 69
+  },
+  {
+    "id": 126,
+    "name": "remove_existing_container",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 71,
+    "endLine": 77
+  },
+  {
+    "id": 127,
+    "name": "start_container",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 81,
+    "endLine": 101
+  },
+  {
+    "id": 128,
+    "name": "run_generator_in_container",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 103,
+    "endLine": 120
+  },
+  {
+    "id": 129,
+    "name": "stop_and_remove_container",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 123,
+    "endLine": 129
+  },
+  {
+    "id": 130,
+    "name": "main",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 131,
+    "endLine": 139
+  },
+  {
+    "id": 131,
+    "name": "load_json",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 156,
+    "endLine": 158
+  },
+  {
+    "id": 132,
+    "name": "save_json",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 160,
+    "endLine": 162
+  },
+  {
+    "id": 133,
+    "name": "fix_path",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 178,
+    "endLine": 181
+  },
+  {
+    "id": 134,
+    "name": "fix_paths_in_json",
+    "file": "runner.py",
+    "path": "runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 183,
+    "endLine": 189
+  },
+  {
+    "id": 135,
+    "name": "load_id_counter",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 8,
+    "endLine": 12
+  },
+  {
+    "id": 136,
+    "name": "save_id_counter",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 16
+  },
+  {
+    "id": 137,
+    "name": "__init__",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 19,
+    "endLine": 25
+  },
+  {
+    "id": 138,
+    "name": "visit_FunctionDef",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 51
+  },
+  {
+    "id": 139,
+    "name": "visit_Call",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 53,
+    "endLine": 83
+  },
+  {
+    "id": 140,
+    "name": "_get_called_class_name",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 85,
+    "endLine": 91
+  },
+  {
+    "id": 141,
+    "name": "visit_ClassDef",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 93,
+    "endLine": 97
+  },
+  {
+    "id": 142,
+    "name": "_get_function_id",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 99,
+    "endLine": 112
+  },
+  {
+    "id": 143,
+    "name": "_is_inside",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 114,
+    "endLine": 119
+  },
+  {
+    "id": 144,
+    "name": "analyze_python_files",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 121,
+    "endLine": 206
+  },
+  {
+    "id": 145,
+    "name": "analyze_metrics",
+    "file": "pythonMaker.py",
+    "path": "pythonMaker.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 208,
+    "endLine": 223
+  },
+  {
+    "id": 146,
+    "name": "infer_type",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 18
+  },
+  {
+    "id": 147,
+    "name": "extract_calls_from_string_literal",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 37
+  },
+  {
+    "id": 148,
+    "name": "extract_calls",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 39,
+    "endLine": 89
+  },
+  {
+    "id": 149,
+    "name": "get_java_function_ranges",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 91,
+    "endLine": 106
+  },
+  {
+    "id": 150,
+    "name": "find_enclosing_function",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 108,
+    "endLine": 112
+  },
+  {
+    "id": 151,
+    "name": "guess_language",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 114,
+    "endLine": 118
+  },
+  {
+    "id": 152,
+    "name": "main",
+    "file": "java_cross_final.py",
+    "path": "java_cross_final.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 120,
+    "endLine": 134
+  },
+  {
+    "id": 153,
+    "name": "extract_relevant_functions",
+    "file": "externalAnalyser.py",
+    "path": "externalAnalyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 44
+  },
+  {
+    "id": 154,
+    "name": "format_prompt",
+    "file": "externalAnalyser.py",
+    "path": "externalAnalyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 46,
+    "endLine": 65
+  },
+  {
+    "id": 155,
+    "name": "analyze_code",
+    "file": "externalAnalyser.py",
+    "path": "externalAnalyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 67,
+    "endLine": 79
+  },
+  {
+    "id": 156,
+    "name": "process_file",
+    "file": "externalAnalyser.py",
+    "path": "externalAnalyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 81,
+    "endLine": 88
+  },
+  {
+    "id": 157,
+    "name": "load_files",
+    "file": "externalAnalyser.py",
+    "path": "externalAnalyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 90,
+    "endLine": 96
+  },
+  {
+    "id": 158,
+    "name": "extract_code_from_file",
+    "file": "analyser.py",
+    "path": "analyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 13
+  },
+  {
+    "id": 159,
+    "name": "analyze_with_ollama",
+    "file": "analyser.py",
+    "path": "analyser.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 30
+  },
+  {
+    "id": 160,
+    "name": "load_and_flatten",
+    "file": "combineJsons.py",
+    "path": "combineJsons.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 15
+  },
+  {
+    "id": 161,
+    "name": "reverse",
+    "file": "SolutionByAnant.py",
+    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnant.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 1,
+    "endLine": 3
+  },
+  {
+    "id": 162,
+    "name": "ReverseNo",
+    "file": "SolutionByVaishnavi.py",
+    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByVaishnavi.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "id": 163,
+    "name": "ReverseNo",
+    "file": "SolutionByVaishnavi2.py",
+    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByVaishnavi2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 9
+  },
+  {
+    "id": 164,
+    "name": "sumDigits",
+    "file": "SolutionByVaibhavTripathi.py",
+    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVaibhavTripathi.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 165,
+    "name": "sum_of_digits",
+    "file": "SolutionByAayushi.py",
+    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAayushi.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "id": 166,
+    "name": "SumDigits",
+    "file": "SolutionByVaishnavi.py",
+    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVaishnavi.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
+    "id": 167,
+    "name": "sum_of_digits",
+    "file": "SolutionByShivam.py",
+    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShivam.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "id": 168,
+    "name": "__init__",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 9,
+    "endLine": 14
+  },
+  {
+    "id": 169,
+    "name": "visit_FunctionDef",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 39
+  },
+  {
+    "id": 170,
+    "name": "visit_Call",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 41,
+    "endLine": 60
+  },
+  {
+    "id": 171,
+    "name": "visit_ClassDef",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 62,
+    "endLine": 67
+  },
+  {
+    "id": 172,
+    "name": "_get_function_id",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 68,
+    "endLine": 78
+  },
+  {
+    "id": 173,
+    "name": "_is_inside",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "PythonFunctionAnalyzer",
+    "parentFunction": null,
+    "startLine": 80,
+    "endLine": 86
+  },
+  {
+    "id": 174,
+    "name": "analyze_python_files",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 88,
+    "endLine": 135
+  },
+  {
+    "id": 175,
+    "name": "analyze_metrics",
+    "file": "2.py",
+    "path": "public/2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 137,
+    "endLine": 154
+  },
+  {
+    "id": 176,
+    "name": "infer_types",
+    "file": "un3.py",
+    "path": "public/un3.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 23
+  },
+  {
+    "id": 177,
+    "name": "parse_sig",
+    "file": "un3.py",
+    "path": "public/un3.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 26,
+    "endLine": 43
+  },
+  {
+    "id": 178,
+    "name": "collect_calls_in_file",
+    "file": "un3.py",
+    "path": "public/un3.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 46,
+    "endLine": 203
+  },
+  {
+    "id": 179,
+    "name": "main",
+    "file": "un3.py",
+    "path": "public/un3.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 206,
+    "endLine": 224
+  },
+  {
+    "id": 180,
+    "name": "find_cpp_files",
+    "file": "inc1.py",
+    "path": "public/inc1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 22
+  },
+  {
+    "id": 181,
+    "name": "is_user_function",
+    "file": "inc1.py",
+    "path": "public/inc1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 24,
+    "endLine": 31
+  },
+  {
+    "id": 182,
+    "name": "collect_calls",
+    "file": "inc1.py",
+    "path": "public/inc1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 33,
+    "endLine": 47
+  },
+  {
+    "id": 183,
+    "name": "main",
+    "file": "inc1.py",
+    "path": "public/inc1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 49,
+    "endLine": 76
+  },
+  {
+    "id": 184,
+    "name": "parse_python_c_api",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 45
+  },
+  {
+    "id": 185,
+    "name": "parse_pybind11",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 48,
+    "endLine": 65
+  },
+  {
+    "id": 186,
+    "name": "parse_boost_python",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 68,
+    "endLine": 90
+  },
+  {
+    "id": 187,
+    "name": "parse_swig",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 93,
+    "endLine": 118
+  },
+  {
+    "id": 188,
+    "name": "parse_python_subprocess",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 121,
+    "endLine": 138
+  },
+  {
+    "id": 189,
+    "name": "parse_jni",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 141,
+    "endLine": 177
+  },
+  {
+    "id": 190,
+    "name": "parse_sig",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": "parse_jni",
+    "startLine": 149,
+    "endLine": 164
+  },
+  {
+    "id": 191,
+    "name": "parse_java_subprocess",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 180,
+    "endLine": 196
+  },
+  {
+    "id": 192,
+    "name": "parse_grpc",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 199,
+    "endLine": 209
+  },
+  {
+    "id": 193,
+    "name": "parse_rest",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 212,
+    "endLine": 231
+  },
+  {
+    "id": 194,
+    "name": "collect_calls",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 234,
+    "endLine": 245
+  },
+  {
+    "id": 195,
+    "name": "main",
+    "file": "Untitled-1.py",
+    "path": "public/Untitled-1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 248,
+    "endLine": 281
+  },
+  {
+    "id": 196,
+    "name": "infer_type",
+    "file": "unj1.py",
+    "path": "public/unj1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 18
+  },
+  {
+    "id": 197,
+    "name": "extract_calls_from_string_literal",
+    "file": "unj1.py",
+    "path": "public/unj1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 20,
+    "endLine": 30
+  },
+  {
+    "id": 198,
+    "name": "extract_calls",
+    "file": "unj1.py",
+    "path": "public/unj1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 32,
+    "endLine": 61
+  },
+  {
+    "id": 199,
+    "name": "main",
+    "file": "unj1.py",
+    "path": "public/unj1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 63,
+    "endLine": 92
+  },
+  {
+    "id": 200,
+    "name": "index",
+    "file": "runner.py",
+    "path": "public/runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 7,
+    "endLine": 8
+  },
+  {
+    "id": 201,
+    "name": "run_script",
+    "file": "runner.py",
+    "path": "public/runner.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 11,
+    "endLine": 16
+  },
+  {
+    "id": 202,
+    "name": "__init__",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 7,
+    "endLine": 12
+  },
+  {
+    "id": 203,
+    "name": "visit_Import",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 21
+  },
+  {
+    "id": 204,
+    "name": "visit_ImportFrom",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 37
+  },
+  {
+    "id": 205,
+    "name": "visit_Assign",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 39,
+    "endLine": 97
+  },
+  {
+    "id": 206,
+    "name": "visit_Call",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 99,
+    "endLine": 128
+  },
+  {
+    "id": 207,
+    "name": "_get_type",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 130,
+    "endLine": 136
+  },
+  {
+    "id": 208,
+    "name": "_report",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 4,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": "CallVisitor",
+    "parentFunction": null,
+    "startLine": 138,
+    "endLine": 150
+  },
+  {
+    "id": 209,
+    "name": "main",
+    "file": "unp1.py",
+    "path": "public/unp1.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 152,
+    "endLine": 161
+  },
+  {
+    "id": 210,
+    "name": "infer_types",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 12,
+    "endLine": 19
+  },
+  {
+    "id": 211,
+    "name": "parse_python_c_api",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 35
+  },
+  {
+    "id": 212,
+    "name": "parse_pybind_like",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 38,
+    "endLine": 44
+  },
+  {
+    "id": 213,
+    "name": "parse_swig",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 47,
+    "endLine": 55
+  },
+  {
+    "id": 214,
+    "name": "parse_python_subprocess",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 58,
+    "endLine": 67
+  },
+  {
+    "id": 215,
+    "name": "parse_zmq_python",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 70,
+    "endLine": 76
+  },
+  {
+    "id": 216,
+    "name": "parse_jni",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 79,
+    "endLine": 98
+  },
+  {
+    "id": 217,
+    "name": "parse_java_subprocess",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 101,
+    "endLine": 110
+  },
+  {
+    "id": 218,
+    "name": "parse_rest",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 113,
+    "endLine": 132
+  },
+  {
+    "id": 219,
+    "name": "parse_socket_java",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 135,
+    "endLine": 141
+  },
+  {
+    "id": 220,
+    "name": "parse_grpc",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 144,
+    "endLine": 150
+  },
+  {
+    "id": 221,
+    "name": "collect_calls",
+    "file": "un2.py",
+    "path": "public/un2.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 153,
+    "endLine": 166
+  }
+]

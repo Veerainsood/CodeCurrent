@@ -269,23 +269,23 @@ function drawGraphElements({ svg, zoomGroup, links, nodes, styling, linksLayer, 
         const group = modulesLayer.append("g")
             .attr("class", "module-group")
             .attr("data-file", file);
-        group.append("rect")
-            .attr("class", "module-bg")
-            .attr("fill", styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length])
-            .attr("fill-opacity", 0.1)
-            .attr("stroke", styling.moduleBorderColor || styling.groupColors[i % styling.groupColors.length])
-            .attr("stroke-dasharray", "4 2")
-            .style("pointer-events", "none")
-            // Creative: Animate a subtle background gradient effect.
-            .transition().duration(2000)
-            .ease(d3.easeLinear)
-            .attrTween("fill", () => {
-                // Create an interpolator between two colors.
-                return d3.interpolateRgb(styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length], "#f0f0f0");
-            })
-            .on("end", function() {
-                d3.select(this).attr("fill", styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length]);
-            });
+        // group.append("rect")
+        //     .attr("class", "module-bg")
+        //     .attr("fill", styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length])
+        //     .attr("fill-opacity", 0)
+        //     .attr("stroke", styling.moduleBorderColor || styling.groupColors[i % styling.groupColors.length])
+        //     .attr("stroke-dasharray", "4 2")
+        //     .style("pointer-events", "none")
+        //     // Creative: Animate a subtle background gradient effect.
+        //     .transition().duration(2000)
+        //     .ease(d3.easeLinear)
+        //     .attrTween("fill", () => {
+        //         // Create an interpolator between two colors.
+        //         return d3.interpolateRgb(styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length], "#f0f0f0");
+        //     })
+        //     .on("end", function() {
+        //         d3.select(this).attr("fill", styling.moduleBgColor || styling.groupColors[i % styling.groupColors.length]);
+        //     });
         moduleGroups.set(file, group);
     });
 
@@ -1675,10 +1675,7 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
             color: #ddd;
             font-size: ${1 * textScale}em;
         }
-        .flex-class {
-            display: flex;
-            justify-content: space-between;
-        }
+        
         .info-item {
             margin-bottom: 5px;
             display: flex;
