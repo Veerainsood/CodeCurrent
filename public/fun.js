@@ -3,10 +3,8 @@ import { getDescription } from "./getInfo.js";
 // import uniqueFunctionsData from '../unique_functions_combined.json';
 // import functionCallsData from '../function_calls_combined.json';
 let jsonData;
-const uniqueFunctionsPath = "../unique_functions_combined.json";
-const functionCallsPath = "../function_calls_combined.json";
-
-
+const uniqueFunctionsPath = "/unique_functions_combined.json";
+const functionCallsPath = "/function_calls_combined.json";
 
 // Asynchronously load both JSON files and combine the data into one object.
 async function loadJSON() {
@@ -1761,7 +1759,7 @@ function clicked(node, nodeId, x, y) {
 }
 function updateInfoPanel(node, id, scale = 1, textScale = 1) {
     const infoPanel = d3.select(`#info-panel-1-${id}`);
-    console.log("Hi hello" , node)
+  
     infoPanel.html(`
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -2004,34 +2002,9 @@ function updateOptimizationPanel(id) {
 //     `);
 // }
 
-async function waitForRunner() {
-    const response = await fetch('/api/runner-status');
-    const { ready } = await response.json();
-    return ready;
-}
-
-async function StartWhenReady() {
-    console.log("🕓 Waiting for runner.py to finish...");
-    let ready = await waitForRunner();
-
-    while (!ready) {
-        await new Promise(res => setTimeout(res, 1000)); // Wait 1 sec
-        ready = await waitForRunner();
-    }
-
-    console.log("✅ runner.py is done. Calling Start()");
-    Start();  // now it's safe to run DOM + graph logic
-}
-
-// Call this after page loads
-window.addEventListener('DOMContentLoaded', () => {
-    StartWhenReady();
-});
-
 
 // Load the JSON file and generate the graph when the window loads.
 function Start() {
-    console.log("🚀 Start function called!");
     loadJSON()
         .then(data => {
             document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
@@ -2041,7 +2014,5 @@ function Start() {
 }
 document.getElementById("reload-All").onclick = function () {Start();}
 // freezeNodes(); // Freeze nodes on load.
-window.Start = Start;
 
-export {Start};
 export {updateDescriptionPanel};
