@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Flow Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidePanel.css">
+  <link rel="stylesheet" href="navStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  
+  <nav class = "navbar">
+    <div class="logo">InterLinker</div>
+
+    <div class="nav-left navbar">
+      <div class="nav-links">
+        <div class="dropdown">
+          <a href="#">Settings <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Preferences</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+        <a href="#">About</a>
+        <button class="refresh-btn" id="reload-All" title="Refresh" onclick="rotateAndReload(this)">
+          <i class="fas fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-right navbar">
+      <div class="search-box">
+        <!-- <input type="text" placeholder="Search..." /> -->
+        
+      </div>
+      <i class="fas fa-search"></i>
+
+      <!-- Toggle button -->
+      <button class="toggle-btn" title="Toggle Dark Mode" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- <header class="site-header">
+    <div class="logo">WebPro</div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="settings-icon">&#9881;</div>
+  </header> -->
+  <!-- Floating Side Panel -->
+  <!-- Floating Side Panel -->
+
+  <!-- Side Panel -->
+  <div>
+    <div>
+      <div id="overlay" class="overlay"></div>
+      <!-- <button id="togglePanel" class="settings-icon1"
+        style="position: fixed; top: 20px; right: 60px; z-index:1100;">Open Panel</button> -->
+
+      <!-- Side Panel -->
+      <!-- <div id="sidePanel" class="side-panel">
+        <div class="resize-handle top-left" data-dir="top-left"></div>
+        <div class="resize-handle top-right" data-dir="top-right"></div>
+        <div class="resize-handle bottom-left" data-dir="bottom-left"></div>
+        <div class="resize-handle bottom-right" data-dir="bottom-right"></div>
+        <div class="resize-handle top" data-dir="top"></div>
+        <div class="resize-handle right" data-dir="right"></div>
+        <div class="resize-handle bottom" data-dir="bottom"></div>
+        <div class="resize-handle left" data-dir="left"></div>
+
+        <div class="panel-header">
+          <span>Settings</span>
+          <button id="closePanel">&times;</button>
+        </div>
+        <div id = "info-panel" class="panel-content">
+          <h3>Movable & Resizable Panel</h3>
+          <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
+        </div>
+      </div> -->
+    </div>
+    <div id="main-screen"><svg></svg></div>
+    <div id="loading-screen" class="loading">
+      <div class="spinner main-spinner"></div>
+      <h1>Loading</h1><span id="opt-dots"></span>
+
+    </div>
+    <!-- <button id="new-simulation">New Simulation</button>
+    <div id="tab-buttons"></div>
+    <div id="tab-content"></div> -->
+
+  <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    
+  </div>
+
+
+
+  <div id="overlay" class="overlay"></div>
+
+
+
+  <script type="module" src="./getInfo.js"></script>
+<script type="module" src="./fun.js"></script>
+<script type="module" src="./HeaderAndPanel.js"></script>
+<script type="module" src="./navFunc.js"></script>
+
+<script>
+
+</script>
+
+
+</body>
+
+</html>
