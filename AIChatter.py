@@ -5,6 +5,21 @@ import subprocess
 import sys
 import os
 import concurrent.futures
+import shutil
+
+def ensure_ollama_installed():
+    if shutil.which("ollama") is None:
+        print("❌ 'ollama' is not installed or not found in PATH.")
+        if sys.platform.startswith("linux"):
+            try:
+                subprocess.check_call(["curl", "-fsSL", "https://ollama.com/install.sh", "|", "sh"])
+            except subprocess.CalledProcessError:
+                print("❌ Failed to install ollama via install.sh")
+                print("➡️  Visit https://ollama.com to install it.")
+                sys.exit(1)
+        else:
+            sys.exit(1)
+
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "tinyllama"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -72,7 +87,7 @@ def log(message):
         log_file.write(f"{timestamp} {message}\n")
 
 def format_prompt_for_structure(code, task):
-    code = code.strip()[:1000]  # limit input chars
+    code = code[:1000] # limit input chars
     prefix = {
         1: "Briefly explain this:",
         2: "Some improvement in:",
@@ -135,6 +150,8 @@ if not is_model_available():
 id = int(sys.argv[1])
 task = int(sys.argv[2])
 
+ensure_ollama_installed()
+
 func = find_function_by_id(FILE_JSON, id)
 if not func:
     print(f"❌ Function ID {id} not found.")
@@ -151,6 +168,8 @@ else:
     # log(f"Came in else with path: {func['path']}")
     code = extract_code_from_file_cached(func["path"], func["startLine"], func["endLine"])
     result = analyze_with_deepseek(code, task)
+    if '.' in result:
+        result = result[:result.rfind('.') + 1]  # Include the period at the end
     cache[key] = result
     save_cache(cache)
     print(result,flush=True)

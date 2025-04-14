@@ -1,3 +1,0 @@
-{
-  "34-1": "This is a Java program that uses the \"kittenClient\" class to launch a kitten-related web service. The \"main()\" method of this class is called when the program is executed as a standalone application, and it calls the \"run()\" method of the same class with an array of command line arguments"
-}
