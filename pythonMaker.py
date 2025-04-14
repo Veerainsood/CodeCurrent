@@ -31,7 +31,7 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
             "id": self.counter,
             "name": node.name,
             "file": os.path.basename(self.file_path),
-            "path": self.file_path,
+            "path": self.file_path[2:] if self.file_path.startswith("./") else self.file_path,
             "language": "Python",
             "parameters": {
                 "count": len([arg for arg in node.args.args if arg.arg not in ("self", "cls")]),
@@ -225,4 +225,5 @@ def analyze_metrics(all_functions, all_calls):
 if __name__ == "__main__":
     analyze_python_files(".")
     save_id_counter(1)
+    
 

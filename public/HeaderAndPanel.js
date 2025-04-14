@@ -428,7 +428,6 @@ function reactivatePanel(panelId, clickX, clickY) {
 }
 
 
-
 // Create multiple panels
 // createPanel(0); 
 

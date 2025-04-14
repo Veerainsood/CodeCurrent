@@ -1,24 +1,59 @@
 import { createPanel, reactivatePanel } from "./HeaderAndPanel.js";
 import { getDescription } from "./getInfo.js";
-const filePath = "./function_analysis.json";
-// let simulations[currentSimulationId] = null;
+// import uniqueFunctionsData from '../unique_functions_combined.json';
+// import functionCallsData from '../function_calls_combined.json';
 let jsonData;
-let GeneratedSidePanel = [];
-let jsonDataList = [];
+const uniqueFunctionsPath = "../unique_functions_combined.json";
+const functionCallsPath = "../function_calls_combined.json";
+
+
+
+// Asynchronously load both JSON files and combine the data into one object.
 async function loadJSON() {
     try {
-        const response = await fetch(filePath);
-        if (!response.ok) throw new Error("Failed to load JSON file.");
+        // Fetch both JSON files concurrently.
+        const [uniqueFunctionsResponse, functionCallsResponse] = await Promise.all([
+            fetch(uniqueFunctionsPath),
+            fetch(functionCallsPath)
+        ]);
 
-        jsonData = await response.json();
+        // Verify that both responses are OK.
+        if (!uniqueFunctionsResponse.ok || !functionCallsResponse.ok) {
+            throw new Error("Failed to load one or more JSON files.");
+        }
+
+        // Parse JSON from both responses.
+        const uniqueFunctions = await uniqueFunctionsResponse.json();
+        const functionCalls = await functionCallsResponse.json();
+
+        // Combine the JSON data into one object.
+        jsonData = {
+            uniqueFunctions,   // from main/unique_functions_combined.json
+            functionCalls      // from main/function_calls_combined.json
+        };
+
+        // Pass the combined data to your graph generation function.
         generateGraph(jsonData);
     } catch (error) {
         console.error("Error loading JSON:", error);
-        alert("Failed to load JSON file. Check the path and try again.");
+        alert("Failed to load JSON files. Check the paths and try again.");
     }
 }
 
+// Example placeholders for style logic (customize as needed).
+// function getNodeStyle(d) {
+//     return { color: d.language === 'C++' ? 'blue' : 'gray' };
+// }
 
+// function getLinkStyle(d) {
+//     return { stroke: d.is_foreign_call ? 'red' : 'green' };
+// }
+
+// Prepare the graph data using the updated JSON structure and property names.
+
+
+let GeneratedSidePanel = [];
+let jsonDataList = [];
 
 let simulationCount = 0;
 let simulations = {}; // Store sim instances
@@ -1640,6 +1675,10 @@ function updateInfoPanel(node, id, scale = 1, textScale = 1) {
             color: #ddd;
             font-size: ${1 * textScale}em;
         }
+        .flex-class {
+            display: flex;
+            justify-content: space-between;
+        }
         .info-item {
             margin-bottom: 5px;
             display: flex;
@@ -1810,11 +1849,44 @@ function updateOptimizationPanel(id) {
 //     `);
 // }
 
+async function waitForRunner() {
+    const response = await fetch('/api/runner-status');
+    const { ready } = await response.json();
+    return ready;
+}
+
+async function StartWhenReady() {
+    console.log("🕓 Waiting for runner.py to finish...");
+    let ready = await waitForRunner();
+
+    while (!ready) {
+        await new Promise(res => setTimeout(res, 1000)); // Wait 1 sec
+        ready = await waitForRunner();
+    }
+
+    console.log("✅ runner.py is done. Calling Start()");
+    Start();  // now it's safe to run DOM + graph logic
+}
+
+// Call this after page loads
+window.addEventListener('DOMContentLoaded', () => {
+    StartWhenReady();
+});
+
 
 // Load the JSON file and generate the graph when the window loads.
+function Start() {
+    console.log("🚀 Start function called!");
+    loadJSON()
+        .then(data => {
+            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+            document.getElementById("main-screen").style.display = "block"; // Show graph container
+        })
 
-
-window.onload = loadJSON;
+}
+document.getElementById("reload-All").onclick = function () {Start();}
 // freezeNodes(); // Freeze nodes on load.
+window.Start = Start;
 
+export {Start};
 export {updateDescriptionPanel};
