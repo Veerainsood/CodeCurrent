@@ -297,43 +297,49 @@ function createLanguageLegend(svg, nodes, styling) {
         .attr("class", "legend")
         .attr("transform", "translate(20,20)");
 
-    languages.forEach((lang, i) => {
-        // Use CSS.escape to safely escape any special characters in the language string.
-        const safeLang = CSS.escape(lang);
-
-        const row = legend.append("g")
-            .attr("transform", `translate(0, ${i * 30})`)
-            .style("cursor", "pointer")
-            .on("click", () => {
-                // Safely select nodes using the escaped language string.
-                const selector = `.node.language-${safeLang}`;
-                // Toggle opacity: if it's at full opacity, fade it; else, restore it.
-                const currentOpacity = d3.selectAll(selector).style("opacity");
-                const visible = currentOpacity === "" || currentOpacity === "1";
-                d3.selectAll(selector)
-                  .transition().duration(500)
-                  .style("opacity", visible ? 0.2 : 1);
-            });
-
-        // Make the legend square have rounded corners and a subtle drop shadow.
-        row.append("rect")
-            .attr("width", 20)
-            .attr("height", 20)
-            .attr("rx", 4) // Rounded corners.
-            .attr("ry", 4)
-            .attr("fill", styling.languageColors[lang] || styling.defaultNodeColor)
-            .attr("stroke", "#fff")
-            .attr("stroke-width", 1)
-            .style("filter", "drop-shadow(2px 2px 2px rgba(0,0,0,0.3))");
-
-        row.append("text")
-            .attr("x", 30)
-            .attr("y", 15)
-            .attr("fill", styling.textColor || "#ffffff")
-            .text(lang)
-            .style("font-size", styling.fontSize || "14px")
-            .style("font-family", "sans-serif");
-    });
+        languages.forEach((lang, i) => {
+            const safeLang = CSS.escape(lang);
+            const highlightColor = "#ffcc00"; // Start color for all buttons
+            const defaultColor = styling.languageColors[lang] || styling.defaultNodeColor;
+        
+            const row = legend.append("g")
+                .attr("transform", `translate(0, ${i * 30})`)
+                .style("cursor", "pointer")
+                .on("click", () => {
+                    const selector = `.node.language-${safeLang}`;
+                    const currentOpacity = d3.selectAll(selector).style("opacity");
+                    const visible = currentOpacity === "" || currentOpacity === "1";
+        
+                    d3.selectAll(selector)
+                        .transition().duration(500)
+                        .style("opacity", visible ? 0.2 : 1);
+        
+                    const rect = row.select("rect");
+                    const currentFill = rect.attr("fill");
+                    const newFill = currentFill === highlightColor ? defaultColor : highlightColor;
+        
+                    rect.attr("fill", newFill);
+                });
+        
+            row.append("rect")
+                .attr("width", 20)
+                .attr("height", 20)
+                .attr("rx", 4)
+                .attr("ry", 4)
+                .attr("fill", highlightColor) // Start with yellow
+                .attr("stroke", "#fff")
+                .attr("stroke-width", 1)
+                .style("filter", "drop-shadow(2px 2px 2px rgba(0,0,0,0.3))");
+        
+            row.append("text")
+                .attr("x", 30)
+                .attr("y", 15)
+                .attr("fill", styling.textColor || "#ffffff")
+                .text(lang)
+                .style("font-size", styling.fontSize || "14px")
+                .style("font-family", "sans-serif");
+        });
+        
 
     return legend;
 }

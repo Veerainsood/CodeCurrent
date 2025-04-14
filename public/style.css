@@ -41,3 +41,70 @@
     animation: dash-move 100s linear infinite;
   }
   
+
+  svg {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    marker-end: url(#arrow);
+}
+
+/* .node text {
+    font-size: 12px;
+    text-anchor: middle;
+    fill: #ffffff;
+}  */
+@keyframes pulse {
+    0%, 100% {
+        stroke-width: 3.5;
+    }
+    50% {
+        stroke-width: 4.5;
+    }
+}
+
+
+#main-screen{
+    display: none;
+}
+.loading {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+#loading-screen{
+    margin-top: 25%;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+.main-spinner {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
