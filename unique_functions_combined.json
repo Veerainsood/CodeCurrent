@@ -1,887 +1,6 @@
 [
   {
     "id": 1,
-    "name": "reverse",
-    "file": "SolutionByAryamon.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAryamon.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 12
-  },
-  {
-    "id": 2,
-    "name": "main",
-    "file": "SolutionByAryamon.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAryamon.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 14,
-    "endLine": 24
-  },
-  {
-    "id": 3,
-    "name": "main",
-    "file": "SolutionByPrabsimar.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPrabsimar.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 16
-  },
-  {
-    "id": 4,
-    "name": "reverse",
-    "file": "SolutionByAnanthakrishnan.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnanthakrishnan.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 12
-  },
-  {
-    "id": 5,
-    "name": "main",
-    "file": "SolutionByAnanthakrishnan.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnanthakrishnan.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 14,
-    "endLine": 24
-  },
-  {
-    "id": 6,
-    "name": "reverse",
-    "file": "SolutionByKuljeet.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKuljeet.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 12
-  },
-  {
-    "id": 7,
-    "name": "main",
-    "file": "SolutionByKuljeet.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKuljeet.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 14,
-    "endLine": 22
-  },
-  {
-    "id": 8,
-    "name": "reverse",
-    "file": "SolutionByBavleen.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByBavleen.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 11
-  },
-  {
-    "id": 9,
-    "name": "main",
-    "file": "SolutionByBavleen.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByBavleen.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 12,
-    "endLine": 20
-  },
-  {
-    "id": 10,
-    "name": "Reverse",
-    "file": "SolutionByRishabh.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByRishabh.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 14
-  },
-  {
-    "id": 11,
-    "name": "main",
-    "file": "SolutionByRishabh.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByRishabh.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 22
-  },
-  {
-    "id": 12,
-    "name": "reverse",
-    "file": "solutionByPooja.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/solutionByPooja.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 9,
-    "endLine": 17
-  },
-  {
-    "id": 13,
-    "name": "main",
-    "file": "solutionByPooja.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/solutionByPooja.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 18,
-    "endLine": 26
-  },
-  {
-    "id": 14,
-    "name": "reverse",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 5,
-    "endLine": 5
-  },
-  {
-    "id": 15,
-    "name": "main",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 8,
-    "endLine": 18
-  },
-  {
-    "id": 16,
-    "name": "reverse",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 20,
-    "endLine": 28
-  },
-  {
-    "id": 17,
-    "name": "sum",
-    "file": "SolutionByAryamon.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 11
-  },
-  {
-    "id": 18,
-    "name": "main",
-    "file": "SolutionByAryamon.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 13,
-    "endLine": 23
-  },
-  {
-    "id": 19,
-    "name": "main",
-    "file": "SolutionbyPrabhleen.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionbyPrabhleen.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 14
-  },
-  {
-    "id": 20,
-    "name": "main",
-    "file": "SolutionByAnuj.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnuj.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 15
-  },
-  {
-    "id": 21,
-    "name": "main",
-    "file": "SolutionBySonal.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySonal.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 17
-  },
-  {
-    "id": 22,
-    "name": "sumOfDigits",
-    "file": "SolutionByPrabsimar.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPrabsimar.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 13
-  },
-  {
-    "id": 23,
-    "name": "main",
-    "file": "SolutionByPrabsimar.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPrabsimar.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 14,
-    "endLine": 19
-  },
-  {
-    "id": 24,
-    "name": "getSum",
-    "file": "SolutionByAnanthakrishnan.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnanthakrishnan.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 13
-  },
-  {
-    "id": 25,
-    "name": "main",
-    "file": "SolutionByAnanthakrishnan.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAnanthakrishnan.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 23
-  },
-  {
-    "id": 26,
-    "name": "getSum",
-    "file": "SolutionByKuljeet.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByKuljeet.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 13
-  },
-  {
-    "id": 27,
-    "name": "main",
-    "file": "SolutionByKuljeet.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByKuljeet.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 23
-  },
-  {
-    "id": 28,
-    "name": "calculate_sum",
-    "file": "SolutionByBavleen.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBavleen.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "long"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 11
-  },
-  {
-    "id": 29,
-    "name": "main",
-    "file": "SolutionByBavleen.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBavleen.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 12,
-    "endLine": 20
-  },
-  {
-    "id": 30,
-    "name": "sumOfDigits",
-    "file": "SolutionByRishabh.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByRishabh.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 13
-  },
-  {
-    "id": 31,
-    "name": "main",
-    "file": "SolutionByRishabh.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByRishabh.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 14,
-    "endLine": 19
-  },
-  {
-    "id": 32,
-    "name": "Sum_Of_Digits",
-    "file": "SolutionByDhruv.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 3
-  },
-  {
-    "id": 33,
-    "name": "main",
-    "file": "SolutionByDhruv.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 12
-  },
-  {
-    "id": 34,
-    "name": "Sum_Of_Digits",
-    "file": "SolutionByDhruv.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhruv.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 23
-  },
-  {
-    "id": 35,
-    "name": "main",
-    "file": "SolutionByBifrost.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByBifrost.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 8,
-    "endLine": 20
-  },
-  {
-    "id": 36,
-    "name": "calculatesum",
-    "file": "SolutionByShrishti.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShrishti.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "long"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 2,
-    "endLine": 10
-  },
-  {
-    "id": 37,
-    "name": "main",
-    "file": "SolutionByShrishti.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShrishti.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 11,
-    "endLine": 19
-  },
-  {
-    "id": 38,
-    "name": "add",
-    "file": "SolutionBySamriddhi.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySamriddhi.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 13
-  },
-  {
-    "id": 39,
-    "name": "main",
-    "file": "SolutionBySamriddhi.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionBySamriddhi.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 21
-  },
-  {
-    "id": 40,
-    "name": "sumNumber",
-    "file": "SolutionByAryamon2.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon2.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 11
-  },
-  {
-    "id": 41,
-    "name": "main",
-    "file": "SolutionByAryamon2.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAryamon2.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 13,
-    "endLine": 22
-  },
-  {
-    "id": 42,
-    "name": "digit_sum",
-    "file": "solutionByPooja.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionByPooja.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 9,
-    "endLine": 17
-  },
-  {
-    "id": 43,
-    "name": "main",
-    "file": "solutionByPooja.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionByPooja.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 18,
-    "endLine": 26
-  },
-  {
-    "id": 44,
-    "name": "sum",
-    "file": "solutionBySeema.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySeema.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 10,
-    "endLine": 18
-  },
-  {
-    "id": 45,
-    "name": "main",
-    "file": "solutionBySeema.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySeema.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 20,
-    "endLine": 27
-  },
-  {
-    "id": 46,
-    "name": "Sum_Of_Digits",
-    "file": "SolutionByDhavalPandey.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 3
-  },
-  {
-    "id": 47,
-    "name": "main",
-    "file": "SolutionByDhavalPandey.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 12
-  },
-  {
-    "id": 48,
-    "name": "Sum_Of_Digits",
-    "file": "SolutionByDhavalPandey.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByDhavalPandey.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 15,
-    "endLine": 23
-  },
-  {
-    "id": 49,
-    "name": "Sum_of_digits",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 3
-  },
-  {
-    "id": 50,
-    "name": "main",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 4,
-    "endLine": 15
-  },
-  {
-    "id": 51,
-    "name": "Sum_of_digits",
-    "file": "Solutionbyvaishi1411.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/Solutionbyvaishi1411.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 16,
-    "endLine": 24
-  },
-  {
-    "id": 52,
-    "name": "find_sum",
-    "file": "SolutionByPiyush.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPiyush.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 10,
-    "endLine": 18
-  },
-  {
-    "id": 53,
-    "name": "main",
-    "file": "SolutionByPiyush.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByPiyush.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 20,
-    "endLine": 27
-  },
-  {
-    "id": 54,
-    "name": "kthSmallestElement",
-    "file": "SampleCode.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Sample Code/SampleCode.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 3,
-      "types": [
-        "int []",
-        "int",
-        "int"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 12,
-    "endLine": 16
-  },
-  {
-    "id": 55,
-    "name": "main",
-    "file": "SampleCode.cpp",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Sample Code/SampleCode.cpp",
-    "language": "C++",
-    "parameters": {
-      "count": 0,
-      "types": []
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 18,
-    "endLine": 34
-  },
-  {
-    "id": 56,
     "name": "test_python_c_api",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -896,7 +15,7 @@
     "endLine": 19
   },
   {
-    "id": 57,
+    "id": 2,
     "name": "test_pybind11",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -911,7 +30,7 @@
     "endLine": 25
   },
   {
-    "id": 58,
+    "id": 3,
     "name": "test_boost_python",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -926,7 +45,7 @@
     "endLine": 32
   },
   {
-    "id": 59,
+    "id": 4,
     "name": "test_swig_wrapper",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -941,7 +60,7 @@
     "endLine": 36
   },
   {
-    "id": 60,
+    "id": 5,
     "name": "test_system_python",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -956,7 +75,7 @@
     "endLine": 40
   },
   {
-    "id": 61,
+    "id": 6,
     "name": "test_zmq_python",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -971,7 +90,7 @@
     "endLine": 49
   },
   {
-    "id": 62,
+    "id": 7,
     "name": "test_java_jni",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -986,7 +105,7 @@
     "endLine": 67
   },
   {
-    "id": 63,
+    "id": 8,
     "name": "test_system_java",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -1001,7 +120,7 @@
     "endLine": 71
   },
   {
-    "id": 64,
+    "id": 9,
     "name": "test_http_java",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -1016,7 +135,7 @@
     "endLine": 75
   },
   {
-    "id": 65,
+    "id": 10,
     "name": "test_socket_java",
     "file": "main.cpp",
     "path": "/home/kripaludas/Documents/Combined/public/main.cpp",
@@ -1031,498 +150,2908 @@
     "endLine": 81
   },
   {
-    "id": 66,
-    "name": "reverse",
-    "file": "SolutionByShubham.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByShubham.java",
-    "language": "Java",
+    "id": 11,
+    "name": "OfflineRandomSampling",
+    "file": "random_data_sampling.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/random_data_sampling.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "int"
-      ],
-      "count": 1
+        "const int",
+        "std::vector<int> &"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "SolutionByShubham",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 7,
-    "endLine": null
+    "startLine": 6,
+    "endLine": 15
+  },
+  {
+    "id": 12,
+    "name": "OnlineRandomSampling",
+    "file": "random_data_sampling.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/random_data_sampling.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "std::vector<int>::const_iterator",
+        "const std::vector<int>::const_iterator",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 46
+  },
+  {
+    "id": 13,
+    "name": "ComputeRandomPermutation",
+    "file": "random_data_sampling.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/random_data_sampling.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 48,
+    "endLine": 53
+  },
+  {
+    "id": 14,
+    "name": "ReplaceAndRemoveString1",
+    "file": "replace_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/replace_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "std::vector<std::string> &",
+        "const std::string &",
+        "const std::string &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 40
+  },
+  {
+    "id": 15,
+    "name": "ReplaceAndRemoveString2",
+    "file": "replace_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/replace_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "std::vector<std::string> &",
+        "const std::string &",
+        "const std::string &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 42,
+    "endLine": 58
+  },
+  {
+    "id": 16,
+    "name": "TelexEncoding",
+    "file": "replace_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/replace_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<std::string> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 60,
+    "endLine": 91
+  },
+  {
+    "id": 17,
+    "name": "GeneratePrimes",
+    "file": "enumerate_prime_number.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/enumerate_prime_number.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 24
+  },
+  {
+    "id": 18,
+    "name": "BuyAndSellStockOnceBruteForce",
+    "file": "stock_trading.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/stock_trading.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 21
+  },
+  {
+    "id": 19,
+    "name": "BuyAndSellStockOnce",
+    "file": "stock_trading.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/stock_trading.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 36
+  },
+  {
+    "id": 20,
+    "name": "BuyAndSellStockTwice",
+    "file": "stock_trading.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/stock_trading.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<double> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 38,
+    "endLine": 59
+  },
+  {
+    "id": 21,
+    "name": "EvenOdd",
+    "file": "order_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/order_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 20
+  },
+  {
+    "id": 22,
+    "name": "Rearrange",
+    "file": "order_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/order_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 32
+  },
+  {
+    "id": 23,
+    "name": "PlusOne",
+    "file": "arbitrary_precision_integer.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/arbitrary_precision_integer.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<int>"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 21
+  },
+  {
+    "id": 24,
+    "name": "StringAddition",
+    "file": "arbitrary_precision_integer.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/arbitrary_precision_integer.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::string &",
+        "const std::string &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 61
+  },
+  {
+    "id": 25,
+    "name": "Multiply",
+    "file": "arbitrary_precision_integer.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/arbitrary_precision_integer.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "std::vector<int> &",
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 63,
+    "endLine": 92
+  },
+  {
+    "id": 26,
+    "name": "DutchFlagPartition1",
+    "file": "dutch_national_flag.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/dutch_national_flag.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const int",
+        "std::vector<Color> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 31
+  },
+  {
+    "id": 27,
+    "name": "DutchFlagPartition2",
+    "file": "dutch_national_flag.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/dutch_national_flag.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const int",
+        "std::vector<Color> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 33,
+    "endLine": 56
+  },
+  {
+    "id": 28,
+    "name": "DutchFlagPartition3",
+    "file": "dutch_national_flag.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/dutch_national_flag.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const int",
+        "std::vector<Color> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 58,
+    "endLine": 83
+  },
+  {
+    "id": 29,
+    "name": "BM_GeneratePrimes",
+    "file": "enumerate_prime_number_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/enumerate_prime_number_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 30,
+    "name": "BENCHMARK_MAIN",
+    "file": "enumerate_prime_number_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/enumerate_prime_number_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 16
+  },
+  {
+    "id": 31,
+    "name": "BM_DeleteDuplicates",
+    "file": "delete_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/delete_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 32,
+    "name": "BM_DeleteDuplicateElements",
+    "file": "delete_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/delete_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 23
+  },
+  {
+    "id": 33,
+    "name": "BM_DeleteSpecificElements",
+    "file": "delete_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/delete_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 35
+  },
+  {
+    "id": 34,
+    "name": "BENCHMARK_MAIN",
+    "file": "delete_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/delete_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 39,
+    "endLine": 39
+  },
+  {
+    "id": 35,
+    "name": "BM_OfflineRandomSampling",
+    "file": "random_data_sampling_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/random_data_sampling_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 13
+  },
+  {
+    "id": 36,
+    "name": "BM_ComputeRandomPermutation",
+    "file": "random_data_sampling_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/random_data_sampling_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 24
+  },
+  {
+    "id": 37,
+    "name": "BENCHMARK_MAIN",
+    "file": "random_data_sampling_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/random_data_sampling_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 28,
+    "endLine": 28
+  },
+  {
+    "id": 38,
+    "name": "BM_CanReachEnd",
+    "file": "advancing_through_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/advancing_through_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 39,
+    "name": "BENCHMARK_MAIN",
+    "file": "advancing_through_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/advancing_through_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 16
+  },
+  {
+    "id": 40,
+    "name": "BM_ReplaceAndRemoveString1",
+    "file": "replace_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/replace_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 41,
+    "name": "BM_ReplaceAndRemoveString2",
+    "file": "replace_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/replace_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 23
+  },
+  {
+    "id": 42,
+    "name": "BM_TelexEncoding",
+    "file": "replace_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/replace_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 37
+  },
+  {
+    "id": 43,
+    "name": "BENCHMARK_MAIN",
+    "file": "replace_element_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/replace_element_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 41,
+    "endLine": 41
+  },
+  {
+    "id": 44,
+    "name": "BM_PlusOne",
+    "file": "arbitrary_precision_integer_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/arbitrary_precision_integer_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 45,
+    "name": "BM_StringAddition",
+    "file": "arbitrary_precision_integer_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/arbitrary_precision_integer_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 24
+  },
+  {
+    "id": 46,
+    "name": "BM_Multiply",
+    "file": "arbitrary_precision_integer_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/arbitrary_precision_integer_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 28,
+    "endLine": 36
+  },
+  {
+    "id": 47,
+    "name": "BENCHMARK_MAIN",
+    "file": "arbitrary_precision_integer_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/arbitrary_precision_integer_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 40,
+    "endLine": 40
+  },
+  {
+    "id": 48,
+    "name": "BM_BuyAndSellStockOnceBruteForce",
+    "file": "stock_trading_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/stock_trading_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 49,
+    "name": "BM_BuyAndSellStockOnce",
+    "file": "stock_trading_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/stock_trading_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 23
+  },
+  {
+    "id": 50,
+    "name": "BM_BuyAndSellStockTwice",
+    "file": "stock_trading_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/stock_trading_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 34
+  },
+  {
+    "id": 51,
+    "name": "BENCHMARK_MAIN",
+    "file": "stock_trading_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/benchmark/stock_trading_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 38,
+    "endLine": 38
+  },
+  {
+    "id": 52,
+    "name": "DeleteDuplicates",
+    "file": "delete_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/delete_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 23
+  },
+  {
+    "id": 53,
+    "name": "DeleteDuplicateElements",
+    "file": "delete_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/delete_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 25,
+    "endLine": 36
+  },
+  {
+    "id": 54,
+    "name": "DeleteSpecificElements",
+    "file": "delete_element.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/delete_element.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "std::vector<int> &",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 38,
+    "endLine": 47
+  },
+  {
+    "id": 55,
+    "name": "CanReachEnd",
+    "file": "advancing_through.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/advancing_through.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 14
+  },
+  {
+    "id": 56,
+    "name": "GTEST_TEST",
+    "file": "arbitrary_precision_integer_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/arbitrary_precision_integer_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 12
+  },
+  {
+    "id": 57,
+    "name": "GTEST_TEST",
+    "file": "arbitrary_precision_integer_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/arbitrary_precision_integer_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 22
+  },
+  {
+    "id": 58,
+    "name": "GTEST_TEST",
+    "file": "arbitrary_precision_integer_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/arbitrary_precision_integer_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 24,
+    "endLine": 31
+  },
+  {
+    "id": 59,
+    "name": "GTEST_TEST",
+    "file": "replace_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/replace_element_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 11
+  },
+  {
+    "id": 60,
+    "name": "GTEST_TEST",
+    "file": "replace_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/replace_element_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": 19
+  },
+  {
+    "id": 61,
+    "name": "GTEST_TEST",
+    "file": "replace_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/replace_element_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 21,
+    "endLine": 43
+  },
+  {
+    "id": 62,
+    "name": "GTEST_TEST",
+    "file": "stock_trading_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/stock_trading_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 11
+  },
+  {
+    "id": 63,
+    "name": "GTEST_TEST",
+    "file": "stock_trading_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/stock_trading_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 13,
+    "endLine": 19
+  },
+  {
+    "id": 64,
+    "name": "GTEST_TEST",
+    "file": "stock_trading_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/stock_trading_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 21,
+    "endLine": 27
+  },
+  {
+    "id": 65,
+    "name": "GTEST_TEST",
+    "file": "random_data_sampling_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/random_data_sampling_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 20
+  },
+  {
+    "id": 66,
+    "name": "GTEST_TEST",
+    "file": "random_data_sampling_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/random_data_sampling_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 36
   },
   {
     "id": 67,
-    "name": "main",
-    "file": "SolutionByShubham.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByShubham.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "random_data_sampling_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/random_data_sampling_test.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "int",
+        "int"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "SolutionByShubham",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 18,
-    "endLine": null
+    "startLine": 38,
+    "endLine": 52
   },
   {
     "id": 68,
-    "name": "rev",
-    "file": "SolutionByMananpreet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByMananpreet.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "advancing_through_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/advancing_through_test.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
+        "int",
         "int"
-      ],
-      "count": 1
+      ]
     },
-    "returnType": "int",
-    "parentClass": "ReverseNumber",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 4,
-    "endLine": null
+    "startLine": 5,
+    "endLine": 10
   },
   {
     "id": 69,
-    "name": "main",
-    "file": "SolutionByMananpreet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByMananpreet.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "delete_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/delete_element_test.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "int",
+        "int"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "ReverseNumber",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 13,
-    "endLine": null
+    "startLine": 5,
+    "endLine": 11
   },
   {
     "id": 70,
-    "name": "main",
-    "file": "SolutionByPranavGurditta.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "delete_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/delete_element_test.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "int",
+        "int"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "Reverse",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 4,
-    "endLine": null
+    "startLine": 13,
+    "endLine": 19
   },
   {
     "id": 71,
-    "name": "input",
-    "file": "SolutionByPranavGurditta.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "delete_element_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/delete_element_test.cpp",
+    "language": "C++",
     "parameters": {
-      "types": [],
-      "count": 0
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "Reverse",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 14,
-    "endLine": null
+    "startLine": 21,
+    "endLine": 28
   },
   {
     "id": 72,
-    "name": "reverse",
-    "file": "SolutionByPranavGurditta.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByPranavGurditta.java",
-    "language": "Java",
+    "name": "GTEST_TEST",
+    "file": "enumerate_prime_number_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/array/test/enumerate_prime_number_test.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
+        "int",
         "int"
-      ],
-      "count": 1
+      ]
     },
-    "returnType": "int",
-    "parentClass": "Reverse",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 25,
-    "endLine": null
+    "startLine": 5,
+    "endLine": 11
   },
   {
     "id": 73,
-    "name": "main",
-    "file": "SolutionByKriti.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Reverse A Given Number/SolutionByKriti.java",
-    "language": "Java",
+    "name": "IsSymmetric",
+    "file": "tree_symmetric.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/tree_symmetric.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "const BinaryTree::Node<int> *"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "Main",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 5,
-    "endLine": null
+    "startLine": 3,
+    "endLine": 6
   },
   {
     "id": 74,
-    "name": "sum",
-    "file": "SolutionByMananpreet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByMananpreet.java",
-    "language": "Java",
+    "name": "CheckSymmetric",
+    "file": "tree_symmetric.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/tree_symmetric.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "int"
-      ],
-      "count": 1
+        "const BinaryTree::Node<int> *",
+        "const BinaryTree::Node<int> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "SumOfDigits",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 4,
-    "endLine": null
+    "startLine": 8,
+    "endLine": 22
   },
   {
     "id": 75,
-    "name": "main",
-    "file": "SolutionByMananpreet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByMananpreet.java",
-    "language": "Java",
+    "name": "CreateLeftBoundary",
+    "file": "binary_tree_exterior.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/binary_tree_exterior.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "BinaryTree::Node<char> *",
+        "std::vector<BinaryTree::Node<char> *> &"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "SumOfDigits",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 13,
-    "endLine": null
+    "startLine": 8,
+    "endLine": 24
   },
   {
     "id": 76,
-    "name": "sumDigits",
-    "file": "SolutionByTrrrey.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByTrrrey.java",
-    "language": "Java",
+    "name": "CreateRightBoundary",
+    "file": "binary_tree_exterior.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/binary_tree_exterior.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "int"
-      ],
-      "count": 1
+        "BinaryTree::Node<char> *",
+        "std::vector<BinaryTree::Node<char> *> &"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "Main",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 5,
-    "endLine": null
+    "startLine": 31,
+    "endLine": 47
   },
   {
     "id": 77,
-    "name": "main",
-    "file": "SolutionByTrrrey.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByTrrrey.java",
-    "language": "Java",
+    "name": "CreateLeafBoundary",
+    "file": "binary_tree_exterior.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/binary_tree_exterior.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "BinaryTree::Node<char> *",
+        "std::vector<BinaryTree::Node<char> *> &"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "Main",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 17,
-    "endLine": null
+    "startLine": 54,
+    "endLine": 68
   },
   {
     "id": 78,
-    "name": "sum",
-    "file": "SolutionByVicky.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVicky.java",
-    "language": "Java",
+    "name": "CreateExteriorNodeList",
+    "file": "binary_tree_exterior.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/binary_tree_exterior.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "int"
-      ],
-      "count": 1
+        "BinaryTree::Node<char> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "SolutionByVicky",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 5,
-    "endLine": null
+    "startLine": 70,
+    "endLine": 84
   },
   {
     "id": 79,
-    "name": "main",
-    "file": "SolutionByVicky.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVicky.java",
-    "language": "Java",
+    "name": "SplitChild",
+    "file": "b_tree.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/b_tree.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "BTree::Node *",
+        "int"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "SolutionByVicky",
+    "parentClass": "Tree",
     "parentFunction": null,
-    "startLine": 14,
-    "endLine": null
+    "startLine": 3,
+    "endLine": 39
   },
   {
     "id": 80,
-    "name": "sum",
-    "file": "solutionBySimranjeet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySimranjeet.java",
-    "language": "Java",
+    "name": "InsertNonFull",
+    "file": "b_tree.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/b_tree.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "int"
-      ],
-      "count": 1
+        "BTree::Node *",
+        "char"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "solutions_by_Simranjeet",
+    "parentClass": "Tree",
     "parentFunction": null,
-    "startLine": 14,
-    "endLine": null
+    "startLine": 41,
+    "endLine": 74
   },
   {
     "id": 81,
-    "name": "main",
-    "file": "solutionBySimranjeet.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/solutionBySimranjeet.java",
-    "language": "Java",
+    "name": "Insert",
+    "file": "b_tree.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/b_tree.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "BTree::Node *",
+        "char"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "solutions_by_Simranjeet",
+    "parentClass": "Tree",
     "parentFunction": null,
-    "startLine": 25,
-    "endLine": null
+    "startLine": 76,
+    "endLine": 93
   },
   {
     "id": 82,
-    "name": "main",
-    "file": "SolutionByAshutosh.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAshutosh.java",
-    "language": "Java",
+    "name": "Search",
+    "file": "b_tree.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/b_tree.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 2,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "BTree::Node *",
+        "char"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "SolutionByAshutosh",
+    "parentClass": "Tree",
     "parentFunction": null,
-    "startLine": 4,
-    "endLine": null
+    "startLine": 95,
+    "endLine": 118
   },
   {
     "id": 83,
-    "name": "sumOfDigits",
-    "file": "SolutionByAshutosh.java",
-    "path": "/home/kripaludas/Documents/Combined/Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAshutosh.java",
-    "language": "Java",
+    "name": "PopulateRightSibling",
+    "file": "right_sibling.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/right_sibling.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "long"
-      ],
-      "count": 1
+        "const BinaryTree::NextExtendedNode<char> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "SolutionByAshutosh",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 12,
-    "endLine": null
+    "startLine": 3,
+    "endLine": 24
   },
   {
     "id": 84,
-    "name": "add",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "IsBalanced",
+    "file": "balanced_tree_status.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/balanced_tree_status.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+        "const BinaryTree::ExtendedNode<int> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "ParserTest",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 25,
-    "endLine": null
+    "startLine": 5,
+    "endLine": 8
   },
   {
     "id": 85,
-    "name": "add",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "CheckBalanced",
+    "file": "balanced_tree_status.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/balanced_tree_status.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+        "const BinaryTree::ExtendedNode<int> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "mymodule",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 30,
-    "endLine": null
+    "startLine": 10,
+    "endLine": 32
   },
   {
     "id": 86,
-    "name": "add",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "LcaHelper",
+    "file": "lowest_common_ancestor.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/lowest_common_ancestor.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 3,
       "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+        "const BinaryTree::Node<int> *",
+        "const BinaryTree::Node<int> *",
+        "const BinaryTree::Node<int> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "JavaCPPDemo",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 35,
-    "endLine": null
+    "startLine": 12,
+    "endLine": 32
   },
   {
     "id": 87,
-    "name": "add",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "FindLowestCommonAncestor",
+    "file": "lowest_common_ancestor.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/lowest_common_ancestor.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 3,
       "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+        "const BinaryTree::Node<int> *",
+        "const BinaryTree::Node<int> *",
+        "const BinaryTree::Node<int> *"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "BridJDemo",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 40,
-    "endLine": null
+    "startLine": 34,
+    "endLine": 39
   },
   {
     "id": 88,
-    "name": "main",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "FindLowestCommonAncestor2",
+    "file": "lowest_common_ancestor.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/lowest_common_ancestor.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 3,
       "types": [
-        "String[]"
-      ],
-      "count": 1
+        "const BinaryTree::ExtendedNode<int> *",
+        "const BinaryTree::ExtendedNode<int> *",
+        "const BinaryTree::ExtendedNode<int> *"
+      ]
     },
-    "returnType": "void",
-    "parentClass": "ParserTest",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 43,
-    "endLine": null
+    "startLine": 41,
+    "endLine": 69
   },
   {
     "id": 89,
-    "name": "my_func",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "BENCHMARK_MAIN",
+    "file": "b_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/b_tree_benchmark.cpp",
+    "language": "C++",
     "parameters": {
-      "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+      "count": 0,
+      "types": []
     },
-    "returnType": "int",
-    "parentClass": "ParserTest",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 119,
-    "endLine": null
+    "startLine": 98,
+    "endLine": 98
   },
   {
     "id": 90,
-    "name": "Client",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "BM_FindLowestCommonAncestor",
+    "file": "lowest_common_ancestor_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/lowest_common_ancestor_benchmark.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "TProtocol"
-      ],
-      "count": 1
+        "int &"
+      ]
     },
-    "returnType": null,
-    "parentClass": "Client",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 126,
-    "endLine": null
+    "startLine": 5,
+    "endLine": 33
   },
   {
     "id": 91,
-    "name": "my_func",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "BM_FindLowestCommonAncestor2",
+    "file": "lowest_common_ancestor_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/lowest_common_ancestor_benchmark.cpp",
+    "language": "C++",
     "parameters": {
+      "count": 1,
       "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+        "int &"
+      ]
     },
-    "returnType": "int",
-    "parentClass": "Client",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 127,
-    "endLine": null
+    "startLine": 37,
+    "endLine": 75
   },
   {
     "id": 92,
-    "name": "add",
-    "file": "main.java",
-    "path": "/home/kripaludas/Documents/Combined/public/main.java",
-    "language": "Java",
+    "name": "BENCHMARK_MAIN",
+    "file": "lowest_common_ancestor_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/lowest_common_ancestor_benchmark.cpp",
+    "language": "C++",
     "parameters": {
-      "types": [
-        "int",
-        "int"
-      ],
-      "count": 2
+      "count": 0,
+      "types": []
     },
-    "returnType": "int",
-    "parentClass": "JNIDemo",
+    "parentClass": null,
     "parentFunction": null,
-    "startLine": 134,
-    "endLine": null
+    "startLine": 79,
+    "endLine": 79
+  },
+  {
+    "id": 93,
+    "name": "BM_BinarySearchTree_PreorderTraversal",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 19
   },
   {
     "id": 94,
+    "name": "BM_BinarySearchTree_InorderTraversal",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 37
+  },
+  {
+    "id": 95,
+    "name": "BM_BinarySearchTree_PostorderTraversal",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 41,
+    "endLine": 55
+  },
+  {
+    "id": 96,
+    "name": "BM_BinarySearchTree_Minimum",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 59,
+    "endLine": 72
+  },
+  {
+    "id": 97,
+    "name": "BM_BinarySearchTree_Maximum",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 76,
+    "endLine": 89
+  },
+  {
+    "id": 98,
+    "name": "BM_BinarySearchTree_Predecessor",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 93,
+    "endLine": 106
+  },
+  {
+    "id": 99,
+    "name": "BM_BinarySearchTree_Successor",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 121,
+    "endLine": 134
+  },
+  {
+    "id": 100,
+    "name": "BM_BinarySearchTree_IterativeSearch",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 149,
+    "endLine": 162
+  },
+  {
+    "id": 101,
+    "name": "BM_BinarySearchTree_RecursiveSearch",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 177,
+    "endLine": 190
+  },
+  {
+    "id": 102,
+    "name": "BENCHMARK_MAIN",
+    "file": "binary_search_tree_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/benchmark/binary_search_tree_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 205,
+    "endLine": 205
+  },
+  {
+    "id": 103,
+    "name": "SumRootToLeaf",
+    "file": "sum_root_to_leaf.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/sum_root_to_leaf.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "const BinaryTree::Node<int> *",
+        "int",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 20
+  },
+  {
+    "id": 104,
+    "name": "SumRootToLeafDecimal",
+    "file": "sum_root_to_leaf.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/sum_root_to_leaf.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const BinaryTree::Node<int> *"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 25
+  },
+  {
+    "id": 105,
+    "name": "SumRootToLeafBinary",
+    "file": "sum_root_to_leaf.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/sum_root_to_leaf.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const BinaryTree::Node<int> *"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 30
+  },
+  {
+    "id": 106,
+    "name": "HasKeySum",
+    "file": "sum_root_to_leaf.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/sum_root_to_leaf.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const BinaryTree::Node<int> *",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 32,
+    "endLine": 44
+  },
+  {
+    "id": 107,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 35
+  },
+  {
+    "id": 108,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 37,
+    "endLine": 66
+  },
+  {
+    "id": 109,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 68,
+    "endLine": 97
+  },
+  {
+    "id": 110,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 99,
+    "endLine": 123
+  },
+  {
+    "id": 111,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 125,
+    "endLine": 149
+  },
+  {
+    "id": 112,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 151,
+    "endLine": 175
+  },
+  {
+    "id": 113,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 177,
+    "endLine": 201
+  },
+  {
+    "id": 114,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 203,
+    "endLine": 227
+  },
+  {
+    "id": 115,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 229,
+    "endLine": 253
+  },
+  {
+    "id": 116,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 255,
+    "endLine": 282
+  },
+  {
+    "id": 117,
+    "name": "GTEST_TEST",
+    "file": "binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 284,
+    "endLine": 311
+  },
+  {
+    "id": 118,
+    "name": "GTEST_TEST",
+    "file": "tree_symmetric_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/tree_symmetric_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "id": 119,
+    "name": "GTEST_TEST",
+    "file": "tree_symmetric_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/tree_symmetric_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 33,
+    "endLine": 59
+  },
+  {
+    "id": 120,
+    "name": "GTEST_TEST",
+    "file": "tree_symmetric_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/tree_symmetric_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 61,
+    "endLine": 85
+  },
+  {
+    "id": 121,
+    "name": "GTEST_TEST",
+    "file": "sum_root_to_leaf_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/sum_root_to_leaf_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 22
+  },
+  {
+    "id": 122,
+    "name": "GTEST_TEST",
+    "file": "sum_root_to_leaf_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/sum_root_to_leaf_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 24,
+    "endLine": 51
+  },
+  {
+    "id": 123,
+    "name": "GTEST_TEST",
+    "file": "sum_root_to_leaf_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/sum_root_to_leaf_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 53,
+    "endLine": 98
+  },
+  {
+    "id": 124,
+    "name": "GTEST_TEST",
+    "file": "construct_binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/construct_binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 7,
+    "endLine": 34
+  },
+  {
+    "id": 125,
+    "name": "GTEST_TEST",
+    "file": "construct_binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/construct_binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 36,
+    "endLine": 63
+  },
+  {
+    "id": 126,
+    "name": "GTEST_TEST",
+    "file": "construct_binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/construct_binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 65,
+    "endLine": 93
+  },
+  {
+    "id": 127,
+    "name": "GTEST_TEST",
+    "file": "construct_binary_search_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/construct_binary_search_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 95,
+    "endLine": 123
+  },
+  {
+    "id": 128,
+    "name": "GTEST_TEST",
+    "file": "lowest_common_ancestor_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/lowest_common_ancestor_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 44
+  },
+  {
+    "id": 129,
+    "name": "GTEST_TEST",
+    "file": "lowest_common_ancestor_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/lowest_common_ancestor_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 46,
+    "endLine": 95
+  },
+  {
+    "id": 130,
+    "name": "GTEST_TEST",
+    "file": "leaf_node_list_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/leaf_node_list_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 48
+  },
+  {
+    "id": 131,
+    "name": "GTEST_TEST",
+    "file": "right_sibling_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/right_sibling_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 58
+  },
+  {
+    "id": 132,
+    "name": "GTEST_TEST",
+    "file": "balanced_tree_status_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/balanced_tree_status_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 28
+  },
+  {
+    "id": 133,
+    "name": "GTEST_TEST",
+    "file": "balanced_tree_status_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/balanced_tree_status_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 30,
+    "endLine": 50
+  },
+  {
+    "id": 134,
+    "name": "GTEST_TEST",
+    "file": "binary_tree_exterior_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/binary_tree_exterior_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 50
+  },
+  {
+    "id": 135,
+    "name": "GTEST_TEST",
+    "file": "b_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/b_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 143
+  },
+  {
+    "id": 136,
+    "name": "GTEST_TEST",
+    "file": "b_tree_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/test/b_tree_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 145,
+    "endLine": 213
+  },
+  {
+    "id": 137,
+    "name": "AddLeafNodeToList",
+    "file": "leaf_node_list.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/leaf_node_list.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "BinaryTree::Node<int> *",
+        "std::vector<BinaryTree::Node<int> *> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 8,
+    "endLine": 21
+  },
+  {
+    "id": 138,
+    "name": "CreateLeafNodeList",
+    "file": "leaf_node_list.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/tree/leaf_node_list.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "BinaryTree::Node<int> *"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 28
+  },
+  {
+    "id": 139,
+    "name": "LongestCommonSubsequenceLength",
+    "file": "longest_common_subsequence.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/longest_common_subsequence.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::string &",
+        "const std::string &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "id": 140,
+    "name": "LongestCommonSubsequence",
+    "file": "longest_common_subsequence.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/longest_common_subsequence.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 5,
+      "types": [
+        "const std::string &",
+        "const int *",
+        "const int",
+        "const int",
+        "std::string &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 44,
+    "endLine": 68
+  },
+  {
+    "id": 141,
+    "name": "PrintOptimalMatrix",
+    "file": "longest_common_subsequence.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/longest_common_subsequence.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "const std::string &",
+        "const std::string &",
+        "const int *"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 70,
+    "endLine": 101
+  },
+  {
+    "id": 142,
+    "name": "BM_FibonacciDynamicTopDown",
+    "file": "fibonacci_number_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/fibonacci_number_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 13
+  },
+  {
+    "id": 143,
+    "name": "BM_FibonacciDynamicBottomUp",
+    "file": "fibonacci_number_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/fibonacci_number_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 24
+  },
+  {
+    "id": 144,
+    "name": "BENCHMARK_MAIN",
+    "file": "fibonacci_number_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/fibonacci_number_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 28,
+    "endLine": 28
+  },
+  {
+    "id": 145,
+    "name": "BM_SubsetSum1",
+    "file": "interval_subset_sum_problem_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/interval_subset_sum_problem_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 146,
+    "name": "BM_SubsetSum2",
+    "file": "interval_subset_sum_problem_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/interval_subset_sum_problem_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 16,
+    "endLine": 23
+  },
+  {
+    "id": 147,
+    "name": "BM_DivideAndConquerSubsetSum",
+    "file": "interval_subset_sum_problem_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/interval_subset_sum_problem_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 27,
+    "endLine": 36
+  },
+  {
+    "id": 148,
+    "name": "BM_DynamicProgrammingSubsetSum",
+    "file": "interval_subset_sum_problem_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/interval_subset_sum_problem_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 40,
+    "endLine": 47
+  },
+  {
+    "id": 149,
+    "name": "BENCHMARK_MAIN",
+    "file": "interval_subset_sum_problem_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/interval_subset_sum_problem_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 51,
+    "endLine": 51
+  },
+  {
+    "id": 150,
+    "name": "BM_CutRod",
+    "file": "rod_cutting_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/rod_cutting_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 13
+  },
+  {
+    "id": 151,
+    "name": "BM_MemoizedCutRod",
+    "file": "rod_cutting_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/rod_cutting_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 25
+  },
+  {
+    "id": 152,
+    "name": "BM_BottomUpCutRod",
+    "file": "rod_cutting_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/rod_cutting_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 29,
+    "endLine": 37
+  },
+  {
+    "id": 153,
+    "name": "BM_ExtendedBottomUpCutRod",
+    "file": "rod_cutting_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/rod_cutting_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "int &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 41,
+    "endLine": 49
+  },
+  {
+    "id": 154,
+    "name": "BENCHMARK_MAIN",
+    "file": "rod_cutting_benchmark.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/benchmark/rod_cutting_benchmark.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 53,
+    "endLine": 53
+  },
+  {
+    "id": 155,
+    "name": "SubsetSum1",
+    "file": "interval_subset_sum_problem.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/interval_subset_sum_problem.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 27
+  },
+  {
+    "id": 156,
+    "name": "SubsetSum2",
+    "file": "interval_subset_sum_problem.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/interval_subset_sum_problem.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 29,
+    "endLine": 45
+  },
+  {
+    "id": 157,
+    "name": "DivideAndConquerSubsetSum",
+    "file": "interval_subset_sum_problem.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/interval_subset_sum_problem.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "const std::vector<int> &",
+        "const int",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 47,
+    "endLine": 78
+  },
+  {
+    "id": 158,
+    "name": "DynamicProgrammingSubsetSum",
+    "file": "interval_subset_sum_problem.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/interval_subset_sum_problem.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 80,
+    "endLine": 93
+  },
+  {
+    "id": 159,
+    "name": "FibonacciDynamicTopDown",
+    "file": "fibonacci_number.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/fibonacci_number.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const int",
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 3,
+    "endLine": 21
+  },
+  {
+    "id": 160,
+    "name": "FibonacciDynamicBottomUp",
+    "file": "fibonacci_number.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/fibonacci_number.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 44
+  },
+  {
+    "id": 161,
+    "name": "CutRod",
+    "file": "rod_cutting.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/rod_cutting.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::map<int, int> &",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 21
+  },
+  {
+    "id": 162,
+    "name": "MemoizedCutRod",
+    "file": "rod_cutting.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/rod_cutting.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::map<int, int> &",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 27
+  },
+  {
+    "id": 163,
+    "name": "MemoizedCutRodAux",
+    "file": "rod_cutting.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/rod_cutting.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "const std::map<int, int> &",
+        "const int",
+        "std::vector<int> &"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 29,
+    "endLine": 53
+  },
+  {
+    "id": 164,
+    "name": "BottomUpCutRod",
+    "file": "rod_cutting.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/rod_cutting.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::map<int, int> &",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 55,
+    "endLine": 71
+  },
+  {
+    "id": 165,
+    "name": "ExtendedBottomUpCutRod",
+    "file": "rod_cutting.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/rod_cutting.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "const std::map<int, int> &",
+        "const int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 73,
+    "endLine": 97
+  },
+  {
+    "id": 166,
+    "name": "GTEST_TEST",
+    "file": "rod_cutting_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/rod_cutting_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 33
+  },
+  {
+    "id": 167,
+    "name": "GTEST_TEST",
+    "file": "rod_cutting_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/rod_cutting_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 35,
+    "endLine": 63
+  },
+  {
+    "id": 168,
+    "name": "GTEST_TEST",
+    "file": "rod_cutting_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/rod_cutting_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 65,
+    "endLine": 93
+  },
+  {
+    "id": 169,
+    "name": "GTEST_TEST",
+    "file": "rod_cutting_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/rod_cutting_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 95,
+    "endLine": 132
+  },
+  {
+    "id": 170,
+    "name": "GTEST_TEST",
+    "file": "fibonacci_number_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/fibonacci_number_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 13
+  },
+  {
+    "id": 171,
+    "name": "GTEST_TEST",
+    "file": "fibonacci_number_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/fibonacci_number_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 15,
+    "endLine": 22
+  },
+  {
+    "id": 172,
+    "name": "GTEST_TEST",
+    "file": "longest_common_subsequence_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/longest_common_subsequence_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 20
+  },
+  {
+    "id": 173,
+    "name": "GTEST_TEST",
+    "file": "interval_subset_sum_problem_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/interval_subset_sum_problem_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 12
+  },
+  {
+    "id": 174,
+    "name": "GTEST_TEST",
+    "file": "interval_subset_sum_problem_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/interval_subset_sum_problem_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 14,
+    "endLine": 21
+  },
+  {
+    "id": 175,
+    "name": "GTEST_TEST",
+    "file": "interval_subset_sum_problem_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/interval_subset_sum_problem_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 32
+  },
+  {
+    "id": 176,
+    "name": "GTEST_TEST",
+    "file": "interval_subset_sum_problem_test.cpp",
+    "path": "/home/kripaludas/Documents/Combined/algorithm-examples/cpp-algorithm/src/dp/test/interval_subset_sum_problem_test.cpp",
+    "language": "C++",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "int",
+        "int"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 34,
+    "endLine": 41
+  },
+  {
+    "id": 262,
     "name": "ensure_ollama_installed",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1537,7 +3066,7 @@
     "endLine": 21
   },
   {
-    "id": 95,
+    "id": 263,
     "name": "load_cache",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1552,7 +3081,7 @@
     "endLine": 33
   },
   {
-    "id": 96,
+    "id": 264,
     "name": "save_cache",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1569,7 +3098,7 @@
     "endLine": 37
   },
   {
-    "id": 97,
+    "id": 265,
     "name": "is_ollama_running",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1584,7 +3113,7 @@
     "endLine": 45
   },
   {
-    "id": 98,
+    "id": 266,
     "name": "is_model_available",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1599,7 +3128,7 @@
     "endLine": 52
   },
   {
-    "id": 99,
+    "id": 267,
     "name": "start_ollama",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1614,7 +3143,7 @@
     "endLine": 60
   },
   {
-    "id": 100,
+    "id": 268,
     "name": "pull_model",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1629,7 +3158,7 @@
     "endLine": 64
   },
   {
-    "id": 101,
+    "id": 269,
     "name": "find_function_by_id",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1647,7 +3176,7 @@
     "endLine": 73
   },
   {
-    "id": 102,
+    "id": 270,
     "name": "extract_code_from_file",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1667,7 +3196,7 @@
     "endLine": 83
   },
   {
-    "id": 103,
+    "id": 271,
     "name": "log",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1684,7 +3213,7 @@
     "endLine": 87
   },
   {
-    "id": 104,
+    "id": 272,
     "name": "format_prompt_for_structure",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1702,7 +3231,7 @@
     "endLine": 96
   },
   {
-    "id": 105,
+    "id": 273,
     "name": "extract_code_from_file_cached",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1721,7 +3250,7 @@
     "endLine": 102
   },
   {
-    "id": 106,
+    "id": 274,
     "name": "analyze_with_deepseek",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1740,7 +3269,7 @@
     "endLine": 134
   },
   {
-    "id": 107,
+    "id": 275,
     "name": "make_request",
     "file": "AIChatter.py",
     "path": "AIChatter.py",
@@ -1755,7 +3284,7 @@
     "endLine": 121
   },
   {
-    "id": 108,
+    "id": 276,
     "name": "process_file",
     "file": "interlang_runner.py",
     "path": "interlang_runner.py",
@@ -1773,7 +3302,7 @@
     "endLine": 41
   },
   {
-    "id": 109,
+    "id": 277,
     "name": "main",
     "file": "interlang_runner.py",
     "path": "interlang_runner.py",
@@ -1788,7 +3317,7 @@
     "endLine": 60
   },
   {
-    "id": 110,
+    "id": 278,
     "name": "__init__",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1805,7 +3334,7 @@
     "endLine": 15
   },
   {
-    "id": 111,
+    "id": 279,
     "name": "visit_FunctionDef",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1822,7 +3351,7 @@
     "endLine": 20
   },
   {
-    "id": 112,
+    "id": 280,
     "name": "visit_Import",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1839,7 +3368,7 @@
     "endLine": 30
   },
   {
-    "id": 113,
+    "id": 281,
     "name": "visit_ImportFrom",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1856,7 +3385,7 @@
     "endLine": 47
   },
   {
-    "id": 114,
+    "id": 282,
     "name": "visit_Assign",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1873,7 +3402,7 @@
     "endLine": 95
   },
   {
-    "id": 115,
+    "id": 283,
     "name": "visit_Call",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1890,7 +3419,7 @@
     "endLine": 126
   },
   {
-    "id": 116,
+    "id": 284,
     "name": "_get_type",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1907,7 +3436,7 @@
     "endLine": 133
   },
   {
-    "id": 117,
+    "id": 285,
     "name": "_report",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1927,7 +3456,7 @@
     "endLine": 166
   },
   {
-    "id": 118,
+    "id": 286,
     "name": "main",
     "file": "python_cross_final.py",
     "path": "python_cross_final.py",
@@ -1942,7 +3471,7 @@
     "endLine": 180
   },
   {
-    "id": 119,
+    "id": 287,
     "name": "infer_types",
     "file": "cpp_cross_final.py",
     "path": "cpp_cross_final.py",
@@ -1959,7 +3488,7 @@
     "endLine": 23
   },
   {
-    "id": 120,
+    "id": 288,
     "name": "parse_sig",
     "file": "cpp_cross_final.py",
     "path": "cpp_cross_final.py",
@@ -1976,7 +3505,7 @@
     "endLine": 43
   },
   {
-    "id": 121,
+    "id": 289,
     "name": "collect_calls_in_file",
     "file": "cpp_cross_final.py",
     "path": "cpp_cross_final.py",
@@ -1993,7 +3522,7 @@
     "endLine": 203
   },
   {
-    "id": 122,
+    "id": 290,
     "name": "main",
     "file": "cpp_cross_final.py",
     "path": "cpp_cross_final.py",
@@ -2008,7 +3537,7 @@
     "endLine": 224
   },
   {
-    "id": 123,
+    "id": 291,
     "name": "ensure_docker_installed",
     "file": "runner.py",
     "path": "runner.py",
@@ -2023,7 +3552,7 @@
     "endLine": 49
   },
   {
-    "id": 124,
+    "id": 292,
     "name": "is_container_running",
     "file": "runner.py",
     "path": "runner.py",
@@ -2040,7 +3569,7 @@
     "endLine": 59
   },
   {
-    "id": 125,
+    "id": 293,
     "name": "container_exists",
     "file": "runner.py",
     "path": "runner.py",
@@ -2057,7 +3586,7 @@
     "endLine": 69
   },
   {
-    "id": 126,
+    "id": 294,
     "name": "remove_existing_container",
     "file": "runner.py",
     "path": "runner.py",
@@ -2074,7 +3603,7 @@
     "endLine": 77
   },
   {
-    "id": 127,
+    "id": 295,
     "name": "start_container",
     "file": "runner.py",
     "path": "runner.py",
@@ -2092,7 +3621,7 @@
     "endLine": 101
   },
   {
-    "id": 128,
+    "id": 296,
     "name": "run_generator_in_container",
     "file": "runner.py",
     "path": "runner.py",
@@ -2110,7 +3639,7 @@
     "endLine": 120
   },
   {
-    "id": 129,
+    "id": 297,
     "name": "stop_and_remove_container",
     "file": "runner.py",
     "path": "runner.py",
@@ -2127,7 +3656,7 @@
     "endLine": 129
   },
   {
-    "id": 130,
+    "id": 298,
     "name": "main",
     "file": "runner.py",
     "path": "runner.py",
@@ -2146,7 +3675,7 @@
     "endLine": 139
   },
   {
-    "id": 131,
+    "id": 299,
     "name": "load_json",
     "file": "runner.py",
     "path": "runner.py",
@@ -2163,7 +3692,7 @@
     "endLine": 158
   },
   {
-    "id": 132,
+    "id": 300,
     "name": "save_json",
     "file": "runner.py",
     "path": "runner.py",
@@ -2181,7 +3710,7 @@
     "endLine": 162
   },
   {
-    "id": 133,
+    "id": 301,
     "name": "fix_path",
     "file": "runner.py",
     "path": "runner.py",
@@ -2198,7 +3727,7 @@
     "endLine": 181
   },
   {
-    "id": 134,
+    "id": 302,
     "name": "fix_paths_in_json",
     "file": "runner.py",
     "path": "runner.py",
@@ -2215,7 +3744,7 @@
     "endLine": 189
   },
   {
-    "id": 135,
+    "id": 303,
     "name": "load_id_counter",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2230,7 +3759,7 @@
     "endLine": 12
   },
   {
-    "id": 136,
+    "id": 304,
     "name": "save_id_counter",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2247,7 +3776,7 @@
     "endLine": 16
   },
   {
-    "id": 137,
+    "id": 305,
     "name": "__init__",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2265,7 +3794,7 @@
     "endLine": 25
   },
   {
-    "id": 138,
+    "id": 306,
     "name": "visit_FunctionDef",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2282,7 +3811,7 @@
     "endLine": 51
   },
   {
-    "id": 139,
+    "id": 307,
     "name": "visit_Call",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2299,7 +3828,7 @@
     "endLine": 83
   },
   {
-    "id": 140,
+    "id": 308,
     "name": "_get_called_class_name",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2316,7 +3845,7 @@
     "endLine": 91
   },
   {
-    "id": 141,
+    "id": 309,
     "name": "visit_ClassDef",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2333,7 +3862,7 @@
     "endLine": 97
   },
   {
-    "id": 142,
+    "id": 310,
     "name": "_get_function_id",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2352,7 +3881,7 @@
     "endLine": 112
   },
   {
-    "id": 143,
+    "id": 311,
     "name": "_is_inside",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2370,7 +3899,7 @@
     "endLine": 119
   },
   {
-    "id": 144,
+    "id": 312,
     "name": "analyze_python_files",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2387,7 +3916,7 @@
     "endLine": 206
   },
   {
-    "id": 145,
+    "id": 313,
     "name": "analyze_metrics",
     "file": "pythonMaker.py",
     "path": "pythonMaker.py",
@@ -2405,7 +3934,7 @@
     "endLine": 223
   },
   {
-    "id": 146,
+    "id": 314,
     "name": "infer_type",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2422,7 +3951,7 @@
     "endLine": 18
   },
   {
-    "id": 147,
+    "id": 315,
     "name": "extract_calls_from_string_literal",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2441,7 +3970,7 @@
     "endLine": 37
   },
   {
-    "id": 148,
+    "id": 316,
     "name": "extract_calls",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2459,7 +3988,7 @@
     "endLine": 89
   },
   {
-    "id": 149,
+    "id": 317,
     "name": "get_java_function_ranges",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2476,7 +4005,7 @@
     "endLine": 106
   },
   {
-    "id": 150,
+    "id": 318,
     "name": "find_enclosing_function",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2494,7 +4023,7 @@
     "endLine": 112
   },
   {
-    "id": 151,
+    "id": 319,
     "name": "guess_language",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2511,7 +4040,7 @@
     "endLine": 118
   },
   {
-    "id": 152,
+    "id": 320,
     "name": "main",
     "file": "java_cross_final.py",
     "path": "java_cross_final.py",
@@ -2526,7 +4055,7 @@
     "endLine": 134
   },
   {
-    "id": 153,
+    "id": 321,
     "name": "extract_relevant_functions",
     "file": "externalAnalyser.py",
     "path": "externalAnalyser.py",
@@ -2543,7 +4072,7 @@
     "endLine": 44
   },
   {
-    "id": 154,
+    "id": 322,
     "name": "format_prompt",
     "file": "externalAnalyser.py",
     "path": "externalAnalyser.py",
@@ -2560,7 +4089,7 @@
     "endLine": 65
   },
   {
-    "id": 155,
+    "id": 323,
     "name": "analyze_code",
     "file": "externalAnalyser.py",
     "path": "externalAnalyser.py",
@@ -2577,7 +4106,7 @@
     "endLine": 79
   },
   {
-    "id": 156,
+    "id": 324,
     "name": "process_file",
     "file": "externalAnalyser.py",
     "path": "externalAnalyser.py",
@@ -2594,7 +4123,7 @@
     "endLine": 88
   },
   {
-    "id": 157,
+    "id": 325,
     "name": "load_files",
     "file": "externalAnalyser.py",
     "path": "externalAnalyser.py",
@@ -2611,7 +4140,7 @@
     "endLine": 96
   },
   {
-    "id": 158,
+    "id": 326,
     "name": "extract_code_from_file",
     "file": "analyser.py",
     "path": "analyser.py",
@@ -2630,7 +4159,7 @@
     "endLine": 13
   },
   {
-    "id": 159,
+    "id": 327,
     "name": "analyze_with_ollama",
     "file": "analyser.py",
     "path": "analyser.py",
@@ -2648,7 +4177,7 @@
     "endLine": 30
   },
   {
-    "id": 160,
+    "id": 328,
     "name": "load_and_flatten",
     "file": "combineJsons.py",
     "path": "combineJsons.py",
@@ -2661,130 +4190,11 @@
     },
     "parentClass": null,
     "parentFunction": null,
-    "startLine": 3,
-    "endLine": 15
+    "startLine": 4,
+    "endLine": 22
   },
   {
-    "id": 161,
-    "name": "reverse",
-    "file": "SolutionByAnant.py",
-    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByAnant.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 1,
-    "endLine": 3
-  },
-  {
-    "id": 162,
-    "name": "ReverseNo",
-    "file": "SolutionByVaishnavi.py",
-    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByVaishnavi.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
-    "id": 163,
-    "name": "ReverseNo",
-    "file": "SolutionByVaishnavi2.py",
-    "path": "Programmers-Communi/Basic/Reverse A Given Number/SolutionByVaishnavi2.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 3,
-    "endLine": 9
-  },
-  {
-    "id": 164,
-    "name": "sumDigits",
-    "file": "SolutionByVaibhavTripathi.py",
-    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVaibhavTripathi.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 5,
-    "endLine": 12
-  },
-  {
-    "id": 165,
-    "name": "sum_of_digits",
-    "file": "SolutionByAayushi.py",
-    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByAayushi.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 1,
-    "endLine": 5
-  },
-  {
-    "id": 166,
-    "name": "SumDigits",
-    "file": "SolutionByVaishnavi.py",
-    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByVaishnavi.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 2,
-    "endLine": 12
-  },
-  {
-    "id": 167,
-    "name": "sum_of_digits",
-    "file": "SolutionByShivam.py",
-    "path": "Programmers-Communi/Basic/Sum of Digits in A Number/SolutionByShivam.py",
-    "language": "Python",
-    "parameters": {
-      "count": 1,
-      "types": [
-        "unknown"
-      ]
-    },
-    "parentClass": null,
-    "parentFunction": null,
-    "startLine": 1,
-    "endLine": 9
-  },
-  {
-    "id": 168,
+    "id": 329,
     "name": "__init__",
     "file": "2.py",
     "path": "public/2.py",
@@ -2801,7 +4211,7 @@
     "endLine": 14
   },
   {
-    "id": 169,
+    "id": 330,
     "name": "visit_FunctionDef",
     "file": "2.py",
     "path": "public/2.py",
@@ -2818,7 +4228,7 @@
     "endLine": 39
   },
   {
-    "id": 170,
+    "id": 331,
     "name": "visit_Call",
     "file": "2.py",
     "path": "public/2.py",
@@ -2835,7 +4245,7 @@
     "endLine": 60
   },
   {
-    "id": 171,
+    "id": 332,
     "name": "visit_ClassDef",
     "file": "2.py",
     "path": "public/2.py",
@@ -2852,7 +4262,7 @@
     "endLine": 67
   },
   {
-    "id": 172,
+    "id": 333,
     "name": "_get_function_id",
     "file": "2.py",
     "path": "public/2.py",
@@ -2869,7 +4279,7 @@
     "endLine": 78
   },
   {
-    "id": 173,
+    "id": 334,
     "name": "_is_inside",
     "file": "2.py",
     "path": "public/2.py",
@@ -2887,7 +4297,7 @@
     "endLine": 86
   },
   {
-    "id": 174,
+    "id": 335,
     "name": "analyze_python_files",
     "file": "2.py",
     "path": "public/2.py",
@@ -2904,7 +4314,7 @@
     "endLine": 135
   },
   {
-    "id": 175,
+    "id": 336,
     "name": "analyze_metrics",
     "file": "2.py",
     "path": "public/2.py",
@@ -2921,7 +4331,7 @@
     "endLine": 154
   },
   {
-    "id": 176,
+    "id": 337,
     "name": "infer_types",
     "file": "un3.py",
     "path": "public/un3.py",
@@ -2938,7 +4348,7 @@
     "endLine": 23
   },
   {
-    "id": 177,
+    "id": 338,
     "name": "parse_sig",
     "file": "un3.py",
     "path": "public/un3.py",
@@ -2955,7 +4365,7 @@
     "endLine": 43
   },
   {
-    "id": 178,
+    "id": 339,
     "name": "collect_calls_in_file",
     "file": "un3.py",
     "path": "public/un3.py",
@@ -2972,7 +4382,7 @@
     "endLine": 203
   },
   {
-    "id": 179,
+    "id": 340,
     "name": "main",
     "file": "un3.py",
     "path": "public/un3.py",
@@ -2987,7 +4397,7 @@
     "endLine": 224
   },
   {
-    "id": 180,
+    "id": 341,
     "name": "find_cpp_files",
     "file": "inc1.py",
     "path": "public/inc1.py",
@@ -3004,7 +4414,7 @@
     "endLine": 22
   },
   {
-    "id": 181,
+    "id": 342,
     "name": "is_user_function",
     "file": "inc1.py",
     "path": "public/inc1.py",
@@ -3022,7 +4432,7 @@
     "endLine": 31
   },
   {
-    "id": 182,
+    "id": 343,
     "name": "collect_calls",
     "file": "inc1.py",
     "path": "public/inc1.py",
@@ -3040,7 +4450,7 @@
     "endLine": 47
   },
   {
-    "id": 183,
+    "id": 344,
     "name": "main",
     "file": "inc1.py",
     "path": "public/inc1.py",
@@ -3055,7 +4465,7 @@
     "endLine": 76
   },
   {
-    "id": 184,
+    "id": 345,
     "name": "parse_python_c_api",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3072,7 +4482,7 @@
     "endLine": 45
   },
   {
-    "id": 185,
+    "id": 346,
     "name": "parse_pybind11",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3089,7 +4499,7 @@
     "endLine": 65
   },
   {
-    "id": 186,
+    "id": 347,
     "name": "parse_boost_python",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3106,7 +4516,7 @@
     "endLine": 90
   },
   {
-    "id": 187,
+    "id": 348,
     "name": "parse_swig",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3123,7 +4533,7 @@
     "endLine": 118
   },
   {
-    "id": 188,
+    "id": 349,
     "name": "parse_python_subprocess",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3140,7 +4550,7 @@
     "endLine": 138
   },
   {
-    "id": 189,
+    "id": 350,
     "name": "parse_jni",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3157,7 +4567,7 @@
     "endLine": 177
   },
   {
-    "id": 190,
+    "id": 351,
     "name": "parse_sig",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3174,7 +4584,7 @@
     "endLine": 164
   },
   {
-    "id": 191,
+    "id": 352,
     "name": "parse_java_subprocess",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3191,7 +4601,7 @@
     "endLine": 196
   },
   {
-    "id": 192,
+    "id": 353,
     "name": "parse_grpc",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3208,7 +4618,7 @@
     "endLine": 209
   },
   {
-    "id": 193,
+    "id": 354,
     "name": "parse_rest",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3225,7 +4635,7 @@
     "endLine": 231
   },
   {
-    "id": 194,
+    "id": 355,
     "name": "collect_calls",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3242,7 +4652,7 @@
     "endLine": 245
   },
   {
-    "id": 195,
+    "id": 356,
     "name": "main",
     "file": "Untitled-1.py",
     "path": "public/Untitled-1.py",
@@ -3257,7 +4667,7 @@
     "endLine": 281
   },
   {
-    "id": 196,
+    "id": 357,
     "name": "infer_type",
     "file": "unj1.py",
     "path": "public/unj1.py",
@@ -3274,7 +4684,7 @@
     "endLine": 18
   },
   {
-    "id": 197,
+    "id": 358,
     "name": "extract_calls_from_string_literal",
     "file": "unj1.py",
     "path": "public/unj1.py",
@@ -3293,7 +4703,7 @@
     "endLine": 30
   },
   {
-    "id": 198,
+    "id": 359,
     "name": "extract_calls",
     "file": "unj1.py",
     "path": "public/unj1.py",
@@ -3311,7 +4721,7 @@
     "endLine": 61
   },
   {
-    "id": 199,
+    "id": 360,
     "name": "main",
     "file": "unj1.py",
     "path": "public/unj1.py",
@@ -3326,7 +4736,7 @@
     "endLine": 92
   },
   {
-    "id": 200,
+    "id": 361,
     "name": "index",
     "file": "runner.py",
     "path": "public/runner.py",
@@ -3341,7 +4751,7 @@
     "endLine": 8
   },
   {
-    "id": 201,
+    "id": 362,
     "name": "run_script",
     "file": "runner.py",
     "path": "public/runner.py",
@@ -3359,7 +4769,7 @@
     "endLine": 16
   },
   {
-    "id": 202,
+    "id": 363,
     "name": "__init__",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3376,7 +4786,7 @@
     "endLine": 12
   },
   {
-    "id": 203,
+    "id": 364,
     "name": "visit_Import",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3393,7 +4803,7 @@
     "endLine": 21
   },
   {
-    "id": 204,
+    "id": 365,
     "name": "visit_ImportFrom",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3410,7 +4820,7 @@
     "endLine": 37
   },
   {
-    "id": 205,
+    "id": 366,
     "name": "visit_Assign",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3427,7 +4837,7 @@
     "endLine": 97
   },
   {
-    "id": 206,
+    "id": 367,
     "name": "visit_Call",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3444,7 +4854,7 @@
     "endLine": 128
   },
   {
-    "id": 207,
+    "id": 368,
     "name": "_get_type",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3461,7 +4871,7 @@
     "endLine": 136
   },
   {
-    "id": 208,
+    "id": 369,
     "name": "_report",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3481,7 +4891,7 @@
     "endLine": 150
   },
   {
-    "id": 209,
+    "id": 370,
     "name": "main",
     "file": "unp1.py",
     "path": "public/unp1.py",
@@ -3496,7 +4906,7 @@
     "endLine": 161
   },
   {
-    "id": 210,
+    "id": 371,
     "name": "infer_types",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3513,7 +4923,7 @@
     "endLine": 19
   },
   {
-    "id": 211,
+    "id": 372,
     "name": "parse_python_c_api",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3530,7 +4940,7 @@
     "endLine": 35
   },
   {
-    "id": 212,
+    "id": 373,
     "name": "parse_pybind_like",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3547,7 +4957,7 @@
     "endLine": 44
   },
   {
-    "id": 213,
+    "id": 374,
     "name": "parse_swig",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3564,7 +4974,7 @@
     "endLine": 55
   },
   {
-    "id": 214,
+    "id": 375,
     "name": "parse_python_subprocess",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3581,7 +4991,7 @@
     "endLine": 67
   },
   {
-    "id": 215,
+    "id": 376,
     "name": "parse_zmq_python",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3598,7 +5008,7 @@
     "endLine": 76
   },
   {
-    "id": 216,
+    "id": 377,
     "name": "parse_jni",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3615,7 +5025,7 @@
     "endLine": 98
   },
   {
-    "id": 217,
+    "id": 378,
     "name": "parse_java_subprocess",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3632,7 +5042,7 @@
     "endLine": 110
   },
   {
-    "id": 218,
+    "id": 379,
     "name": "parse_rest",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3649,7 +5059,7 @@
     "endLine": 132
   },
   {
-    "id": 219,
+    "id": 380,
     "name": "parse_socket_java",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3666,7 +5076,7 @@
     "endLine": 141
   },
   {
-    "id": 220,
+    "id": 381,
     "name": "parse_grpc",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3683,7 +5093,7 @@
     "endLine": 150
   },
   {
-    "id": 221,
+    "id": 382,
     "name": "collect_calls",
     "file": "un2.py",
     "path": "public/un2.py",
@@ -3698,5 +5108,374 @@
     "parentFunction": null,
     "startLine": 153,
     "endLine": 166
+  },
+  {
+    "id": 383,
+    "name": "__init__",
+    "file": "bit_compression.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/bit_compression.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CompressedGene",
+    "parentFunction": null,
+    "startLine": 2,
+    "endLine": 3
+  },
+  {
+    "id": 384,
+    "name": "__str__",
+    "file": "bit_compression.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/bit_compression.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": "CompressedGene",
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 6
+  },
+  {
+    "id": 385,
+    "name": "_compress",
+    "file": "bit_compression.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/bit_compression.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": "CompressedGene",
+    "parentFunction": null,
+    "startLine": 8,
+    "endLine": 21
+  },
+  {
+    "id": 386,
+    "name": "decompress",
+    "file": "bit_compression.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/bit_compression.py",
+    "language": "Python",
+    "parameters": {
+      "count": 0,
+      "types": []
+    },
+    "parentClass": "CompressedGene",
+    "parentFunction": null,
+    "startLine": 23,
+    "endLine": 37
+  },
+  {
+    "id": 387,
+    "name": "naive_string_matcher",
+    "file": "naive_string_search.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/naive_string_search.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "id": 388,
+    "name": "test_bit_compression",
+    "file": "test_bit_compression.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/test/test_bit_compression.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 10,
+    "endLine": 19
+  },
+  {
+    "id": 389,
+    "name": "test_naive_string_matcher",
+    "file": "test_naive_string_matcher.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/string/test/test_naive_string_matcher.py",
+    "language": "Python",
+    "parameters": {
+      "count": 4,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 11,
+    "endLine": 13
+  },
+  {
+    "id": 390,
+    "name": "fibonacci_recursive",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 6,
+    "endLine": 14
+  },
+  {
+    "id": 391,
+    "name": "fibonacci_memoization",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 30
+  },
+  {
+    "id": 392,
+    "name": "helper",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": "fibonacci_memoization",
+    "startLine": 25,
+    "endLine": 28
+  },
+  {
+    "id": 393,
+    "name": "fibonacci_automatic_memoization",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 34,
+    "endLine": 44
+  },
+  {
+    "id": 394,
+    "name": "fibonacci_iterative",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 47,
+    "endLine": 59
+  },
+  {
+    "id": 395,
+    "name": "fibonacci_generator",
+    "file": "fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 62,
+    "endLine": 75
+  },
+  {
+    "id": 396,
+    "name": "test_fibonacci_recursive",
+    "file": "test_fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/test/test_fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 17,
+    "endLine": 19
+  },
+  {
+    "id": 397,
+    "name": "test_fibonacci_memoization",
+    "file": "test_fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/test/test_fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 31,
+    "endLine": 33
+  },
+  {
+    "id": 398,
+    "name": "test_fibonacci_automatic_memoization",
+    "file": "test_fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/test/test_fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 45,
+    "endLine": 47
+  },
+  {
+    "id": 399,
+    "name": "test_fibonacci_iterative",
+    "file": "test_fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/test/test_fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 59,
+    "endLine": 61
+  },
+  {
+    "id": 400,
+    "name": "test_fibonacci_generator",
+    "file": "test_fibonacci.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/dp/test/test_fibonacci.py",
+    "language": "Python",
+    "parameters": {
+      "count": 3,
+      "types": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 73,
+    "endLine": 75
+  },
+  {
+    "id": 401,
+    "name": "get_console_logger",
+    "file": "logging.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/utils/logging.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 5,
+    "endLine": 19
+  },
+  {
+    "id": 402,
+    "name": "_str_to_log_level",
+    "file": "logging.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/utils/logging.py",
+    "language": "Python",
+    "parameters": {
+      "count": 1,
+      "types": [
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 22,
+    "endLine": 43
+  },
+  {
+    "id": 403,
+    "name": "_create_console_logger",
+    "file": "logging.py",
+    "path": "algorithm-examples/python-algorithm/algorithm/utils/logging.py",
+    "language": "Python",
+    "parameters": {
+      "count": 2,
+      "types": [
+        "unknown",
+        "unknown"
+      ]
+    },
+    "parentClass": null,
+    "parentFunction": null,
+    "startLine": 46,
+    "endLine": 59
   }
 ]

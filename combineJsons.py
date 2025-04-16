@@ -1,9 +1,16 @@
 import json
+import os
 
 def load_and_flatten(file):
+    if os.path.getsize(file) == 0:
+        print(f"Skipped empty file: {file}")
+        return []
     with open(file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-        # Flatten nested lists if any
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"Skipped invalid JSON file: {file} — {e}")
+            return []
         if isinstance(data, list):
             flat = []
             for item in data:
@@ -42,4 +49,4 @@ for file in input_files2:
 with open("function_calls_combined.json", "w", encoding="utf-8") as f:
     json.dump(merged_calls, f, indent=4)
 
-print("Merged all JSON arrays correctly.")
+print("Merged all JSON arrays correctly, skipping empty/invalid files.")
