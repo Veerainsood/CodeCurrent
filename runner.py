@@ -110,7 +110,8 @@ def run_generator_in_container(container_name, mode):
         docker_cmd = ["docker", "exec", container_name, "bash", "-c", bash_file]
         docker_cmd2 = ["docker", "exec", container_name, "bash", "-c", bash_file2]
     elif mode == 2:
-        bash_file = "./tester_interlang.sh"
+        bash_file = "./runner_interlangcpp.sh"
+        docker_cmd = ["docker", "exec", container_name, "bash", "-c", bash_file]
     else:
         raise ValueError("Unknown mode for generator script")
 

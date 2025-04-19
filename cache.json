@@ -1,0 +1,8 @@
+{
+  "12-1": "This is a C++ program that prompts the user to enter a string and checks if it contains any characters that are not in the original string.",
+  "12-2": "With these improvements, the output of the program is:\n    \nOriginal string: eagerer -> \"ea\"\n    Original string: eaglets -> \"eag\"\n    Original string: eardrop -> \"ear\"\n    Original string: After eagling the Road Hole on Thursday",
+  "652-1": "This function is a recursive algorithm that takes an integer `n` as input and returns the minimum number of squares needed to cover all possible positions on a square grid of size `n`.",
+  "652-3": "Here's a list of code smells in the function `numSquare` defined in the previous example:\n\n1. The function has too many lines, with over 50 lines. This can be a sign of excessive complexity or unnecessary repetition.\n\n2.",
+  "480-1": "The `swap` function in C is a built-in function that swaps the values of two pointers (i.e., `x` and `y`) using the `temp` variable as a temporary storage location.",
+  "480-3": "1. Cyclomatic complexity (CC): This measures the number of decision points in a function and is calculated by counting the number of conditions that must be evaluated to reach a specific outcome."
+}
