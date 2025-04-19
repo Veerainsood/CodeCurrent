@@ -102,18 +102,23 @@ def start_container(container_name, image_name):
 
 def run_generator_in_container(container_name, mode):
     # mode: 0 = cpp, 1 = java, 2 = interlangcpp
+    docker_cmd =[]
+    docker_cmd2 =[]
     if mode == 0:
-        bash_file = "./tester.sh"
-    elif mode == 1:
-        bash_file = "./tester_java.sh"
+        bash_file = "./runner_cpp.sh"
+        bash_file2 = "./runner_java.sh"
+        docker_cmd = ["docker", "exec", container_name, "bash", "-c", bash_file]
+        docker_cmd2 = ["docker", "exec", container_name, "bash", "-c", bash_file2]
     elif mode == 2:
         bash_file = "./tester_interlang.sh"
     else:
         raise ValueError("Unknown mode for generator script")
 
-    docker_cmd = ["docker", "exec", container_name, "bash", "-c", bash_file]
     try:
         subprocess.check_call(docker_cmd)
+        if mode == 0:
+            subprocess.check_call(docker_cmd2)
+            pass
         print(f"Generator command ({bash_file}) executed successfully in container: {container_name}")
     except subprocess.CalledProcessError as e:
         print("Error executing generator command:", e)
@@ -143,13 +148,11 @@ def main(container_name, image_name, mode):
 ensure_docker_installed()
 
 main("cpp_parser_container", "veerain/cplusplusparser:latest", 0)
-main("java_parser_container", "veerain/cplusplusparser:javaInterlang", 1)
-
 # Final steps
 os.system("python3 pythonMaker.py")
 os.system("python3 combineJsons.py")
 
-main("interlang_parser_container", "veerain/cplusplusparser:interlangcpp", 2)
+main("cpp_parser_container", "veerain/cplusplusparser:latest", 2)
 
 import json
 
