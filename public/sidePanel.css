@@ -58,8 +58,8 @@ body, html {
   position: fixed;
   top: 7%;
   right: 0%;
-  height: 80%;
-  width: 60vh;
+  height: 85%;
+  width: 70vh;
   min-width: 280px;
   max-width: 600px;
   background: linear-gradient(90deg, #2c3e50, #3498db);

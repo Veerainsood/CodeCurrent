@@ -91,7 +91,8 @@ def format_prompt_for_structure(code, task):
     prefix = {
         1: "Briefly explain this:",
         2: "Some improvement in:",
-        3: "List code smells in the following Python function.Be specific and concise:\n"
+        3: "List code smells in the following function.Be specific and concise:\n",
+        4: "List the mood of programmer in the following function.Be specific and concise:\n"
     }.get(task, "")
     return f"{prefix}\n{code}"
 
@@ -102,7 +103,7 @@ def extract_code_from_file_cached(path, start, end):
     return extract_code_from_file(path, start, end)
 
 
-def analyze_with_deepseek(code, task, timeout=10):
+def analyze_with_deepseek(code, task, timeout=20):
     prompt = format_prompt_for_structure(code, task)
     payload = {
         "model": MODEL_NAME,

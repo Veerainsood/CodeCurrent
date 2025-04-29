@@ -2,6 +2,7 @@ import { getDescription } from "./getInfo.js";
 let GeneratedSidePanel = [];
 GeneratedSidePanel[2] = [];
 GeneratedSidePanel[3] = [];
+GeneratedSidePanel[4] = [];
 function createAnimatedPanel(panelId, clickX, clickY) {
   // Create a <style> tag if not already present to hold our custom animation
   if (!document.getElementById('dynamic-panel-styles')) {
@@ -34,7 +35,7 @@ function createAnimatedPanel(panelId, clickX, clickY) {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         overflow: hidden;
-        width: 400px; /* adjust as needed */
+        width: 30vw; /* adjust as needed */
         height: 350px; /* adjust as needed */
         border: 1px solid rgba(0,0,0,0.1);
       }
@@ -60,8 +61,8 @@ function createAnimatedPanel(panelId, clickX, clickY) {
       .resize-handle.top-right {
         top: -6px;
         right: -6px;
-        width: 12px;
-        height: 12px;
+        width: 5%;
+        height: 5%;
         cursor: nesw-resize;
       }
       .resize-handle.bottom-left {
@@ -175,7 +176,7 @@ function createAnimatedPanel(panelId, clickX, clickY) {
     document.head.appendChild(styleEl);
   }
   function setActiveTab(panelId, tabNum) {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
       const btn = document.getElementById(`tab-btn-${i}-${panelId}`);
       if (btn) {
         btn.classList.toggle("active", i === tabNum);
@@ -221,6 +222,7 @@ function createAnimatedPanel(panelId, clickX, clickY) {
         <button id="tab-btn-1-${panelId}" class="tab-btn">Discription</button>
         <button id="tab-btn-2-${panelId}" class="tab-btn">Improvement</button>
         <button id="tab-btn-3-${panelId}" class="tab-btn">Smell</button>
+        <button id="tab-btn-4-${panelId}" class="tab-btn">Mood</button>
         <button id="closePanel-${panelId}" 
                 style="background: transparent; border: none; font-size: 24px; cursor: pointer;">
            &times;
@@ -246,6 +248,12 @@ function createAnimatedPanel(panelId, clickX, clickY) {
           <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
         </div>
       </div>
+      <div id="tab-content-4-${panelId}" class="panel-content" style="display: none;">
+        <div id="info-panel-4-${panelId}" >
+          <h3>Movable & Resizable Panel</h3>
+          <p>Try dragging the header to move this panel. You can also resize it from any edge or corner.</p>
+        </div>
+      </div>
     </div>
   `;
   
@@ -259,6 +267,7 @@ function createAnimatedPanel(panelId, clickX, clickY) {
     document.getElementById(`tab-content-1-${panelId}`).style.display = "block";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "none";
+    document.getElementById(`tab-content-4-${panelId}`).style.display = "none";
   });
   
   document.getElementById(`tab-btn-2-${panelId}`).addEventListener('click', function() {
@@ -270,6 +279,7 @@ function createAnimatedPanel(panelId, clickX, clickY) {
     document.getElementById(`tab-content-1-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "block";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "none";
+    document.getElementById(`tab-content-4-${panelId}`).style.display = "none";
   });
   
   document.getElementById(`tab-btn-3-${panelId}`).addEventListener('click', function() {
@@ -281,8 +291,19 @@ function createAnimatedPanel(panelId, clickX, clickY) {
     document.getElementById(`tab-content-1-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-2-${panelId}`).style.display = "none";
     document.getElementById(`tab-content-3-${panelId}`).style.display = "block";
+    document.getElementById(`tab-content-4-${panelId}`).style.display = "none";
   });
-  
+  document.getElementById(`tab-btn-4-${panelId}`).addEventListener('click', function() {
+    setActiveTab(panelId, 4);
+    if (!GeneratedSidePanel[4][panelId]) {
+      getDescription(panelId, 4);
+      GeneratedSidePanel[4][panelId] = true;
+    }
+    document.getElementById(`tab-content-1-${panelId}`).style.display = "none";
+    document.getElementById(`tab-content-2-${panelId}`).style.display = "none";
+    document.getElementById(`tab-content-3-${panelId}`).style.display = "none";
+    document.getElementById(`tab-content-4-${panelId}`).style.display = "block";
+  });
 
   // Use requestAnimationFrame to trigger the animation once rendered.
   requestAnimationFrame(() => {

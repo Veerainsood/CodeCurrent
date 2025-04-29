@@ -32,11 +32,7 @@ function rotateAndReload(btn) {
   
   // Load theme on startup
   window.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-      document.body.classList.add("light");
-    }
-  
-    updateToggleIcon();
+    document.querySelector('.toggle-btn').addEventListener('click', toggleDarkMode);
   });
   
+export {toggleDarkMode,rotateAndReload}

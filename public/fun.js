@@ -327,14 +327,14 @@ function createLanguageLegend(svg, nodes, styling) {
                 .attr("rx", 4)
                 .attr("ry", 4)
                 .attr("fill", highlightColor) // Start with yellow
-                .attr("stroke", "#fff")
+                // .attr("stroke", "#fff")
                 .attr("stroke-width", 1)
                 .style("filter", "drop-shadow(2px 2px 2px rgba(0,0,0,0.3))");
         
             row.append("text")
                 .attr("x", 30)
                 .attr("y", 15)
-                .attr("fill", styling.textColor || "#ffffff")
+                // .attr("fill", styling.textColor || "#ffffff")
                 .text(lang)
                 .style("font-size", styling.fontSize || "14px")
                 .style("font-family", "sans-serif");
@@ -1762,6 +1762,7 @@ function clicked(node, nodeId, x, y) {
         updateInfoPanel(node, nodeId, 0.85, 0.85);
         updateEthicsPanel(nodeId)
         updateOptimizationPanel(nodeId);
+        updateMoodPanel(nodeId);
     }
     console.log("Node clicked:", nodeId, x, y);
 }
@@ -1975,6 +1976,47 @@ function updateOptimizationPanel(id) {
       getDescription(id, 3);
     };
   }
+
+  function updateMoodPanel(id) {
+    const moodPanel = d3.select(`#info-panel-4-${id}`);
+    
+    // Update HTML safely (fixed duplicate ID and dots ID)
+    moodPanel.html(`
+      <div class="card description-card" id="mood-panel-${id}" style="animation: fadeIn 0.5s ease-in-out;">
+        <div class="description-header flex-class">
+          <div></div>
+          <h3>Code  Mood</h3>
+          <button class="refresh-btn" id="reload-4-${id}" title="Refresh">
+            <i class="fas fa-rotate-right"></i>
+          </button>
+        </div>
+        <div class="description-body">
+          <div class="loading" id="spinner-4-${id}">
+            <div class="spinner"></div>
+            Analyzing<span id="opt-dots-${id}"></span>
+          </div>
+          <div id="mood-body-${id}">
+          </div>
+        </div>
+      </div>
+    `);
+  
+    // Animate dots
+    const dotsEl = document.getElementById(`mood-dots-${id}`);
+    let count = 0;
+    setInterval(() => {
+      count = (count + 1) % 4;
+      if(dotsEl)
+      dotsEl.textContent = '.'.repeat(count);
+    }, 500);
+  
+    // Bind refresh button logic
+    document.querySelector(`#reload-4-${id}`).onclick = function () {
+      d3.select(`#spinner-4-${id}`).style("display", "flex");
+      d3.select(`#mood-body-${id}`).style("display", "none");
+      getDescription(id, 4);
+    };
+  }
   
 
   // Call this function when your description is ready
@@ -1993,6 +2035,11 @@ function updateOptimizationPanel(id) {
       ethicsBody.style("display", "block"); 
       ethicsBody.html(description);
     }
+    else if (type === 4) {
+        const moodBody = d3.select(`#mood-body-${id}`);
+        moodBody.style("display", "block"); 
+        moodBody.html(description);
+      }
   }
   
   

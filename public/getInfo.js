@@ -12,7 +12,7 @@ async function getDescription(id, task) {
     const url = `/api/desc/${id}/${task}`;
 
     // First request with 15s timeout
-    let res = await fetchWithTimeout(url, 15000);
+    let res = await fetchWithTimeout(url, 25000);
     if (res !== 'timeout') {
         const data = await res.json();
         if (data.output) {
@@ -22,7 +22,7 @@ async function getDescription(id, task) {
     }
 
     // Second request with 20s timeout
-    res = await fetchWithTimeout(url, 20000);
+    res = await fetchWithTimeout(url, 30000);
     if (res !== 'timeout') {
         const data = await res.json();
         if (data.output) {
