@@ -11,7 +11,7 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Light mode overrides */
+/* Light mode override*/
 body.light {
     background: linear-gradient(135deg, #f0f0f0, #dfe6e9);  /* Subtle off-white gradient */
     color: #34495e;
