@@ -6,17 +6,27 @@ from collections import Counter
 ID_COUNTER_FILE = "./id_counter.txt"
 
 def load_id_counter():
+    """
+    Load the ID counter from a file to continue from the last saved state.
+    If the file doesn't exist, return 0 to start the counter from 0.
+    """
     if os.path.exists(ID_COUNTER_FILE):
         with open(ID_COUNTER_FILE, "r") as f:
             return int(f.read().strip())
     return 0
 
 def save_id_counter(counter):
+    """
+    Save the current ID counter to a file for later use.
+    """
     with open(ID_COUNTER_FILE, "w") as f:
         f.write(str(counter))
 
 class PythonFunctionAnalyzer(ast.NodeVisitor):
     def __init__(self, file_path, counter_start):
+        """
+        Initialize the analyzer with the file path and starting ID counter.
+        """
         self.file_path = file_path
         self.current_class = None
         self.current_function = None
@@ -25,6 +35,10 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         self.counter = counter_start
 
     def visit_FunctionDef(self, node):
+        """
+        Visit function definition nodes to collect function information such as
+        name, parameters, location, and the parent class or function if applicable.
+        """
         self.counter += 1
 
         function_info = {
@@ -51,6 +65,10 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         self.current_function = previous_function
 
     def visit_Call(self, node):
+        """
+        Visit function call nodes to analyze the function calls within other functions,
+        capturing details such as the caller and callee function names, arguments, and context.
+        """
         if isinstance(node.func, ast.Name):
             callee_name = node.func.id
             callee_class = None
@@ -83,6 +101,9 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         self.generic_visit(node)
 
     def _get_called_class_name(self, attr_node):
+        """
+        Attempt to retrieve the class name associated with an attribute call.
+        """
         if isinstance(attr_node.value, ast.Call):
             if isinstance(attr_node.value.func, ast.Name):
                 return attr_node.value.func.id
@@ -91,12 +112,18 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         return None
 
     def visit_ClassDef(self, node):
+        """
+        Visit class definition nodes to keep track of the current class context.
+        """
         previous_class = self.current_class
         self.current_class = node.name
         self.generic_visit(node)
         self.current_class = previous_class
 
     def _get_function_id(self, name, parent_class=None, param_count=None):
+        """
+        Retrieve the ID of a function by matching the name, class, and parameter count.
+        """
         if not name or name.strip() == "":
             return "UNKNOWN"
 
@@ -112,6 +139,9 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         return "UNKNOWN"
 
     def _is_inside(self, node, types):
+        """
+        Check if a node is inside specific block types like if, match, for, or while.
+        """
         while node:
             if isinstance(node, types):
                 return True
@@ -119,6 +149,9 @@ class PythonFunctionAnalyzer(ast.NodeVisitor):
         return False
 
 def analyze_python_files(directory):
+    """
+    Analyze Python files in the specified directory, parse them into AST, and extract function and call information.
+    """
     all_functions = []
     all_calls = []
 
@@ -206,6 +239,9 @@ def analyze_python_files(directory):
     analyze_metrics(all_functions, all_calls)
 
 def analyze_metrics(all_functions, all_calls):
+    """
+    Analyze and print function call statistics like most called functions and unused functions.
+    """
     call_counts = Counter(call["callee_Id"] for call in all_calls if "callee_Id" in call)
 
     most_called = sorted(call_counts.items(), key=lambda x: x[1], reverse=True)
@@ -225,5 +261,3 @@ def analyze_metrics(all_functions, all_calls):
 if __name__ == "__main__":
     analyze_python_files(".")
     save_id_counter(1)
-    
-

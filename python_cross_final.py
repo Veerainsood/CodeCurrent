@@ -9,16 +9,18 @@ class CallVisitor(ast.NodeVisitor):
         # Stack to keep track of function definitions (AST nodes)
         self.func_stack = []
         self.calls = []
-        self.var_types = {}         # mapping variable -> interop type
-        self.import_aliases = {}    # mapping alias -> full module name
-        self.jython_classes = set()
+        self.var_types = {}         # Mapping of variables to their interop types
+        self.import_aliases = {}    # Mapping of alias to full module name
+        self.jython_classes = set() # Set to store Jython class names
         super().__init__()
 
+    # Visit function definitions to track where functions are declared
     def visit_FunctionDef(self, node):
         self.func_stack.append(node)
         self.generic_visit(node)
         self.func_stack.pop()
 
+    # Handle imports and track interop-related modules
     def visit_Import(self, node):
         for alias in node.names:
             name = alias.name
@@ -29,6 +31,7 @@ class CallVisitor(ast.NodeVisitor):
                 self.var_types[asname] = name  # use module name as type
         self.generic_visit(node)
 
+    # Handle imports from specific submodules and mark certain interop classes
     def visit_ImportFrom(self, node):
         module = node.module or ''
         for alias in node.names:
@@ -46,6 +49,7 @@ class CallVisitor(ast.NodeVisitor):
                 self.jython_classes.add(asname)
         self.generic_visit(node)
 
+    # Track assignments involving interop-related types
     def visit_Assign(self, node):
         if isinstance(node.value, ast.Call):
             call = node.value
@@ -94,6 +98,7 @@ class CallVisitor(ast.NodeVisitor):
                         self.var_types[tid] = 'java_class'
         self.generic_visit(node)
 
+    # Visit function calls to track interop calls based on their arguments
     def visit_Call(self, node):
         # Handle subprocess.run calls explicitly.
         if (isinstance(node.func, ast.Attribute) and 
@@ -125,6 +130,7 @@ class CallVisitor(ast.NodeVisitor):
                     self._report(lang, node.func.attr, node.args, node)
         self.generic_visit(node)
 
+    # Helper method to get the type of a node (variable, constant, etc.)
     def _get_type(self, node):
         if isinstance(node, ast.Constant):
             return type(node.value).__name__
@@ -132,6 +138,7 @@ class CallVisitor(ast.NodeVisitor):
             return 'variable'
         return node.__class__.__name__
 
+    # Method to report an interop call, adding it to the `calls` list
     def _report(self, language, callee, args, call_node):
         # Determine caller from the function stack. If empty, then it's global.
         if self.func_stack:
@@ -165,6 +172,7 @@ class CallVisitor(ast.NodeVisitor):
             "end_line": end_line
         })
 
+# Main function to parse the input Python file and detect interop calls
 def main():
     if len(sys.argv) != 2:
         print("Usage: python detect_interop_calls.py <your_python_file.py>")
