@@ -210,3 +210,20 @@
     }
   }
   
+
+
+
+  /* Add this CSS to style the animated image icon */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.animated-icon {
+  width: 40px;  /* Adjust the size of the animated icon */
+  height: auto;
+  margin-left: 10px;  /* Space between the logo and the animated icon */
+  /* No animation needed for GIFs, but you can add more CSS effects if needed */
+}
