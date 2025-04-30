@@ -6,6 +6,79 @@ let jsonData;
 const uniqueFunctionsPath = "../unique_functions_combined.json";
 const functionCallsPath = "../function_calls_combined.json";
 
+const statsBtn = document.getElementById("stats-btn");
+const statsPanel = document.getElementById("stats-panel");
+const statsBody = document.getElementById("stats-content-body");
+
+statsBtn.addEventListener("click", async () => {
+  const funcData = await fetch("../unique_functions_combined.json").then(res => res.json());
+
+  const languageStats = {}; 
+
+  funcData.forEach(func => {
+    const lang = func.language;
+    const file = func.file;
+
+    if (!languageStats[lang]) {
+      languageStats[lang] = {
+        files: new Set(),
+        count: 0
+      };
+    }
+
+    languageStats[lang].files.add(file);
+    languageStats[lang].count += 1;
+  });
+
+  let totalFunctions = funcData.length;
+  let statsHtml = `<p><strong>Total Functions:</strong> ${totalFunctions}</p>`;
+
+  const labels = [];
+  const data = [];
+  const backgroundColors = [];
+
+  const colorPalette = [
+    '#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b',
+    '#858796', '#5a5c69', '#fd7e14', '#20c997', '#6f42c1'
+  ];
+
+  let colorIndex = 0;
+
+  for (const [lang, stats] of Object.entries(languageStats)) {
+    statsHtml += `<p><strong>${lang}</strong>: ${stats.count} functions in ${stats.files.size} file(s)</p>`;
+    labels.push(lang);
+    data.push(stats.count);
+    backgroundColors.push(colorPalette[colorIndex % colorPalette.length]);
+    colorIndex++;
+  }
+
+  statsBody.innerHTML = statsHtml + '<canvas id="languagePieChart" width="300" height="300"></canvas>';
+  statsPanel.style.display = "block";
+
+  const ctx = document.getElementById('languagePieChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: data,
+        backgroundColor: backgroundColors
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom'
+        },
+        title: {
+          display: true,
+          text: 'Functions per Language'
+        }
+      }
+    }
+  });
+});
 
 
 // Asynchronously load both JSON files and combine the data into one object.
