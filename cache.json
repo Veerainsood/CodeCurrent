@@ -1,10 +1,7 @@
 {
-  "8-4": "The mood of this program is enthusiastic, optimistic, and friendly. It's a good sign that the programmer has a positive attitude towards coding and wants to share their skills with others. The program is designed to run successfully and provide an enjoyable experience for the user.",
-  "8-3": "1. IllegalArgumentException: The specified file does not exist or is not a valid Java file (line 10)\n   This code smell indicates that the function should check if the input file exists and is a valid Java file before attempting to run it.",
-  "8-1": "In Java, you can use the system() function to execute a command in the terminal or console. This function allows you to run external programs and perform actions on your system without having to create a separate process. Here's how to call the \"java\" program from within a Java class:\n\n1.",
-  "3-1": "This is a Python function that imports the `mymodule` module from the Boost C++ library and calls its `myfunc()` function with arguments `99` and `\"boost\"`.",
-  "3-4": "The mood of programmer in the following function is \"Excited\" as it demonstrates a thorough understanding and implementation of Boost Python library's functionality. The function uses the `attr` object to call the `myfunc` method with two arguments, which are integers representing the input values for the function.",
-  "22-1": "This is a Python function that loads a JSON file from the specified path (in this case, `CACHE_FILE`) and returns its contents as a dictionary. The function checks if the file exists by calling the `os.path.",
-  "22-2": "To improve the code, you can add a check for the existence of the cache file before loading it using the `os.path.exists()` function. If the file does not exist, the function will return an empty dictionary instead of None, which is what happens when the file path is invalid or cannot be read.",
-  "27-1": "The `pull_model()` function is a Python script that uses the Ollama command line tool to pull the specified model from the Ollama server."
+  "7-1": "To implement this function in C++, you can use a loop to iterate through each character in the input string \"text\".",
+  "7-4": "The mood of this function is concise and specific, indicating that it focuses on finding the longest word in a given text string.",
+  "7-3": "Here is a code smell list for the function Longest_Word:\n\n1. Code smell: The function has too many nested loops, which can be replaced with a single loop. This will improve the performance and reduce the number of nested loops.\n\n2.",
+  "31-3": "Here's a list of code smells in the function:\n\n1. Code smell: The function has too many parameters, which makes it difficult to read and understand. Consider removing unnecessary arguments or breaking up the function into smaller, more manageable parts.\n\n2.",
+  "661-1": "This is a C++ program that prompts the user to enter an integer value (n), and then performs a series of replacements on the original number using a loop. The program first initializes n to 8, which is the original value entered by the user."
 }
