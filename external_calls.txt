@@ -1,0 +1,11 @@
+./jni-bind/implementation/class_loader_ref_test.cc,Java
+./jni-bind/implementation/method_ref_test.cc,Java
+./jni-bind/implementation/global_object_test.cc,Java
+./jni-bind/implementation/overload_ref_test.cc,Java
+./jni-bind/implementation/thread_guard_test.cc,Java
+./jni-bind/implementation/local_array_method_multidimensional_test.cc,Java
+./jni-bind/implementation/jvm_ref_test.cc,Java
+./jni-bind/implementation/multi_type_test.cc,Java
+./jni-bind/implementation/static_ref_test.cc,Java
+./jni-bind/implementation/local_array_method_test.cc,Java
+./jni-bind/implementation/string_ref_test.cc,Java

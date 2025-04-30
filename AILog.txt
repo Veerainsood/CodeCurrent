@@ -1,0 +1,66 @@
+[2025-04-12 12:48:53] Found in cache
+[2025-04-12 12:49:27] Found in cache
+[2025-04-12 13:23:25] Came in else with path: /home/kripaludas/Documents/Combined/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenClient.java
+[2025-04-12 13:23:52] Came in else with path: /home/kripaludas/Documents/Combined/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenClient.java
+[2025-04-12 13:23:52] Called analyse with deepseek for the code :  public static void main(String[] args) throws Exception {
+    new KittenClient().run(args);
+  }
+}
+
+[2025-04-12 13:24:02] Came in else with path: /home/kripaludas/Documents/Combined/public/main.cpp
+[2025-04-12 13:24:02] Called analyse with deepseek for the code :void test_boost_python() {
+    Py_Initialize();
+    object mod = import("mymodule");
+    object res = mod.attr("myfunc")(99, "boost");
+    Py_Finalize();
+}
+
+[2025-04-12 13:24:48] Came in else with path: AIChatter.py
+[2025-04-12 13:24:48] Called analyse with deepseek for the code :def start_ollama():
+    # print("🟡 Starting ollama serve...")      
+    subprocess.Popen(["ollama", "serve"])
+    for _ in range(10):
+        if is_ollama_running():
+            return
+        time.sleep(0.5) # give some time to start
+
+[2025-04-12 13:25:22] Found in cache
+[2025-04-12 13:25:52] Found in cache
+[2025-04-12 13:26:07] Found in cache
+[2025-04-12 13:27:21] Came in else with path: /home/kripaludas/Documents/Combined/please-examples/cc/kitten.cc
+[2025-04-12 13:27:21] Called analyse with deepseek for the code :Kitten GetKitten(const std::string& port, Breed breed) {
+  GetKittenRequest request;
+  if (breed) {
+    request.set_breed(breed);
+  }
+
+  std::shared_ptr<Channel> channel = grpc::CreateChannel(
+      "localhost:" + port, grpc::InsecureChannelCredentials());
+  std::unique_ptr<PetShop::Stub> stub(PetShop::NewStub(channel));
+
+  GetKittenResponse response;
+  ClientContext context;
+  Status status = stub->GetKitten(&context, request, &response);
+  if (!status.ok()) {
+    fprintf(stderr, "Failed to get kitten :(\n");
+    exit(1);
+  }
+  return response.kitten();
+}
+
+[2025-04-12 13:33:54] Came in else with path: /home/kripaludas/Documents/Combined/please-examples/java/src/main/java/net/thoughtmachine/please/examples/KittenClient.java
+[2025-04-12 13:33:54] Called analyse with deepseek for the code :  public static void main(String[] args) throws Exception {
+    new KittenClient().run(args);
+  }
+}
+
+[2025-04-12 13:34:28] Found in cache
+[2025-04-12 13:34:45] Came in else with path: /home/kripaludas/Documents/Combined/public/main.cpp
+[2025-04-12 13:34:45] Called analyse with deepseek for the code :void test_swig_wrapper() {
+    int result = myfunc(123, "swig test");
+}
+
+[2025-04-12 13:34:54] Found in cache
+[2025-04-12 13:35:09] Found in cache
+[2025-04-12 13:35:53] Found in cache
+[2025-04-12 13:36:14] Found in cache
