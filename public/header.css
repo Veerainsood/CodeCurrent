@@ -52,7 +52,17 @@ body.light text {
     font-weight: 600;
     letter-spacing: 1px;
     transition: color 0.3s ease;
+    
 }
+
+.animated-icon {
+    width: 40px;           /* or whatever size you need */
+    height: 40px;          /* keep width & height equal */
+    border-radius: 50%;    /* makes it a circle */
+    object-fit: cover;     /* ensures it fills the container without distortion */
+    overflow: hidden;      /* clips any overflow just in case */
+    display: inline-block; /* if you need to control its box-model */
+  }
 
 /* Navbar */
 .navbar {
@@ -88,6 +98,7 @@ body.light .navbar a {
 .settings-icon:hover {
     transform: rotate(90deg);
 }
+
 
 /* Responsive: Mobile navbar hidden */
 @media (max-width: 768px) {

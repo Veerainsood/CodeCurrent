@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Flow Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidePanel.css">
+  <link rel="stylesheet" href="navStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #2c2c3e;
+      --fg: #fff;
+      --panel-bg: #1e1e2f;
+      --btn-bg: #4caf50;
+      --btn-fg: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--panel-bg);
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .settings-container {
+      width: 100%;
+      max-width: 480px;
+      background: var(--bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .settings-container h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .setting-group {
+      margin-bottom: 1.25rem;
+    }
+    .setting-group label {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .setting-group label input[type="checkbox"] {
+      margin-right: 0.5rem;
+      transform: scale(1.2);
+    }
+    .setting-group select {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      font-size: 1rem;
+    }
+    .btn-apply {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      background: var(--btn-bg);
+      color: var(--btn-fg);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-apply:hover {
+      opacity: 0.9;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="settings-container">
+    <h2>Graph Settings</h2>
+
+    <div class="setting-group">
+      <label><input type="checkbox" id="show-cpp" checked /> Show C++</label>
+      <label><input type="checkbox" id="show-java" checked /> Show Java</label>
+      <label><input type="checkbox" id="show-python" checked /> Show Python</label>
+    </div>
+
+    <div class="setting-group">
+      <label for="layout-select">Layout Style:</label>
+      <select id="layout-select">
+        <option value="force">Force-Directed</option>
+        <option value="circular">Circular</option>
+        <option value="radial">Radial</option>
+      </select>
+    </div>
+
+    <div class="setting-group">
+      <label><input type="checkbox" id="show-edges" checked /> Show Edges</label>
+    </div>
+
+    <button class="btn-apply" onclick="applySettings()">Apply Settings</button>
+  </div>
+
+  <script>
+    function applySettings() {
+    const settings = {
+      showCpp: document.getElementById('show-cpp').checked,
+      showJava: document.getElementById('show-java').checked,
+      showPython: document.getElementById('show-python').checked,
+      layout: document.getElementById('layout-select').value,
+      showEdges: document.getElementById('show-edges').checked,
+    };
+
+    // Save settings
+    localStorage.setItem('graphSettings', JSON.stringify(settings));
+    console.log("Applied Settings:", settings);
+
+    // Redirect back to home
+    window.location.href = 'index.html';
+  }
+
+    // On load, populate controls from saved settings (if any)
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = JSON.parse(localStorage.getItem('graphSettings') || '{}');
+      if ('showCpp' in saved) document.getElementById('show-cpp').checked = saved.showCpp;
+      if ('showJava' in saved) document.getElementById('show-java').checked = saved.showJava;
+      if ('showPython' in saved) document.getElementById('show-python').checked = saved.showPython;
+      if (saved.layout) document.getElementById('layout-select').value = saved.layout;
+      if ('showEdges' in saved) document.getElementById('show-edges').checked = saved.showEdges;
+    });
+  </script>
+
+</body>
+</html>

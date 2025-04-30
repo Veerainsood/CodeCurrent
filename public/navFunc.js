@@ -35,4 +35,5 @@ function rotateAndReload(btn) {
     document.querySelector('.toggle-btn').addEventListener('click', toggleDarkMode);
   });
   
+  
 export {toggleDarkMode,rotateAndReload}
