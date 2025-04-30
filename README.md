@@ -164,6 +164,68 @@ Each function call captures:
 
 6) **Preet Bobde**(CS22B043): C++ JSON 2 generation, Set up Docker for environment, detection of inter-language function calls between JavaScript and Python.
 
+## Directory Structure
+```bash
+.
+├── AIChatter.py
+├── AI_Log.txt
+├── AILog.txt
+├── analyser.py
+├── binRunner.sh
+├── cache.json
+├── combineJsons.py
+├── connect.sh
+├── cpp_cross_final.py
+├── crossPython.sh
+├── externalAnalyser.py
+├── external_calls.txt
+├── function_calls_combined.json
+├── function_calls_cpp.json
+├── function_calls_java.json
+├── function_calls_python.json
+├── getInfo.js
+├── id_counter.txt
+├── interlangCpp.json
+├── interlang_runner.py
+├── java_cross_final.py
+├── JS_Python_interfunction.zip
+├── log.txt
+├── public
+│   ├── 2.py
+│   ├── file.json
+│   ├── function_analysis.json
+│   ├── fun.js
+│   ├── getInfo.js
+│   ├── HeaderAndPanel.js
+│   ├── header.css
+│   ├── inc1.py
+│   ├── index.html
+│   ├── main.cpp
+│   ├── main.java
+│   ├── main.py
+│   ├── navFunc.js
+│   ├── navStyle.css
+│   ├── runner.py
+│   ├── sidePanel.css
+│   ├── style.css
+│   ├── un2.py
+│   ├── un3.py
+│   ├── unj1.py
+│   ├── unp1.py
+│   └── Untitled-1.py
+├── python_cross_final.py
+├── pythonMaker.py
+├── README.md
+├── repo
+├── runner.py
+├── server.js
+├── TODO
+├── unique_functions_combined.json
+├── unique_functions_cpp.json
+├── unique_functions_java.json
+└── unique_functions_python.json
+```
+
 ## Release-2 Plan (Future Work)
 
 - Improve accuracy of function call detection in current languages.
