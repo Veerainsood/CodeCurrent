@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="sidePanel.css">
   <link rel="stylesheet" href="navStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -24,6 +25,9 @@
     </div>
     <div class="nav-left navbar">
       <div class="nav-links">
+        <a href="#" id="stats-btn" class="stats-nav-link">
+          <i class="fa fa-chart-bar"></i> Statistics
+        </a>
         <div class="dropdown">
           <a href="#">Settings <i class="fa fa-caret-down"></i></a>
           <div class="dropdown-content">
@@ -119,5 +123,17 @@
 <script type="module" src="./navFunc.js"></script>
 
 </body>
+
+<div id="stats-panel" class="stats-popup" style="display:none;">
+  <div class="stats-popup-content">
+    <div class="stats-header">
+      <h2 style="color: black;">📊 Project Statistics</h2>
+      <button class="close-btn" onclick="document.getElementById('stats-panel').style.display='none'">&times;</button>
+    </div>
+    <div id="stats-content-body" class="stats-body">
+      <canvas id="languagePieChart" width="300" height="300"></canvas>
+    </div>
+  </div>
+</div>
 
 </html>
